@@ -82,3 +82,12 @@ C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\ENTIDAD\obj\Debug\ENTIDA
 C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\ENTIDAD\obj\Debug\ENTIDAD.csproj.CopyComplete
 C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\ENTIDAD\obj\Debug\ENTIDAD.dll
 C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\ENTIDAD\obj\Debug\ENTIDAD.pdb
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\ENTIDAD\bin\Debug\ENTIDAD.dll
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\ENTIDAD\bin\Debug\ENTIDAD.pdb
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\ENTIDAD\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\ENTIDAD\bin\Debug\Newtonsoft.Json.xml
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\ENTIDAD\obj\Debug\ENTIDAD.csproj.AssemblyReference.cache
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\ENTIDAD\obj\Debug\ENTIDAD.csproj.CoreCompileInputs.cache
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\ENTIDAD\obj\Debug\ENTIDAD.csproj.CopyComplete
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\ENTIDAD\obj\Debug\ENTIDAD.dll
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\ENTIDAD\obj\Debug\ENTIDAD.pdb

@@ -156,3 +156,16 @@ C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\LN\obj\Debug\LN.csproj.C
 C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\LN\obj\Debug\LN.csproj.CopyComplete
 C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\LN\obj\Debug\LN.dll
 C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\LN\obj\Debug\LN.pdb
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\LN\bin\Debug\LN.dll
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\LN\bin\Debug\LN.pdb
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\LN\bin\Debug\DAO.dll
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\LN\bin\Debug\ENTIDAD.dll
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\LN\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\LN\bin\Debug\DAO.pdb
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\LN\bin\Debug\ENTIDAD.pdb
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\LN\bin\Debug\Newtonsoft.Json.xml
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\LN\obj\Debug\LN.csproj.AssemblyReference.cache
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\LN\obj\Debug\LN.csproj.CoreCompileInputs.cache
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\LN\obj\Debug\LN.csproj.CopyComplete
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\LN\obj\Debug\LN.dll
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\LN\obj\Debug\LN.pdb

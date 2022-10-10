@@ -250,47 +250,9 @@
                         </li>
                     </ul>
                 </nav>
-
             }
-            else if (Convert.ToInt32(Session["PERFIL_USUARIO"]) == 13){
-                
-                
-    <nav id="sidebar">
-        <div class="sidebar-header">
-            <img src="~/Assets/brand/logo_nordic.png" alt="logo Nordyc Pharmaceutical" style="height:10px;width:140px;" />
-        </div>
-        <h6 class="btn-dark" style="text-align:center;">@Session["nombre_usuario_logeado"]</h6>
-        <ul class="list-unstyled components">
-
-            
-            <li >
-            @Html.ActionLink("Listar Canjes", "ListarCanjes", "Canjes", new { @class = "nav-link" })
-            </li >
-
-            <li>
-                @Html.ActionLink("Asignacion de Gerencias Lineas", "AsigancionGL", "Viaticos", new { @class = "nav-link" })
-            </li>
-            
-
-        </ul>
 
 
-
-
-        <ul class="list-unstyled CTAs">
-
-            <li>
-                @Html.ActionLink("Cerrar Session", "CerrarSesion", "Viaticos", new { @class = "nav-link" })
-                @*<a href="#" class="article">Back to Home</a>*@
-            </li>
-        </ul>
-    </nav>
-                
-                
-                
-                
-                
-            }
         }
 
 

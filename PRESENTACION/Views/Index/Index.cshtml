@@ -201,6 +201,13 @@
                         enviar_id_usuario(data.idusuario);
                      window.location.href = "@Url.Action("Master", "Viaticos")";
                     }
+                    else if (data.perfil == 13) {
+                        enviarperfil(data.perfil);
+                        enviar_id_usuario(data.idusuario);
+                     window.location.href = "@Url.Action("ListarCanjes", "Canjes")";
+                    }
+
+
                     else {
                         enviarperfil(data.perfil);
                         enviar_id_usuario(data.idusuario);
