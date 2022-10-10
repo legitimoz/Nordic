@@ -431,6 +431,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CanjesController.cs" />
     <Compile Include="Controllers\CotizadorController.cs" />
     <Compile Include="Controllers\IndexController.cs" />
     <Compile Include="Controllers\SOPController.cs" />
@@ -506,6 +507,8 @@
     <Content Include="Views\Index\Programas.cshtml" />
     <Content Include="Views\Layout\_LayoutSOP.cshtml" />
     <Content Include="Views\Viaticos\Reporteliquidaciones.cshtml" />
+    <Content Include="Views\Canjes\ListarCanjes.cshtml" />
+    <Content Include="Views\Layout\_LayoutCanjes.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

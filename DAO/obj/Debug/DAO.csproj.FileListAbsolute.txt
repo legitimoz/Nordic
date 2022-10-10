@@ -128,3 +128,14 @@ C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\DAO\obj\Debug\DAO.csproj
 C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\DAO\obj\Debug\DAO.csproj.CopyComplete
 C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\DAO\obj\Debug\DAO.dll
 C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\DAO\obj\Debug\DAO.pdb
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\DAO\bin\Debug\DAO.dll
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\DAO\bin\Debug\DAO.pdb
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\DAO\bin\Debug\ENTIDAD.dll
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\DAO\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\DAO\bin\Debug\ENTIDAD.pdb
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\DAO\bin\Debug\Newtonsoft.Json.xml
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\DAO\obj\Debug\DAO.dll
+C:\Users\jhonatan.punto\Desktop\Sistemas\Git\Nordic\DAO\obj\Debug\DAO.pdb
