@@ -1,0 +1,148 @@
+﻿@{
+    
+   // int perfil = Convert.ToInt32(Session["PERFIL_USUARIO"]);
+}
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width ,initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">-->
+    <link href="~/Assets/dist/css/bootstrap.css" rel="stylesheet">
+    <!--link href="../Assets/dist/css/bootstrap.min.css" rel="stylesheet"-->
+    <link href="~/Assets/dist/css/navbar.css" rel="stylesheet">
+    <!-- Data Tables -->
+    <link rel="stylesheet" href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+    <!--SELECT 2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Assets/dist/css/select2_boostrap4.css" />
+    <!--ICONS BOOSTRAP -->
+    <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"-->
+
+    <link href="~/Assets/dist/css/bootstrap-icons.css" rel="stylesheet" />
+    <!-- for live demo-->
+    <link href="~/Assets/dist/css/ScrollTabla.css" rel="stylesheet" />
+    <link href="~/Assets/dist/css/Datalist.css" rel="stylesheet" />
+
+    <title>@ViewBag.Title</title>
+</head>
+<!--MENU LAYAOUT--->
+
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">SSENDA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <div class="form-inline my-2 my-md-0">
+                @*<ul class="navbar-nav mr-auto" id="menu_dinamico">
+                    </ul>*@
+
+                <ul class="navbar-nav mr-auto">
+                    @if (Convert.ToInt32(Session["PERFIL_USUARIO"]) != 6)
+                    {
+                        <li class="nav-item active">
+                            <a class="nav-link" href="~/Cotizador/Monitoreo">Monitoreo </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown" aria-expanded="false">Gestion de Cotizacion Estatico</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown09">
+                                <!--FOR PARA CRREAR MENUS DINAMICOS con los usuarios creados y sus respectivos permisos-->
+                                <a class="dropdown-item" href="~/Cotizador/index">Registro de Cotizacion</a>
+                                <a class="dropdown-item" href="~/Cotizador/ListarCotizaciones">Listado de Cotizaciones</a>
+                                <!---a class="dropdown-item" href="~/Cotizador/ListarClientes">Listado de Clientes</!--a-->
+
+                            </div>
+                        </li>
+
+
+
+                    }
+                    else
+                    {
+
+                    }
+
+                    <li class="nav-item active">
+
+                        @if (Convert.ToInt32(Session["PERFIL_USUARIO"]) != 6)
+                        {
+
+                        }
+                        else
+                        {
+                            <a class="nav-link" href="/Cotizador/Visor">Visor de Cotizaciones </a>
+                        }
+
+
+                    </li>
+
+                    <li class="nav-item">
+                        @Html.ActionLink("Cerrar Session", "CerrarSesion", "Cotizador", new { @class = "nav-link" })
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-4 col-sm-3 offset-8 offset-sm-9">
+            @*<h7> @Session["nombre_usuario_logeado"]</h7>
+            <h7>  @Session["PERFIL_USUARIO"] </h7>*@
+        </div>
+    </div>
+
+
+    <div>
+        @RenderBody()
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper)
+    <script src="../Assets/dist/js/jquery-3.6.0.min.js"></script>-->
+
+
+
+    @*<script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+
+    <script src="../Assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" type="text/javascript"></script>
+
+    <script src="~/Assets/dist/jsPDF-1.3.2/dist/jspdf.min.js"></script>
+    <script src="~/Assets/dist/jsPDF-1.3.2/dist/jspdf.plugin.autotable.min.js"></script>*@
+
+
+    @*<script src="~/Assets/dist/js/selectclientes.js"></script>*@
+    @*<script src="~/Assets/dist/js/articulos.js"></script>
+    <script src="~/Assets/dist/js/AgregarArticulosTabla.js"></script>*@
+    @*<script src="~/Assets/dist/js/visor.js"></script>*@
+    @*<script src="~/Assets/dist/js/lista_cotizador_vendedor.js"></script>*@
+    @*<script src="~/Assets/dist/js/AgregarClienteNuevo.js"></script>*@
+    @*<script src="~/Assets/dist/js/ListarTablaCabceraCotizacion.js"></script>*@
+    @*<script src="~/Assets/dist/js/Login.js"></script>*@
+    @*<script src="~/Assets/dist/js/MenuPermisos.js"></script>*@
+    @*<script src="~/Assets/dist/js/Estados.js"></script>*@
+
+    @*<script src="~/Assets/dist/js/ListarTablaCabceraCotizacion.js"></script>*@
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5999800D-16D7-4606-9861-4A140C575FDA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LN</RootNamespace>
+    <AssemblyName>LN</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="COTIZADOR\AlmacenLN.cs" />
+    <Compile Include="COTIZADOR\ArticuloLN.cs" />
+    <Compile Include="COTIZADOR\CabezeraCotizacionLN.cs" />
+    <Compile Include="COTIZADOR\ClienteNuevoCotizacionLN.cs" />
+    <Compile Include="COTIZADOR\ClienteSofconLN.cs" />
+    <Compile Include="COTIZADOR\DetalleFinancieroClienteLN.cs" />
+    <Compile Include="COTIZADOR\Detalle_CotizacionLN.cs" />
+    <Compile Include="COTIZADOR\DireccionesClienteLN.cs" />
+    <Compile Include="COTIZADOR\EstadosLN.cs" />
+    <Compile Include="COTIZADOR\FormaVentaLN.cs" />
+    <Compile Include="COTIZADOR\MarcaLN.cs" />
+    <Compile Include="COTIZADOR\MonitoreoLN.cs" />
+    <Compile Include="COTIZADOR\MotivosLN.cs" />
+    <Compile Include="COTIZADOR\PermisoLN.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="COTIZADOR\StockLN.cs" />
+    <Compile Include="COTIZADOR\TransportistasLN.cs" />
+    <Compile Include="COTIZADOR\UsuarioLN.cs" />
+    <Compile Include="COTIZADOR\VendedorLN.cs" />
+    <Compile Include="SOP\SOP_RegistroSanitarioLN.cs" />
+    <Compile Include="VIATICOS\VIA_CAB_SOL_LN.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{e1d817e9-6dea-411b-be18-99b0ac726f4c}</Project>
+      <Name>DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ENTIDAD\ENTIDAD.csproj">
+      <Project>{b03a985f-1747-457b-a80d-c33e23a1eef7}</Project>
+      <Name>ENTIDAD</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

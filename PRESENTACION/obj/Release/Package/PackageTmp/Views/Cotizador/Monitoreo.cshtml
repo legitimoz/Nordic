@@ -1,0 +1,255 @@
+﻿
+@{
+    ViewBag.Title = "Monitoreo";
+    Layout = "~/Views/Layout/_LayoutMenu.cshtml";
+}
+
+<main>
+    <div class="container">
+        <h3>Monitoreo</h3>
+        <div class="row p-3 mb-2 text-white" style="background-color:#E3EAEC;">
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-1">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Fecha Inicio</span>
+                    </div>
+                    <input type="date" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                </div>
+            </div>
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Fecha Fin</span>
+                    </div>
+                    <input type="date" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                </div>
+            </div>
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Estados</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Elija...</option>
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Cliente</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Elija...</option>
+                        <option value="1">Cliente 1</option>
+                        <option value="2">Cliente 2</option>
+                        <option value="3">Cliente 3</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Vendedor</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Elija...</option>
+                        <option value="1">Vendedor 1</option>
+                        <option value="2">Vendedor 2</option>
+                        <option value="3">Vendedor 3</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+
+                        <!-- prueba-->
+                        <!--- FIN DE PRUEBA-->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <h4>Lista de cotizaciones </h4> <br />
+        <div class="row">
+
+            <div class="table-responsive table-responsive-md table-responsive-lg">
+                <table class="table table-sm table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col"># CTZ</th>
+                            <th scope="col">Cliente</th>
+                            <th scope="col">Vendedor</th>
+                            <th scope="col">Fec.Registro</th>
+                            <th scope="col">Fec.Aprob.</th>
+                            <th scope="col">Fec. Pedido</th>
+                            <th scope="col">Num. Ped.</th>
+                            <th scope="col">Num.Guia</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Det</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="res_monitoreo_cotizaciones">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="../Assets/dist/js/bootstrap.bundle.min.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        ListarMonitoreo();
+
+      });
+
+    function ListarMonitoreo() {
+        var codigoanulacion;
+        var botonanular = "";
+        //   console.log("Estamos en Listado cabeceras");
+        //var mitablacabecera = document.getElementById("tabla_cabecera_cotizacion_vendedor");
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+            url: '/Cotizador/ListarCotizacionesMonitoreo',
+            success: function (data) {
+
+                var mitablacabecera_monitoreo = document.getElementById("res_monitoreo_cotizaciones");
+                if (mitablacabecera_monitoreo) {
+                    mitablacabecera_monitoreo.innerHTML = ``;
+                }
+                else {
+                    // mitablacabecera.innerHTML = ``;
+                }
+                //recorrer lista de objectos :D
+                mitablacabecera_monitoreo.innerHTML = ``;
+                var codigocotizaciontext = "CTZ-00";
+                var NUM_PEDIDO = 125;
+                var NUM_GIA = 255;
+                for (cab in data) {
+                    console.log(data);
+                    if (data[cab].pedido == "") {
+                        NUM_PEDIDO = NUM_PEDIDO + 2;
+                        NUM_GIA = NUM_GIA + 1;
+                        var fecha_ok = "2022-06-14 09:50:15";
+                        var fecha_ok_2 = "2022-06-15 09:50:15";
+                        
+                        var almacen_ok = "CAJAMARQUILLA";
+                        var importetotal = Importe(data[cab].cotizacion);
+                        console.log(importetotal);
+                        // console.log(data);
+                        codigoanulacion = codigocotizaciontext + data[cab].cotizacion;
+                        //  console.log(codigoanulacion);
+                        //console.log("Cotizacion ___________________________");
+                        //console.log("codigo " + data[cab].codigo + " cliente" + data[cab].cliente + " almacen " + data[cab].almacen);
+                        //console.log("_______________________________________");
+                        mitablacabecera_monitoreo.innerHTML += ` <tr>
+                                  <td scope='row'>${codigocotizaciontext}${data[cab].cotizacion}</td>
+                                  <td>${data[cab].cliente}</td>
+                                  <td>${data[cab].vendedor}</td>
+                                  <td>${data[cab].fechacreacion}</td>
+                                  <td>${fecha_ok}</td>
+                                  <td>${fecha_ok_2}</td>
+                                  <td >${NUM_PEDIDO}</td>
+                                  <td >${NUM_GIA}</td>
+                                    <td >vigente</td>
+                                  <td><button id="${codigoanulacion}" class="btn text-white" onclick="Aprobar_p(${data[cab].codigo})" style="background-color:#D22B08;"><i class="bi bi-clipboard2-x"></i></button></td>
+                                </tr>
+                                    `;
+                    }
+                    else {
+
+                        var fecha_ok = "2022-06-13 09:50:15";
+                        var almacen_ok = "CAJAMARQUILLA";
+                        var importetotal = Importe(data[cab].cotizacion);
+                        console.log(importetotal);
+                        // console.log(data);
+                        codigoanulacion = codigocotizaciontext + data[cab].cotizacion;
+                        //  console.log(codigoanulacion);
+                        //console.log("Cotizacion ___________________________");
+                        //console.log("codigo " + data[cab].codigo + " cliente" + data[cab].cliente + " almacen " + data[cab].almacen);
+                        //console.log("_______________________________________");
+                        mitablacabecera_monitoreo.innerHTML += ` <tr>
+                                  <td scope='row'>${codigocotizaciontext}${data[cab].cotizacion}</td>
+                                  <td>${data[cab].cliente}</td>
+                                  <td>${data[cab].vendedor}</td>
+                                  <td>${data[cab].fechacreacion}</td>
+                                  <td>${data[cab].fechaaprobacion}</td>
+                                  <td>${data[cab].pedido}</td>   
+                                  <td >${data[cab].numeropedido}</td>
+                                  <td >${data[cab].numeroguia}</td>
+                                    <td >${data[cab].estado}</td>
+                                  <td><button id="${codigoanulacion}" class="btn text-white" onclick="Aprobar_p(${data[cab].codigo})" style="background-color:#D22B08;"><i class="bi bi-clipboard2-x"></i></button></td>
+                                </tr>
+                                    `;
+
+                       
+                    }
+                   
+
+
+
+                }
+
+
+
+            }
+        });
+
+    }
+
+
+    function Importe(codigoCabecera) {
+        var totalll = 0;
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+            url: '/Cotizador/Listado_Detalle_stock_mayor_cero',
+            data: "{ 'codigo': '" + codigoCabecera + "'}",
+            success: function (data) {
+
+                for (cab in data) {
+
+                    var cant_solic = data[cab].cantidad_solicitada;
+                    var precio_cot = data[cab].preciodecotizacion;
+
+
+                    var precio_entero = parseInt(precio_cot);
+                    var total_articulo = cant_solic * precio_entero;
+                    var total_articulo_string = total_articulo + "";
+                    var cant_solic_string = cant_solic + "";
+
+
+                    total_final = total_final + parseInt(total_articulo);
+
+                    //  data_c[cab] = [data[cab].codigo_articulo, data[cab].nombre_articulo, data[cab].preciodecotizacion.slice(0, 6), cant_solic_string, total_articulo_string];
+                    totalll = total_final;
+                }
+            }
+        });
+
+        return totalll;
+    }
+
+</script>
+

@@ -1,0 +1,569 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{446BD04E-54CD-4C80-A668-717A2D04022C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PRESENTACION</RootNamespace>
+    <AssemblyName>PRESENTACION</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44330</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.96.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.96.0\lib\net46\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.16.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.16.0\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.1.0.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.1.0\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SunatMVB">
+      <HintPath>Assets\Viaticos\MSVSunatV2\SunatMVB.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\brand\bootstrap-outline.svg" />
+    <Content Include="Assets\brand\bootstrap-solid.svg" />
+    <Content Include="Assets\brand\CARGA.JPG" />
+    <Content Include="Assets\brand\logistica.jpg" />
+    <Content Include="Assets\brand\logo_comprimax.png" />
+    <Content Include="Assets\brand\logo_nordic.png" />
+    <Content Include="Assets\brand\logo_senda.png" />
+    <Content Include="Assets\brand\user.png" />
+    <Content Include="Assets\brand\VIATICOS.JPG" />
+    <Content Include="Assets\dist\css\bootstrap-icons.css" />
+    <Content Include="Assets\dist\css\bootstrap-icons.woff2" />
+    <Content Include="Assets\dist\css\bootstrap.css" />
+    <Content Include="Assets\dist\css\bootstrap.min.css" />
+    <Content Include="Assets\dist\css\cabezeratabla.css" />
+    <Content Include="Assets\dist\css\Datalist.css" />
+    <Content Include="Assets\dist\css\navbar.css" />
+    <Content Include="Assets\dist\css\ScrollTabla.css" />
+    <Content Include="Assets\dist\css\select2_boostrap4.css" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\.gitignore" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\bower.json" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\build.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\CNAME" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\dist\jspdf.debug.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\dist\jspdf.min.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\dist\jspdf.plugin.autotable.min.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\docs\getting_started.md" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\doc\files.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\doc\index.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\doc\plugins\from_html.md" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\doc\symbols\FontObject.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\doc\symbols\jsPDF-jsPDF.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\doc\symbols\jsPDF-PubSub.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\doc\symbols\jsPDF.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\doc\symbols\jsPDFClass.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\doc\symbols\PubSub.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\doc\symbols\src\c__work_jsPDF_jspdf.js.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\doc\symbols\src\c__work_jsPDF_tools_jspdf.js.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\doc\symbols\src\jspdf.js.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\doc\symbols\_global_.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\annotation\test_annotation-magFactor.pdf" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\annotation\test_annotation.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\annotation\test_annotation.pdf" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\annotation\test_annotation_2.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\basic.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\bootstrap\css\bootstrap-responsive.css" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\bootstrap\css\bootstrap.css" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\bootstrap\js\bootstrap.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\canvg_context2d\bar_graph_with_text_and_lines.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\context2d\test_context2d.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\context2d\test_context2d_paths.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\css\editor.css" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\css\main.css" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\css\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\css\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\css\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\css\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\css\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\css\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\css\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\css\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\css\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\css\smoothness\jquery-ui-1.8.17.custom.css" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\downloadify.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\html2pdf\auto_break.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\html2pdf\examples.css" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\html2pdf\images\favicon.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\html2pdf\lists.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\html2pdf\page_break.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\html2pdf\pdf.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\html2pdf\pdf2.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\html2pdf\showcase.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\html2pdf\showcase_supported_html.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\html2pdf\simple.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\html2pdf\tables.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\html2pdf\total_mess.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\images.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\images\24_bit.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\images\32_bit.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\images\grayscale_16bpc.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\images\grayscale_8bpc.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\images\grayscale_alpha_16_bpc.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\images\grayscale_alpha_8bpc.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\images\grid.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\images\jpg.jpg" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\images\png8_flat.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\images\png8_trans.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\images\RGBA_16bpc.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\images\RGB_16bpc.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\images\tiny_png_indexed.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\jaxer.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\jspdf.PLUGINTEMPLATE.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\AcroForm.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\autoprint.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\basic.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\circles.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\editor.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\font-faces.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\font-size.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\from-html.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\html2canvas.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\images.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\images_png.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\jquery\jquery-1.7.1.min.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\jquery\jquery-ui-1.8.17.custom.min.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\kitchen-sink.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\landscape.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\lines.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\rectangles.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\string-splitting.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\test_harness.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\text-colors.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\theme-ambiance.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\triangles.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\two-page.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\js\user-input.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\null-logo-trans.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\octocat.jpg" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\octocat.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\outline\test_outline.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\outline\test_outline.pdf" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\runner.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\test_from_html.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\test_from_html_css_page_breaks.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\test_insert_page.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\examples\thinking-monkey.jpg" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\index.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\ISSUE_TEMPLATE.md" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\jspdf.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\canvg_context2d\canvg.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\canvg_context2d\libs\rgbcolor.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\canvg_context2d\libs\StackBlur.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\canvg_context2d\README.md" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\css_colors.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\deflate.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\Downloadify\images\download.png" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\Downloadify\js\downloadify.min.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\Downloadify\js\swfobject.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\Downloadify\LICENSE.txt" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\Downloadify\media\downloadify.swf" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\Downloadify\README.textile" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\Downloadify\src\com\dynamicflash\util\Base64.as" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\Downloadify\src\com\dynamicflash\util\tests\Base64Test.as" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\Downloadify\src\Downloadify.as" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\Downloadify\src\downloadify.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\Downloadify\test.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\dist\html2canvas.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\LICENSE" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\readme.md" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\clone.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\color.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\core.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\dummyimagecontainer.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\fallback.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\font.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\fontmetrics.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\framecontainer.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\gradientcontainer.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\imagecontainer.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\imageloader.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\lineargradientcontainer.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\log.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\nodecontainer.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\nodeparser.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\promise.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\proxy.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\proxyimagecontainer.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\pseudoelementcontainer.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\renderer.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\renderers\canvas.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\stackingcontext.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\support.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\svgcontainer.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\svgnodecontainer.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\textcontainer.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\utils.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\webkitgradientcontainer.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2canvas\src\xhr.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\html2pdf.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\png_support\png.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\png_support\zlib.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\polyfill.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\README" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\require\config.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\libs\require\require.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\main.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\MIT-LICENSE.txt" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\npm-shrinkwrap.json" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\package.json" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\plugins\acroform.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\plugins\addhtml.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\plugins\addimage.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\plugins\annotations.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\plugins\autoprint.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\plugins\canvas.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\plugins\cell.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\plugins\context2d.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\plugins\from_html.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\plugins\javascript.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\plugins\outline.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\plugins\png_support.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\plugins\prevent_scale_to_fit.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\plugins\split_text_to_size.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\plugins\standard_fonts_metrics.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\plugins\svg.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\plugins\total_pages.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\plugins\xmp_metadata.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\README.md" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\RELEASE.md" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\SUMMARY.md" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\001_blankpdf.pdf" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\002_twopagedoc.pdf" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\002_twopagedoc_oldapi.pdf" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\003_demolandscape.pdf" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\004_fontsizes.pdf" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\005_demofonttypes.pdf" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\006_demotestcolors.pdf" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\007_demometadata.pdf" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\008_demorectangles.pdf" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\009_demoliness.pdf" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\010_democircles.pdf" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\011_multilinetext.pdf" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\012_multiplelines.pdf" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\013_sillysvgrenderer.pdf" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\013_sillysvgrenderer.svg" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\014_addImage.jpeg" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\014_addImage.jpeg.base64.txt" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\014_addImage.pdf.base64.txt" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\014_addImage.txt" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\015_splittext.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\015_splittext.pdf" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\components_tests.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\index.htm" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\libs\curl-0.5.4.min.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\libs\custom_fill.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\libs\qunit.css" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\libs\qunit.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\pdf_generate_tests.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\test.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\test_from_html_css_page_breaks.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\test_harness.js" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\test\test_min.html" />
+    <Content Include="Assets\dist\jsPDF-1.3.2\todo.txt" />
+    <Content Include="Assets\dist\js\AgregarArticulosTabla.js" />
+    <Content Include="Assets\dist\js\AgregarClienteNuevo.js" />
+    <Content Include="Assets\dist\js\Estados.js" />
+    <Content Include="Assets\dist\js\ListarTablaCabceraCotizacion.js" />
+    <Content Include="Assets\dist\js\articulos.js" />
+    <Content Include="Assets\dist\js\bootstrap.bundle.min.js" />
+    <Content Include="Assets\dist\js\cab_coti.js" />
+    <Content Include="Assets\dist\js\cotizador.js" />
+    <Content Include="Assets\dist\js\jquery-3.6.0.min.js" />
+    <Content Include="Assets\dist\js\lista_cotizador_vendedor.js" />
+    <Content Include="Assets\dist\js\Login.js" />
+    <Content Include="Assets\dist\js\logo_senda.png" />
+    <Content Include="Assets\dist\js\logo_ssendaok.png" />
+    <Content Include="Assets\dist\js\MenuPermisos.js" />
+    <Content Include="Assets\dist\js\n_cuentas-min.png" />
+    <Content Include="Assets\dist\js\n_cuentas.png" />
+    <Content Include="Assets\dist\js\n_cuentas2.png" />
+    <Content Include="Assets\dist\js\selectclientes.js" />
+    <Content Include="Assets\dist\js\selector.js" />
+    <Content Include="Assets\dist\js\visor.js" />
+    <Content Include="Assets\Imagenes\CUENTAS DE BANCO - HEADMARK CORPORATION %281%29.png" />
+    <Content Include="Assets\Imagenes\CUENTAS DE BANCO - HEADMARK CORPORATION.png" />
+    <Content Include="Assets\Imagenes\DD.jpg" />
+    <Content Include="Assets\Imagenes\GIF.png" />
+    <Content Include="Assets\Imagenes\logo.png" />
+    <Content Include="Assets\Imagenes\logo_comprimax.png" />
+    <Content Include="Assets\Imagenes\n_cuentas %281%29.png" />
+    <Content Include="Assets\Imagenes\n_cuentas.png" />
+    <Content Include="Assets\Imagenes\n_cuentas2.png" />
+    <Content Include="Assets\Imagenes\voucher %281%29.jpg" />
+    <Content Include="Assets\Imagenes\voucher.jpg" />
+    <Content Include="Assets\Viaticos\brand\bootstrap-outline.svg" />
+    <Content Include="Assets\Viaticos\brand\bootstrap-solid.svg" />
+    <Content Include="Assets\Viaticos\dist\css\addons\datatables-select.min.css" />
+    <Content Include="Assets\Viaticos\dist\css\addons\datatables-select2.min.css" />
+    <Content Include="Assets\Viaticos\dist\css\addons\datatables.min.css" />
+    <Content Include="Assets\Viaticos\dist\css\addons\datatables2.min.css" />
+    <Content Include="Assets\Viaticos\dist\css\addons\directives.min.css" />
+    <Content Include="Assets\Viaticos\dist\css\addons\flag.min.css" />
+    <Content Include="Assets\Viaticos\dist\css\addons\jquery.zmd.hierarchical-display.min.css" />
+    <Content Include="Assets\Viaticos\dist\css\addons\rating.min.css" />
+    <Content Include="Assets\Viaticos\dist\css\bootstrap-icons.css" />
+    <Content Include="Assets\Viaticos\dist\css\bootstrap.css" />
+    <Content Include="Assets\Viaticos\dist\css\bootstrap.min.css" />
+    <Content Include="Assets\Viaticos\dist\css\cabezeratabla.css" />
+    <Content Include="Assets\Viaticos\dist\css\Datalist.css" />
+    <Content Include="Assets\Viaticos\dist\css\descarga.png" />
+    <Content Include="Assets\Viaticos\dist\css\Layaout\dashboard.css" />
+    <Content Include="Assets\Viaticos\dist\css\Layaout\dashboard.js" />
+    <Content Include="Assets\Viaticos\dist\css\Layaout\style.css" />
+    <Content Include="Assets\Viaticos\dist\css\navbar.css" />
+    <Content Include="Assets\Viaticos\dist\css\ScrollTabla.css" />
+    <Content Include="Assets\Viaticos\dist\css\select2_boostrap4.css" />
+    <Content Include="Assets\Viaticos\dist\js\addons\datatables-select.min.css" />
+    <Content Include="Assets\Viaticos\dist\js\addons\datatables-select2.min.css" />
+    <Content Include="Assets\Viaticos\dist\js\addons\datatables.min.css" />
+    <Content Include="Assets\Viaticos\dist\js\addons\datatables2.min.css" />
+    <Content Include="Assets\Viaticos\dist\js\addons\directives.min.css" />
+    <Content Include="Assets\Viaticos\dist\js\addons\flag.min.css" />
+    <Content Include="Assets\Viaticos\dist\js\addons\jquery.zmd.hierarchical-display.min.css" />
+    <Content Include="Assets\Viaticos\dist\js\addons\rating.min.css" />
+    <Content Include="Assets\Viaticos\dist\js\bootstrap.bundle.min.js" />
+    <Content Include="Assets\Viaticos\dist\js\file-earmark-pdf.svg" />
+    <Content Include="Assets\Viaticos\dist\js\jquery-3.6.0.min.js" />
+    <Content Include="Assets\Viaticos\dist\js\Login.js" />
+    <Content Include="Assets\Viaticos\dist\js\MenuPermisos.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Views\Viaticos\dashboard\dashboard.css" />
+    <Content Include="Views\Viaticos\dashboard\dashboard.js" />
+    <Content Include="Views\Viaticos\dashboard\index.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CotizadorController.cs" />
+    <Compile Include="Controllers\IndexController.cs" />
+    <Compile Include="Controllers\SOPController.cs" />
+    <Compile Include="Controllers\ViaticosController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="Assets\dist\css\bootstrap.min.css.map" />
+    <Content Include="Assets\dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Assets\dist\js\cotizaciones.json" />
+    <Content Include="Assets\dist\js\clientes.json" />
+    <Content Include="Assets\dist\css\bootstrap.css.map" />
+    <Content Include="Assets\dist\css\bootstrap-icons.woff" />
+    <Content Include="Assets\dist\css\fonts\bootstrap-icons.woff" />
+    <Content Include="Assets\dist\css\fonts\bootstrap-icons.woff2" />
+    <Content Include="Assets\Viaticos\dist\css\bootstrap-icons.woff" />
+    <Content Include="Assets\Viaticos\dist\css\bootstrap-icons.woff2" />
+    <Content Include="Assets\Viaticos\dist\css\bootstrap.css.map" />
+    <Content Include="Assets\Viaticos\dist\css\bootstrap.min.css.map" />
+    <Content Include="Assets\Viaticos\dist\css\fonts\bootstrap-icons.woff" />
+    <Content Include="Assets\Viaticos\dist\css\fonts\bootstrap-icons.woff2" />
+    <Content Include="Assets\Viaticos\dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Assets\Imagenes\CTZ-00450.pdf" />
+    <Content Include="Assets\Imagenes\CTZ-00452.pdf" />
+    <Content Include="Assets\Imagenes\CTZ-00470.pdf" />
+    <Content Include="libman.json" />
+    <Content Include="Assets\Viaticos\dist\js\addons\datatables-select.min.css.map" />
+    <Content Include="Assets\Viaticos\dist\js\addons\datatables-select2.min.css.map" />
+    <Content Include="Assets\Viaticos\dist\js\addons\datatables.min.css.map" />
+    <Content Include="Assets\Viaticos\dist\js\addons\datatables2.min.css.map" />
+    <Content Include="Assets\Viaticos\dist\js\addons\directives.min.css.map" />
+    <Content Include="Assets\Viaticos\dist\js\addons\flag.min.css.map" />
+    <Content Include="Assets\Viaticos\dist\js\addons\jquery.zmd.hierarchical-display.min.css.map" />
+    <Content Include="Assets\Viaticos\dist\js\addons\rating.min.css.map" />
+    <Content Include="Assets\Viaticos\dist\css\addons\datatables-select.min.css.map" />
+    <Content Include="Assets\Viaticos\dist\css\addons\datatables-select2.min.css.map" />
+    <Content Include="Assets\Viaticos\dist\css\addons\datatables.min.css.map" />
+    <Content Include="Assets\Viaticos\dist\css\addons\datatables2.min.css.map" />
+    <Content Include="Assets\Viaticos\dist\css\addons\directives.min.css.map" />
+    <Content Include="Assets\Viaticos\dist\css\addons\flag.min.css.map" />
+    <Content Include="Assets\Viaticos\dist\css\addons\jquery.zmd.hierarchical-display.min.css.map" />
+    <Content Include="Assets\Viaticos\dist\css\addons\rating.min.css.map" />
+    <Content Include="Assets\brand\FORECAST_PRIVADO.xlsx" />
+    <None Include="packages.config" />
+    <Content Include="Views\Layout\_LayoutMenu.cshtml" />
+    <Content Include="Views\Index\Index.cshtml" />
+    <Content Include="Views\Cotizador\Index.cshtml" />
+    <Content Include="Views\Cotizador\Visor.cshtml" />
+    <Content Include="Views\Cotizador\ListarCotizaciones.cshtml" />
+    <Content Include="Views\Cotizador\CotizacionCreada.cshtml" />
+    <Content Include="Views\Cotizador\Monitoreo.cshtml" />
+    <Content Include="Views\Viaticos\Vendedor.cshtml" />
+    <Content Include="Views\Layout\_LayoutViatico.cshtml" />
+    <Content Include="Views\Viaticos\GerenteLinea.cshtml" />
+    <Content Include="Views\Viaticos\Index.cshtml" />
+    <Content Include="Views\Viaticos\RegistroViatico.cshtml" />
+    <Content Include="Views\Viaticos\ListaViaticos.cshtml" />
+    <Content Include="Views\Viaticos\Liquidacion.cshtml" />
+    <Content Include="Views\Viaticos\ViaticoCreado.cshtml" />
+    <Content Include="Views\Viaticos\AprobacionGerenteLinea.cshtml" />
+    <Content Include="Views\SOP\Index.cshtml" />
+    <Content Include="Views\SOP\Proyeccion.cshtml" />
+    <Content Include="Views\SOP\Institucional.cshtml" />
+    <Content Include="Views\SOP\Embarque.cshtml" />
+    <Content Include="Views\Viaticos\Representante.cshtml" />
+    <Content Include="Views\Viaticos\Master.cshtml" />
+    <Content Include="Views\Viaticos\AsigancionGL.cshtml" />
+    <Content Include="Views\Viaticos\RestriccionesSistema.cshtml" />
+    <Content Include="Views\Index\Programas.cshtml" />
+    <Content Include="Views\Layout\_LayoutSOP.cshtml" />
+    <Content Include="Views\Viaticos\Reporteliquidaciones.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Assets\Viaticos\Imagenes\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ENTIDAD\ENTIDAD.csproj">
+      <Project>{b03a985f-1747-457b-a80d-c33e23a1eef7}</Project>
+      <Name>ENTIDAD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LN\LN.csproj">
+      <Project>{5999800d-16d7-4606-9861-4a140c575fda}</Project>
+      <Name>LN</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51172</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44330/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

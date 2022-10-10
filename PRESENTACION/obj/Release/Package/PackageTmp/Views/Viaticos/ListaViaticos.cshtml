@@ -1,0 +1,1289 @@
+﻿
+@{
+    ViewBag.Title = "ListaViaticos";
+    Layout = "~/Views/Layout/_LayoutViatico.cshtml";
+}
+
+
+<main>
+    <div class="container">
+        <h3 class="text-center">Gestion Viaticos</h3>
+        <div class="row   text-white" style="background-color: #e9ecef; ">
+
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-1">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Fecha Inicio</span>
+                    </div>
+                    <input type="date" class="form-control" id="lc_dt_fec_ini" aria-describedby="basic-addon3">
+                </div>
+            </div>
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Fecha Fin</span>
+                    </div>
+                    <input type="date" class="form-control" id="lc_dt_fec_fin" aria-describedby="basic-addon3">
+                </div>
+            </div>
+
+
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Estados</label>
+                    </div>
+                    <select class="custom-select" id="via_estados">
+                        <option selected>Elija...</option>
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <!--input class="form-control" type="search" placeholder="Buscar" aria-label="Search"-->
+                        <!-- prueba-->
+                        <!--- FIN DE PRUEBA-->
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row  mb-1 p-2 text-white" style="background-color: #e9ecef; ">
+
+
+            <div class="col-sm-4 col-4">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Cliente</label>
+                    <input class="col-9 col-sm-12 form-control" name="clientes" list="listas">
+                </div>
+                <datalist class="col-sm-6 col-6" id="listas">
+
+                    @*@foreach (var item in ViewBag.clienteDataTable)
+                    {
+                        nombre_completo = @item.ruc + " " + @item.razonsocial;
+                        <option data-codigo="@item.ruc" value="@nombre_completo"></option>
+                    }*@
+
+                </datalist>
+                @*Asociamos al input la datalist 'listas'*@
+
+            </div>
+            <div class="col-sm-3 col-3">
+                <!--BOTON BUSCAR POR FECHA-->
+                <button type="button" id="limpiar" class="btn btn-dark"><i class="bi bi-search"></i>Limpiar</button>
+            </div>
+            <div class="col-sm-3 col-3">
+                <!--BOTON BUSCAR POR FECHA-->
+                <button type="button" id="lc_btn_fec" class="btn btn-dark"><i class="bi bi-search"></i>Buscar</button>
+            </div>
+
+        </div>
+
+        <h4></h4>
+
+        <div class="row">
+
+            <div class="table-responsive table-responsive-md table-responsive-lg">
+                <table class="table table-sm table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#Solicitud</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Linea</th>
+                            <th scope="col">Fecha Solicitud</th>
+                            <th scope="col">Motivo Viaje</th>
+                            <th scope="col">Monto Solicitado</th>
+                            <th scope="col">Medio Viaje</th>
+                            <th scope="col">Origen</th>
+                            <th scope="col">Destino</th>
+                           
+                            <th scope="col">VerDetalle</th>
+                            <th scope="col">Por Aprobar</th>
+                            <th scope="col">Liquidar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla_cabecera_viaticos">
+                      
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+       
+        <!-- MODAL VIATICO CREADA DETALLE-->
+        <div class="modal fade" id="exampleModalCenter_viatico" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Editar Cotizacion</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!--Cotizacion a Modificar--->
+                        <main role="main">
+                            <div class="jumbotron">
+
+                                <div class="container">
+                                    <h4>Numero Solicitud</h4>
+                                   <input disabled type="text" style="font-size:14px;" id="via_num_sol" value="" />
+                                    <div class="row">
+
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link  col-12 col-sm-12" id="home-tab" data-toggle="tab" href="#solicitud" role="tab" aria-controls="home" aria-selected="false">Cabecera Solicitud</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link active col-12 col-sm-12" id="profile-tab" data-toggle="tab" href="#clientes" role="tab" aria-controls="profile" aria-selected="true">Detalle Clientes</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link col-12 col-sm-12" id="gastos-tab" data-toggle="tab" href="#gastos" role="tab" aria-controls="gastos" aria-selected="false">Detalle Gastos</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content" id="myTabContent">
+
+                                        <!--<div class="tab-pane fade" id="solicitud" role="tabpanel" aria-labelledby="home-tab">
+
+                                            <div class="container">
+                                                <div class="p-2"></div>
+                                                <div class="row">
+
+
+                                                    <div class="col-md-12 order-md-1">
+                                                        <h4 class="mb-3"></h4>
+                                                        <form class="needs-validation" novalidate>
+                                                            <div class="row">
+                                                                <div class="col-md-8 mb-3">
+                                                                    <label for="firstName">Nombre</label>
+                                                                    <input type="text" class="form-control" id="v_r_nombre" placeholder="" value="" required>
+                                                                    <div class="invalid-feedback">
+                                                                        Nombre es requerido
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="country">Linea</label>-->
+                                                                    @*<input disabled class="form-control" value="@ViewBag.ViaCabSol.Nombrelinea" required>*@
+
+                                                                    <!--<div class="invalid-feedback">
+                                                                        Linea Requerida
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="country">Fecha Solicitud</label>-->
+                                                                    @*<input type="date" class="form-control" id="via_fecha_solicitud" placeholder="" value="@ViewBag.ViaCabSol." required>*@
+                                                                    <!--<div class="invalid-feedback">
+                                                                        Fecha Solicitud requerida
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="state">Motivo Viaje</label>-->
+                                                                    @*<input class="custom-select d-block w-100" value="@ViewBag.ViaCabSol.NombreMotivoViaje" required>*@
+
+                                                                    <!--<div class="invalid-feedback">
+                                                                        Motivo viaje requerido
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2 mb-3">
+                                                                    <label for="zip">Monto Solicitado</label>
+                                                                    <input type="number" class="form-control" id="via_monto_sol" placeholder="" required>
+                                                                    <div class="invalid-feedback">
+                                                                        Monto Solicitud requerido
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="username">Medio de Viaje</label>
+                                                                    <div class="input-group">-->
+
+                                                                        @*<input class="custom-select d-block w-100" value="@ViewBag.ViaCabSol.NombreMedioViaje" required>*@
+
+                                                                        <!--<div class="invalid-feedback" style="width: 100%;">
+                                                                            Medio de Viaje Requerido
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <hr class="mb-4">
+                                                            <h6>Origen</h6>
+
+                                                            <div class="row">
+
+                                                                <div class="col-md-3 mb-3">
+                                                                    <label for="country">Fecha Y hora Origen</label>-->
+                                                                    @*<input type="datetime-local" class="form-control" placeholder="" value="@ViewBag.ViaCabSol.fecha_origi" required>*@
+                                                                    <!--<div class="invalid-feedback">
+                                                                        Fecha y Hora requerido
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-3 mb-3">
+                                                                    <label for="country">Departamento</label>-->
+                                                                    @*<input class="custom-select d-block w-100" value="@ViewBag.ViaCabSol.id_depart_ori" required>*@
+
+
+                                                                    <!--<div class="invalid-feedback">
+                                                                        Departamento requerido.
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 mb-3">
+                                                                    <label for="state">Provincia</label>-->
+                                                                    @*<input class="custom-select d-block w-100" value="@ViewBag.ViaCabSol.id_prov_ori" required>*@
+
+                                                                    <!--<div class="invalid-feedback">
+                                                                        Provincia requerida
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 mb-3">
+                                                                    <label for="zip">Distrito</label>-->
+                                                                    @*<input class="custom-select d-block w-100" value="@ViewBag.ViaCabSol.id_distri_ori" required>*@
+
+
+                                                                    <!--<div class="invalid-feedback">
+                                                                        Distrito  requerido.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <h6>Destino</h6>
+                                                            <div class="row">
+                                                                <div class="col-md-3 mb-3">
+                                                                    <label for="country">Fecha Y hora Destino</label>
+                                                                    <input type="datetime-local" class="form-control" id="via_fec_hora_dest" placeholder="" value="" required>
+                                                                    <div class="invalid-feedback">
+                                                                        Fecha y Hora requerido
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 mb-3">
+                                                                    <label for="country">Departamento</label>-->
+                                                                    @*<input class="custom-select d-block w-100" value="@ViewBag.ViaCabSol.id_depart_dest" required>*@
+
+
+                                                                    <!--<div class="invalid-feedback">
+                                                                        Departamento requerio
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 mb-3">
+                                                                    <label for="state">Provincia</label>-->
+                                                                    @*<input class="custom-select d-block w-100" value="@ViewBag.ViaCabSol.id_prov_dest" required>*@
+
+                                                                    <!--<div class="invalid-feedback">
+                                                                        Provincia requerida
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 mb-3">
+                                                                    <label for="zip">Distrito</label>-->
+                                                                    @*<input class="custom-select d-block w-100" value="@ViewBag.ViaCabSol.id_distri_dest" required>*@
+
+                                                                    <!--<div class="invalid-feedback">
+                                                                        Distrito requerido
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <hr class="mb-4">
+
+                                                            <div class="row">
+                                                                <div class="col-md-3 mb-3">
+                                                                    <label for="cc-expiration">Fecha Termino Viaje</label>
+                                                                    <input type="date" class="form-control" id="via_fec_term_viaje" placeholder="" required>
+                                                                    <div class="invalid-feedback">
+                                                                        Fecha termino requerida
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 mb-3">
+                                                                    <label for="cc-cvv">Monto Proyectado</label>
+                                                                    <input type="text" class="form-control" id="via_mont_esperado" placeholder="" required>
+                                                                    <div class="invalid-feedback">
+                                                                        Monto Esperado requerido
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-3 mb-3">
+                                                                    <label for="cc-cvv">Cantidad Dias</label>
+                                                                    <input type="text" class="form-control" id="via_cant_dias" placeholder="" required>
+                                                                    <div class="invalid-feedback">
+                                                                        Dias  requerido
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <hr class="mb-4">-->
+                                                            @*<button class="btn btn-primary btn-lg btn-block" id="btn_reg_via">Registrar Solicitud</button>*@
+                                                        <!--</form>
+                                                    </div>
+                                                </div>
+
+                                                <footer class="my-5 pt-5 text-muted text-center text-small">
+                                                    <p class="mb-1">&copy; 2021-2023 FGB</p>
+                                                    <ul class="list-inline">
+                                                    </ul>
+                                                </footer>
+                                            </div>
+
+                                        </div>-->
+
+                                        <div class="tab-pane fade" id="solicitud" role="tabpanel" aria-labelledby="home-tab">
+
+                                            <div class="container">
+                                                <div class="p-2"></div>
+                                                <div class="row">
+
+
+                                                    <div class="col-md-12 order-md-1">
+                                                        <h4 class="mb-3"></h4>
+                                                        <form class="needs-validation" novalidate>
+                                                            <div class="row">
+                                                                <div class="col-md-8 mb-3">
+                                                                    <label for="firstName">Nombre</label>
+                                                                    <input type="text" class="form-control" id="v_r_nombre" placeholder="" value="@ViewBag.Usuario.usr_nombre" required>
+                                                                    <div class="invalid-feedback">
+                                                                        Nombre es requerido
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="country">Linea</label>
+                                                                    <input disabled class="form-control"  id="v_r_linea" value="@ViewBag.ViaCabSol.Nombrelinea" required>
+
+                                                                    <div class="invalid-feedback">
+                                                                        Linea Requerida
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="country">Fecha Solicitud</label>
+                                                                    <input type="date" class="form-control" id="via_fecha_solicitud" placeholder="" value="@ViewBag.ViaCabSol.fecha_solicitud" required>
+                                                                    <div class="invalid-feedback">
+                                                                        Fecha Solicitud requerida
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="state">Motivo Viaje</label>
+                                                                    <input class="custom-select d-block w-100"  id="v_r_motivo_viaje" value="@ViewBag.ViaCabSol.NombreMotivoViaje" required>
+
+                                                                    <div class="invalid-feedback">
+                                                                        Motivo viaje requerido
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2 mb-3">
+                                                                    <label for="zip">Monto Solicitado</label>
+                                                                    <input type="number" class="form-control"  id="v_r_monto" placeholder="" required>
+                                                                    <div class="invalid-feedback">
+                                                                        Monto Solicitud requerido
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="username">Medio de Viaje</label>
+                                                                    <div class="input-group">
+
+                                                                        <input class="custom-select d-block w-100"  id="v_r_medio_viaje" value="@ViewBag.ViaCabSol.NombreMedioViaje" required>
+
+                                                                        <div class="invalid-feedback" style="width: 100%;">
+                                                                            Medio de Viaje Requerido
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <hr class="mb-4">
+                                                            <h6>Origen</h6>
+
+                                                            <div class="row">
+
+                                                                <div class="col-md-3 mb-3">
+                                                                    <label for="country">Fecha Y hora Origen</label>
+                                                                    <input type="datetime-local" class="form-control" placeholder="" value="@ViewBag.ViaCabSol.fecha_origi" required>
+                                                                    <div class="invalid-feedback">
+                                                                        Fecha y Hora requerido
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-3 mb-3">
+                                                                    <label for="country">Departamento</label>
+                                                                    <input class="custom-select d-block w-100"  id="v_r_dep_origen" value="@ViewBag.ViaCabSol.id_depart_ori" required>
+
+
+                                                                    <div class="invalid-feedback">
+                                                                        Departamento requerido.
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 mb-3">
+                                                                    <label for="state">Provincia</label>
+                                                                    <input class="custom-select d-block w-100" id="v_r_prov_origen" value="@ViewBag.ViaCabSol.id_prov_ori" required>
+
+                                                                    <div class="invalid-feedback">
+                                                                        Provincia requerida
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 mb-3">
+                                                                    <label for="zip">Distrito</label>
+                                                                    <input class="custom-select d-block w-100" id="v_r_dis_origen" value="@ViewBag.ViaCabSol.id_distri_ori" required>
+
+
+                                                                    <div class="invalid-feedback">
+                                                                        Distrito  requerido.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <h6>Destino</h6>
+                                                            <div class="row">
+                                                                <div class="col-md-3 mb-3">
+                                                                    <label for="country">Fecha Y hora Destino</label>
+                                                                    <input type="datetime-local" class="form-control" id="via_fec_hora_dest" placeholder="" value="" required>
+                                                                    <div class="invalid-feedback">
+                                                                        Fecha y Hora requerido
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 mb-3">
+                                                                    <label for="country">Departamento</label>
+                                                                    <input class="custom-select d-block w-100" id="v_r_dep_destino" value="@ViewBag.ViaCabSol.id_depart_dest" required>
+
+
+                                                                    <div class="invalid-feedback">
+                                                                        Departamento requerio
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 mb-3">
+                                                                    <label for="state">Provincia</label>
+                                                                    <input class="custom-select d-block w-100" id="v_r_prov_destino" value="@ViewBag.ViaCabSol.id_prov_dest" required>
+
+                                                                    <div class="invalid-feedback">
+                                                                        Provincia requerida
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 mb-3">
+                                                                    <label for="zip">Distrito</label>
+                                                                    <input class="custom-select d-block w-100" id="v_r_dis_destino" value="@ViewBag.ViaCabSol.id_distri_dest" required>
+
+                                                                    <div class="invalid-feedback">
+                                                                        Distrito requerido
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <hr class="mb-4">
+
+                                                            <div class="row">
+                                                                <div class="col-md-3 mb-3">
+                                                                    <label for="cc-expiration">Fecha Termino Viaje</label>
+                                                                    <input type="date" class="form-control" id="via_fec_term_viaje" placeholder="" value="@ViewBag.ViaCabSol.fecha_term_viaje" required>
+                                                                    <div class="invalid-feedback">
+                                                                        Fecha termino requerida
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 mb-3">
+                                                                    <label for="cc-cvv">Monto Proyectado</label>
+                                                                    <input type="text" class="form-control" id="via_mont_esperado" placeholder="" required>
+                                                                    <div class="invalid-feedback">
+                                                                        Monto Esperado requerido
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-3 mb-3">
+                                                                    <label for="cc-cvv">Cantidad Dias</label>
+                                                                    <input type="text" class="form-control" id="via_cant_dias" placeholder="" value="@ViewBag.ViaCabSol.cant_dias" required>
+                                                                    <div class="invalid-feedback">
+                                                                        Dias  requerido
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <hr class="mb-4">
+                                                            @*<button class="btn btn-primary btn-lg btn-block" id="btn_reg_via">Registrar Solicitud</button>*@
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                                <footer class="my-5 pt-5 text-muted text-center text-small">
+                                                    <p class="mb-1">&copy; 2021-2023 FGB</p>
+                                                    <ul class="list-inline">
+                                                    </ul>
+                                                </footer>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="tab-pane fade show active" id="clientes" role="tabpanel" aria-labelledby="profile-tab">
+
+                                            <!--Registro Clientes-->
+                                            <h4 class="mb-3"></h4>
+
+                                            <div class="form-row">
+
+                                                <div class="col-md-5 mb-5">
+                                                    <label for="via_clie_select" class="col-2 col-sm-1 col-form-label">Cliente </label>
+                                                    <select id="via_clie_select" data-placeholder="Choose one thing" class="form-control col-md-12 mb-12">
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-md-2 mb-3">
+                                                    <label for="via_mont_esperado_clie">Monto Proyectado</label>
+                                                    <input type="text" class="form-control" style="height:29px;" id="via_mont_esperado_clie" required>
+                                                    <div class="invalid-feedback">
+                                                        Monto Esperado requerido
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3 mb-3">
+                                                    <label for="via_det_add_clie"> Registrar </label>
+                                                    <button class="form-control btn btn-primary" style="height:29px;" id="via_det_add_clie" onclick="RegistrarCliente();"> Registrar Cliente </button>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="table-responsive">
+
+
+                                                <table id="mytable" class="table table-sm table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">RUC</th>
+                                                            <th scope="col">RAZON SOCIAL</th>
+                                                            <th scope="col">MONTO</th>
+                                                            <th scope="col">ANULAR</th>
+
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody id="via_detalle_clientes">
+
+                                                    </tbody>
+
+                                                </table>
+
+                                            </div>
+
+                                            <!---->
+
+                                            <div class="col-md-12  ">
+
+
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="tab-pane fade" id="gastos" role="tabpanel" aria-labelledby="gastos-tab">
+                                            <h4 class="mb-3"></h4>
+
+                                            <!--FORM DE REGISTRO DE VIATICOS-->
+
+
+                                            <div class="form-row">
+                                                <div class="col-md-4 mb-4">
+                                                    <label for="list_gastos_presupuesto">Conceptos Gastos</label>
+                                                    <select class="custom-select" id="list_gastos_presupuesto" required>
+                                                        <option selected disabled value="">Elija...</option>
+
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-md-1 mb-1">
+                                                    <label for="validationDefault03">Cantidad</label>
+                                                    <input type="text" style="height:29px;" class="form-control" id="validationDefault03" required>
+                                                </div>
+
+                                                <div class="col-md-1 mb-1">
+                                                    <label for="validationDefault05">Precio</label>
+                                                    <input type="text" style="height:29px;" class="form-control" id="validationDefault05" required>
+                                                </div>
+
+                                                <div class="col-md-2 mb-2">
+                                                    <label for="validationDefault06"> Registrar</label>
+                                                    <button class="form-control btn btn-primary" style="height:29px;" id="validationDefault06" type="submit">Registrar</button>
+                                                </div>
+                                            </div>
+
+
+
+                                            <!--FIN DE FORM -->
+
+
+                                            <div class="table-responsive">
+
+
+                                                <table id="mytable" class="table table-sm table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">#</th>
+                                                            <th scope="col">Concepto de Gasto</th>
+                                                            <th scope="col">Cantidad</th>
+                                                            <th scope="col">Precio</th>
+                                                            <th scope="col">Confirmar</th>
+                                                            <th scope="col">Anular</th>
+
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody id="via_dt_concepto_presupuesto">
+                                                    </tbody>
+
+                                                </table>
+                                                @*<button class="btn btn-primary btn-lg btn-block" id="btn_reg_via">Registrar Detalle</button>*@
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+
+
+
+                                </div>
+
+                            </div>
+
+
+
+                        </main>
+                        <!--FIN --->
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FIN MODAL EDITAR-->
+        <!--MODAL ADJUNTO-->
+
+    </div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="  crossorigin="anonymous"></script>
+<script src="~/Assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        init();
+    });
+
+    function init() {
+        ListadoViaticos("PE");
+        $("#via_clie_select").select2({
+            minimumInputLength: 3 // para buscar a partir del 3er digito
+        });
+
+        $("#via_estados").on('change', function () {
+            var cod_estado = document.getElementById('via_estados').value;
+            ListadoViaticos(cod_estado);
+            // console.log("cambio estados " + idestado);
+        });
+
+
+
+     ListadoClientes();
+     ListadoEstados();
+    }
+
+  function ListadoViaticos(estado) {
+
+     // var vcs_id = document.getElementById('via_num_sol').value;
+     // var estado = "AP";
+
+
+
+        $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                 url: "@Url.Action("ListadoViaticosCreados", "Viaticos")",
+               data: "{'estado': '" + estado + "'}",
+                success: function (data) {
+                console.log(data);
+                    var mitablaviaticoscreados = document.getElementById("tabla_cabecera_viaticos");
+
+                    mitablaviaticoscreados.innerHTML = ``;
+
+                    for (cab in data) {
+
+                        if (data[cab].est_codigo == "PE") {
+
+                            var estado = "PENDIENTE"
+                            mitablaviaticoscreados.innerHTML += ` <tr>
+                            <td>${data[cab].id_v_num_sol}</td>
+                            <td>${estado}</td>
+                            <td>${data[cab].Nombrelinea}</td>
+                            <td>${data[cab].fecha_solicitud}</td>
+                            <td>${data[cab].NombreMotivoViaje}</td>
+                            <td>${data[cab].monto_solicitado}</td>
+
+                            <td>${data[cab].NombreMedioViaje}</td>
+                            <td>${data[cab].id_depart_ori}</td>
+                            <td>${data[cab].id_depart_dest}</td>
+                       <td><button class="btn text-white" onclick="EnviarcodigoEditViatico(${data[cab].id_v_num_sol})" data-toggle="modal" data-target="#exampleModalCenter_viatico" style="background-color:#278DE9;"><i class="bi bi-pencil-square"></i></button></td>
+                       <td><button class="btn text-white" onclick="Enviar_aprobar_glinea(${data[cab].id_v_num_sol})"  style="background-color:#CE7E14;"><i class="bi bi-pencil-square"></i></button></td>
+                       <td><button disabled class="btn text-white" onclick="Liquidar(${data[cab].id_v_num_sol})" style="background-color:#09B556;"><i class="bi bi-check2-square"></i></button></td>
+                </tr>
+                `;
+
+                        }
+                       else if (data[cab].est_codigo == "AN") {
+
+                            var estado = "ANULADO"
+                            mitablaviaticoscreados.innerHTML += ` <tr>
+                            <td>${data[cab].id_v_num_sol}</td>
+                            <td>${estado}</td>
+                            <td>${data[cab].Nombrelinea}</td>
+                            <td>${data[cab].fecha_solicitud}</td>
+                            <td>${data[cab].NombreMotivoViaje}</td>
+                            <td>${data[cab].monto_solicitado}</td>
+
+                            <td>${data[cab].NombreMedioViaje}</td>
+                            <td>${data[cab].id_depart_ori}</td>
+                            <td>${data[cab].id_depart_dest}</td>
+                            
+
+                       <td><button class="btn text-white" onclick="EnviarcodigoEditViatico(${data[cab].id_v_num_sol})" data-toggle="modal" data-target="#exampleModalCenter_viatico" style="background-color:#278DE9;"><i class="bi bi-pencil-square"></i></button></td>
+                       <td><button class="btn text-white" onclick="Enviar_aprobar_glinea(${data[cab].id_v_num_sol})"  style="background-color:#CE7E14;"><i class="bi bi-pencil-square"></i></button></td>
+                      <td>${data[cab].motivoanulacion}</td>
+                       </tr>
+                        `;
+
+                        }
+
+                      else  if (data[cab].est_codigo == "AP") {
+
+                            var estado = "APROBADO"
+                            mitablaviaticoscreados.innerHTML += ` <tr>
+                            <td>${data[cab].id_v_num_sol}</td>
+                            <td>${estado}</td>
+                            <td>${data[cab].Nombrelinea}</td>
+                            <td>${data[cab].fecha_solicitud}</td>
+                            <td>${data[cab].NombreMotivoViaje}</td>
+                            <td>${data[cab].monto_solicitado}</td>
+
+                            <td>${data[cab].NombreMedioViaje}</td>
+                            <td>${data[cab].id_depart_ori}</td>
+                            <td>${data[cab].id_depart_dest}</td>
+
+
+                       <td><button class="btn text-white" onclick="EnviarcodigoEditViatico(${data[cab].id_v_num_sol})" data-toggle="modal" data-target="#exampleModalCenter_viatico" style="background-color:#278DE9;"><i class="bi bi-pencil-square"></i></button></td>
+                        <td><button class="btn text-white" onclick="Enviar_aprobar_glinea(${data[cab].id_v_num_sol})"  style="background-color:#CE7E14;"><i class="bi bi-pencil-square"></i></button></td>
+                       <td><button class="btn text-white" onclick="Liquidar(${data[cab].id_v_num_sol})" style="background-color:#09B556;"><i class="bi bi-check2-square"></i></button></td>
+
+
+
+                </tr>
+                `;
+
+                        }
+
+                }
+
+                }
+                });
+    }
+
+     function ListadoClientes() {
+
+      // var via_clientes_select = document.getElementById('via_clie_select');
+       // if (via_clientes_select) {
+            $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("ListadoClientesSoftcom", "Viaticos")",
+
+                success: function (data) {
+
+                var cadena = "";
+                    if (data.length > 0) {
+
+                        $.each(data, function (k, v) {
+                            cadena += "<option value=''>Seleccione Cliente</option>";
+                cadena += "<option value='" + v.ruc + "'>" + v.ruc + "-" + v.nombre + "</option>";
+                });
+                } else {
+                cadena += "<option value=''>NO SE ENCONTRARON REGISTROS</option>";
+                }
+
+                $("#via_clie_select").html(cadena);
+                }
+                });
+                //  }
+                // else {
+
+
+
+                //}
+
+    }
+
+    function RegistrarCliente() {
+        var clienteselecionado = document.getElementById('via_clie_select');
+        var codigoCliente = clienteselecionado.options[clienteselecionado.selectedIndex].value;
+        var nombreCliente = clienteselecionado.options[clienteselecionado.selectedIndex].text;
+        var nombreCliente_array = nombreCliente.split("-", 2);
+        var nombreCliente_ok = nombreCliente_array[1];
+        var vsc_id = document.getElementById('via_num_sol').value;
+        var vcs_prec_proyectado = document.getElementById('via_mont_esperado_clie').value;
+
+        console.log("cliente ruc" + codigoCliente.trim());
+        console.log("cliente precio" + vcs_prec_proyectado);
+        console.log("cliente nom " + nombreCliente_ok.trim());
+        console.log("id solicitud" + vsc_id);
+
+        $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                 url: "@Url.Action("AgregarDetalleCliente", "Viaticos")",
+            data: "{'cod_cliente': '" + codigoCliente.trim() + "','nom_cliente': '" + nombreCliente_ok.trim() + "','vcs_id': '" + vsc_id + "','precio_proyectado': '" + vcs_prec_proyectado + "'}",
+                success: function (data) {
+
+                    if (data == true) {
+                        swal.fire("Registro exitoso","","success");
+                        ListadoDetClie(vsc_id);
+
+                        $('#via_clie_select').val("Elegir").trigger('change');
+                        limpiar_formulario_Detalle_clientes();
+                    }
+                    else {
+                        swal.fire("CLiente existente", "", "error");
+                        $('#via_clie_select').val("Elegir").trigger('change');
+                        limpiar_formulario_Detalle_clientes();
+                    }
+                }
+            });
+
+
+    }
+
+    function limpiar_formulario_Detalle_clientes() {
+
+        $('#via_clie_select').val("Elegir").trigger('change');
+
+        document.getElementById('via_mont_esperado_clie').value = "";
+
+
+    }
+
+
+    const FormatoMoneda = (number) => {
+        const exp = /(\d)(?=(\d{3})+(?!\d))/g;
+        const rep = '$1,';
+        let arr = number.toString().split('.');
+        arr[0] = arr[0].replace(exp, rep);
+        return arr[1] ? arr.join('.') : arr[0];
+    }
+
+    function Enviar_aprobar_glinea(cod_solicitud) {
+
+        //document.getElementById('accion_totalizar').removeAttribute("disabled", "");
+        //document.getElementById('accion_totalizar').setAttribute("enabled", "");
+
+        Swal.fire({
+            title: '¿Esta seguro en enviar para Aprobar? SOL-00 ' + cod_solicitud,
+            showDenyButton: false,
+            showCancelButton: false,
+            confirmButtonText: 'ENVIAR A REVISAR',
+            denyButtonText: 'DATO DE NEGAR',
+        }).then((result) => {
+
+            if (result.isConfirmed) {
+
+                ajax_enviaraprobarg_linea(cod_solicitud);
+
+
+
+            } else if (result.isDenied) {
+                Swal.fire('Cambios no Guardados', '', 'info')
+            }
+        })
+
+
+    }
+
+    function ajax_enviaraprobarg_linea(codigocotizacion) {
+
+        console.log(codigocotizacion);
+        console.log("Totalizando internamnete " + codigocotizacion);
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+            data: "{ 'codigo': '" + codigocotizacion + "','estado': '" + 'EA' + "'}",
+
+             url: "@Url.Action("Enviar__aproba_glinea", "Viaticos")",
+            success: function (data) {
+                var respuesta = data.split('-');
+                var msg = parseInt(respuesta[1]);
+                var cant_clientes = parseInt(respuesta[2]);
+                var presupuesto = parseInt(respuesta[3]) ;
+            //    var tipo_venta = respuesta[4] ;
+
+                console.log("POR APROBAR  ?:" + data);
+
+                if (cant_clientes > 0 && presupuesto>0) {
+                    Swal.fire('ENVIADO APROBAR SOL-00' + codigocotizacion, '', 'success');
+                    ListadoViaticos("PE");
+                }
+
+
+                else if (cant_clientes == 0) {
+                    Swal.fire('No tiene Clientes asiganados', '', 'error');
+                  //  ListarCotizacionesVendedor(3);
+                }
+                else if (presupuesto == 0) {
+                    Swal.fire('No tiene Presupuesto asiganado', '', 'error');
+                    //  ListarCotizacionesVendedor(3);
+                }
+
+
+
+
+                else {
+
+                    Swal.fire('Fallo ' + msg, '', 'error');
+                }
+
+
+
+            }
+
+        });
+
+    }
+
+    function Liquidar(codigoSolicitud) {
+
+
+
+
+        location.href =  '@Url.Action("Liquidacion", "Viaticos")?codigo=' + codigoSolicitud ;
+
+    }
+
+    function SumaPresupuestoPorSolicitud(id_solicitud) {
+
+        var sumaAcumulada = 0;
+        console.log("id solicitud "+id_solicitud);
+
+      // suma = 5000 + 200;
+
+        sumaAcumulada=   $.ajax({
+                async:'false',
+                dataType: "json",
+                type: 'POST',
+                global: 'false',
+                contentType: "application/json; charset=utf-8",
+                 url: "@Url.Action("MontoPresupuestadoporSolicitud", "Viaticos")",
+                data: "{'id_solicitud': '" + id_solicitud + "'}",
+                success: function (data) {                  //console.log(data);
+                    if (data.Nombrelinea=="") {
+                        //sumaAcumulada = 0;
+                    }
+                    else {
+                        var x = parseFloat(data.Nombrelinea);
+                        //console.log("X" + x);
+                     sumaAcumulada = x;
+
+                    }
+            }
+
+        });
+        console.log(sumaAcumulada);
+        return sumaAcumulada;
+    }
+
+     function EnviarcodigoEditViatico(codigocabecera) {
+         ListadoDetClie(codigocabecera);
+         ListadoDetallePresupuesto(codigocabecera);
+        // listarDetalleCotizacion(codigocabecera);
+       //  listarDetalleCotizacion(codigocabecera);
+
+             $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+            data: "{ 'codigo': '" + codigocabecera + "'}",
+              url: "@Url.Action("ObtenerSolictudViatico", "Viaticos")",
+            //url: '/Cotizador/traer_dato_para_codigo',
+            success: function (data) {
+
+               // console.log(data.cliente);
+                document.getElementById("via_num_sol").value = codigocabecera;
+                document.getElementById("v_r_medio_viaje").value = data.NombreMedioViaje;
+                document.getElementById("v_r_motivo_viaje").value = data.NombreMotivoViaje;
+                document.getElementById("v_r_linea").value = data.Nombrelinea;
+
+                
+                document.getElementById("v_r_dep_origen").value = data.id_depart_ori;
+
+                document.getElementById("v_r_prov_origen").value = data.id_prov_ori;
+                document.getElementById("v_r_dis_origen").value = data.id_distri_ori;
+
+                document.getElementById("v_r_dep_destino").value = data.id_depart_dest;
+                document.getElementById("v_r_prov_destino").value = data.id_prov_dest;
+                document.getElementById("v_r_dis_destino").value = data.id_distri_dest;
+                document.getElementById("via_cant_dias").value = 2;
+
+
+
+
+
+
+
+               // ListaArticulosporAlmacen(codAlmacen);
+
+             }
+        });
+        }
+
+    function ListadoDetClie(vcs_id) {
+        // var vcs_id = document.getElementById('via_num_sol').value;
+
+        $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                 url: "@Url.Action("ListadoDetClie", "Viaticos")",
+            data: "{'vcs_id': '" + vcs_id + "'}",
+                success: function (data) {
+                    console.log(data);
+                    var mitabladetcliente = document.getElementById("via_detalle_clientes");
+
+                    mitabladetcliente.innerHTML = ``;
+
+                    for (cab in data) {
+
+                        mitabladetcliente.innerHTML += ` <tr>
+
+                                        <td>${data[cab].cod_clie}</td>
+                                  <td>${data[cab].nom_clie}</td>
+                                    <td>S/${FormatoMoneda(data[cab].precio_proyectado)}</td>
+                                  <td><button class="btn text-white" onclick="AnularCliente(${data[cab].cod_clie},${data[cab].vcs_id})" style="background-color:#D22B08;"><i class="bi bi-clipboard2-x"></i></button></td>
+
+
+
+                                </tr>
+                                    `;
+
+
+
+                    }
+
+                }
+            });
+    }
+
+    function ListadoDetallePresupuesto(id_solicitud) {
+
+        $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                 url: "@Url.Action("ListadoDet_Presupuesto", "Viaticos")",
+            data: "{'id_solicitud': '" + id_solicitud + "'}",
+                success: function (data) {
+                    console.log(data);
+                    var mitabladetpresupuesto= document.getElementById("via_dt_concepto_presupuesto");
+                    mitabladetpresupuesto.innerHTML = ``;
+
+                    for (cab in data) {
+                        var precio_maximo = data[cab].precio_maximo;
+                        var descripcion_gasto = data[cab].descripcion_gasto;
+                      //  document.getElementById('precio_maximo_gasto').value = precio_maximo;
+                        var cantidad = "cant" + data[cab].id_gasto;
+                        var precio = "prec" + data[cab].id_gasto;
+
+                        if (data[cab].dias > 0 && data[cab].precio > 0 ) {
+                            mitabladetpresupuesto.innerHTML += ` <tr>
+                         <td><input type="image" src="${data[cab].icon}" title="${descripcion_gasto}" width="20" height="20"/></td>
+                         <td>${data[cab].nombregasto}</td>
+                         <td>${data[cab].dias}</td>
+                          <td>${data[cab].precio}</td>
+
+                          <td><button class="btn text-white" onclick="RegistrarDetallePresupuesto(${data[cab].id_gasto},${cantidad},${precio},${precio_maximo})"  style="background-color:#09B556;"><i class="bi bi-pencil-square"></i></button></td>
+                          <td><button class="btn text-white borrar" onclick="AnularDetPresupuesto(${data[cab].id_gasto})" style="background-color:#D22B08;"><i class="bi bi-clipboard2-x"></i></button></td>
+                          </tr>
+                           `;
+
+                        }
+                        else {
+
+                            var precio_maximo = data[cab].precio_maximo;
+                            var descripcion_gasto = data[cab].descripcion_gasto;
+                           // document.getElementById('precio_maximo_gasto').value = precio_maximo;
+                            mitabladetpresupuesto.innerHTML += ` <tr>
+                    
+                        <td><input type="image" src="${data[cab].icon}" title="${descripcion_gasto}" width="20" height="20"/></td>
+                         <td> ${data[cab].nombregasto}</td>
+
+                          <td> <input type='text' id='${cantidad}' alt='${descripcion_gasto}' </td>
+                          <td> <input type='text' id='${precio}'</td>
+                          <td><button class="btn text-white" onclick="RegistrarDetallePresupuesto(${data[cab].id_gasto},${cantidad},${precio},${precio_maximo})"  style="background-color:#09B556;"><i class="bi bi-pencil-square"></i></button></td>
+                          <td><button class="btn text-white borrar" onclick="AnularDetPresupuesto(${data[cab].id_gasto})" style="background-color:#D22B08;"><i class="bi bi-clipboard2-x"></i></button></td>
+                          </tr>
+                           `;
+                        }
+
+
+
+                    }
+
+                }
+            });
+
+    }
+
+    function RegistrarDetallePresupuesto(id_gasto, cantidad, precio, precio_maximo) {
+
+        console.log(precio_maximo);
+
+        var id_solicitud = document.getElementById('via_num_sol').value;
+
+        if (cantidad.vale != "" && precio.value != "" && id_solicitud != "" && precio.value<=precio_maximo) {
+
+
+
+
+                $.ajax({
+                    dataType: "json",
+                    type: 'POST',
+                    contentType: "application/json; charset=utf-8",
+
+                    url: "@Url.Action("RegistroDetallePresupuesto", "Viaticos")",
+                    data: "{'id_solicitud': '" + id_solicitud + "','id_gasto': '" + id_gasto + "','cantidad': '" + cantidad.value + "','precio': '" + precio.value + "'}",
+
+                    success: function (data) {
+
+                        if (data == true) {
+                            Swal.fire("Datos Registrados", "", "success");
+                            document.getElementById('cantidad');
+
+                            $(cantidad).prop("disabled", true);
+                            $(precio).prop("disabled", true);
+
+                            ListadoViaticos("PE");
+                        }
+                        else {
+                            Swal.fire("Este Gasto ya fue Registrado anteriormente", "", "error");
+
+                        }
+
+                    }
+                });
+            }
+
+        else {
+
+
+            if (precio.value >= precio_maximo) {
+
+                Swal.fire("Precio mayor al maximo S/ " + precio_maximo , '', "warning");
+
+            }
+
+            else {
+                Swal.fire("Datos Incompletos" ,'', "info");
+            }
+
+
+        }
+    }
+
+     function AnularDetPresupuesto(id_gasto) {
+
+        var id_solicitud = document.getElementById('via_num_sol').value;
+
+        $.ajax({
+                    dataType: "json",
+                    type: 'POST',
+                    contentType: "application/json; charset=utf-8",
+
+                    url: "@Url.Action("AnularDetallePresupuesto", "Viaticos")",
+                    data: "{'id_solicitud': '" + id_solicitud + "','id_gasto': '" + id_gasto + "'}",
+
+                    success: function (data) {
+
+                        if (data == true) {
+                            Swal.fire("Gasto Anulado", "", "success");
+                            document.getElementById('cantidad');
+
+                            $(cantidad).prop("disabled", true);
+                            $(precio).prop("disabled", true);
+
+                        }
+                        else {
+                            Swal.fire("Este Gasto ya fue Registrado anteriormente", "", "error");
+
+                        }
+
+                    }
+                });
+
+
+
+        $(document).on('click', '.borrar', function (event) {
+            event.preventDefault();
+            $(this).closest('tr').remove();
+        });
+
+    }
+
+     function ListadoEstados() {
+
+      // var via_clientes_select = document.getElementById('via_clie_select');
+       // if (via_clientes_select) {
+         var app_function = 1; //LISTADO
+            $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("ListadoEstados", "Viaticos")",
+                data: "{'app_function': '" + app_function + "'}",
+                success: function (data) {
+                    console.log(data);
+                var cadena = "";
+                    if (data.length > 0) {
+                        cadena += "<option value=''>Seleccione Estado</option>";
+                        $.each(data, function (k, v) {
+
+                            cadena += "<option selected value='" + v.est_codigo + "'>" + v.est_codigo + "-" + v.est_descri + "</option>";
+                             });
+                            }
+                        else {
+                                  cadena += "<option value=''>NO SE ENCONTRARON REGISTROS</option>";
+                             }
+
+                         $("#via_estados").html(cadena);
+                            }
+                            });
+                //  }
+                // else {
+
+
+
+                //}
+
+    }
+
+
+</script>

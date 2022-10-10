@@ -1,0 +1,1066 @@
+﻿@using ENTIDAD;
+@{
+    ViewBag.Title = "CotizacionCreada";
+    Layout = "~/Views/Layout/_LayoutMenu.cshtml";
+
+}
+<main role="main">
+    <div class="jumbotron">
+
+        <div class="container">
+            <h3 class="text-center">COTIZADOR</h3>
+
+            <div class="row">
+
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active col-12 col-sm-12" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Datos Generales</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link col-12 col-sm-12" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Detalle Articulos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content" id="myTabContent">
+
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <!--INICIO CONTENIDO DEL PILL HOME -->
+                    <div class="p-3">
+
+                    </div>
+                    <!----form--->
+                    @*@using (Html.BeginForm("InsertarCabeceraCotizacion", "Cotizador", FormMethod.Post))*@
+                    @*//{*@
+                    <div class="form-group row">
+                        <label for="codigocliente" class="col-3 col-sm-1 col-form-label">Numero</label>
+                        <div class="col-9 col-sm-5">
+                            <input type="text" class="form-control" name="txtCliente2" id="codigocliente" value="@ViewBag.Cabecera.codigo" disabled>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Cliente </label>
+                        <div class="col-9 col-sm-7">
+                            <input type="hidden" class="form-control" id="q" onkeyup="traerDatosClientes()" placeholder="Cliente">
+                            @*<select id="clienteres3" name="clienteres3" onchange="RellenarDatosCliente();" class="col-12 custom-select js-example-basic-single">*@
+
+                            <input disabled type="text" class="form-control" value="@ViewBag.Cabecera.cliente" placeholder="Cliente">
+                            @* <select id="clienteres3" name="txtCliente" class="col-12 custom-select js-example-basic-single" required>*@
+
+                            @*@foreach (var item in ViewBag.Cabecera)
+                                    {
+
+                                        <option value=@item.codigo>@item.almacen</option>
+
+                                    }
+
+                                </select>*@
+
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="direcion_cliente" class="col-3 col-sm-1 col-form-label">Direccion </label>
+                        <div class="col-9 col-sm-9">
+                            <input disabled type="text" class="form-control" name="txtDireccion" id="direcion_cliente" value="@ViewBag.Cabecera.direccion" placeholder="Direccion" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="formapago" class="col-3 col-sm-1 col-form-label"> Pago </label>
+                        <div class="col-9 col-sm-4">
+                            <input disabled type="text" class="form-control" name="txtFormaPago_" id="formapago_" placeholder="Forma de pago" value="@ViewBag.Cabecera.formapago" required>
+                            <!--<select id="formapago" name="formapago" class="custom-select">-->
+                            @*@foreach (var item in ViewBag.formaventa)
+                                  {
+
+                                     <option value=@item.codigo>@item.nombre</option>
+
+                                }*@
+                            <!--</select>-->
+                        </div>
+
+                        <!--artificio espacio entre filas para celular-->
+                        <div class="col-12 col-sm-auto">
+                            <div class="form-group row"></div>
+                        </div>
+                        <!--FIN artificio espacio entre filas para celular-->
+                        <!--Documentos por tipo de  pago-->
+
+
+                        <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Adjunto</label>
+                        <div class="col-9 col-sm-4">
+                            <div class="custom-file ">
+                                <input type="file" name="txtAdjunto" class="custom-file-input" value="@ViewBag.Cabecera.adjunto" id="customFileLang" lang="es" disabled>
+                                <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Vendedor </label>
+                        <div class="col-9 col-sm-4">
+
+                            <input disabled type="text" class="form-control" name="txtFormaPago" id="formapago_" placeholder="Forma de pago" value="@ViewBag.Cabecera.vendedor" required>
+
+                            @*<select id="vendedores" name="txtVendedor" class="col-12 custom-select" required>
+                                    @foreach (var item in ViewBag.cliente)
+                                    {
+
+                                        <option value=@item.ruc>@item.vendedor</option>
+
+                                    }
+
+
+                                </select>*@
+                        </div>
+
+                        <!--artificio espacio entre filas para celular-->
+                        <div class="col-12 col-sm-auto">
+                            <div class="form-group row"></div>
+                        </div>
+                        <!--FIN artificio espacio entre filas para celular-->
+
+                        <label for="inputPassword3" class="col-3 col-sm-1 col-form-label"> Emision </label>
+                        <div class="col-9 col-sm-4">
+
+                            <input type="text" id="fecha_emitida_cot" class="form-control" placeholder="" value="@ViewBag.Cabecera.fechaemision" disabled>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group row">
+
+                        <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Moneda </label>
+                        <div class="col-9 col-sm-4">
+
+                            <input disabled type="text" class="form-control" name="txtFormaPago_" id="formapago_" placeholder="Forma de pago" value="NUEVOS SOLES" required>
+                        </div>
+
+                        <!--artificio espacio entre filas para celular-->
+                        <div class="col-12 col-sm-auto">
+                            <div class="form-group row"></div>
+                        </div>
+                        <!--FIN artificio espacio entre filas para celular-->
+
+                        <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Glosa</label>
+                        <div class="col-9 col-sm-4">
+                            <input disabled type="text" class="form-control" id="direcion" name="txtGlosa" placeholder="Glosa">
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group row">
+                        <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Almacen </label>
+                        <div class="col-9 col-sm-4">
+                            <input type="hidden" class="form-control" name="txtFormaPago" id="alamceninput" placeholder="Forma de pago" value="@ViewBag.Cabecera.glosa">
+                            <input disabled type="text" class="form-control" name="txtFormaPago" placeholder="Forma de pago" value="@ViewBag.Cabecera.almacen" required>
+                            @*<select name="txtAlmacen" id="almacen" class="custom-select">
+                                    @foreach (var item in ViewBag.almacen)
+                                    {
+
+                                        <option value=@item.codigo>@item.nombre</option>
+
+                                    }
+
+                                </select>*@
+                        </div>
+                    </div>
+
+                    <!--CAMBIO DE FECHA EN LA FILA DE ARRIBA-->
+                    @*<div class="form-group row">
+                            <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Fecha Creacion </label>
+                            <div class="col-9 col-sm-5">
+                                <input type="date" class="form-control" id="inputPassword3" placeholder="Fecha Creacion">
+                            </div>
+                        </div>*@
+                    <!--FIN DE CAMBIO-->
+
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <button type="submit" id="cabeceracoti" class="btn btn-primary" disabled>Guardar Cotizacion </button>
+                        </div>
+                    </div>
+
+                    <!----/!--form---->
+                    <!--FIN DEL CONTENIDO PILL HOME--->
+                </div>
+
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="p-3">
+
+                    </div>
+                    <!--INICIO DEL CONTENIDO PILL PROFILE--->
+
+
+                    <div class="form-group row">
+                        <label for="articulo_select_modelo" class="col-3 col-sm-1 col-form-label">Modelos </label>
+
+                        <div class="col-9 col-sm-3">
+
+                            <select id="articulo_select_modelo" data-placeholder="Choose one thing" class="custom-select col-8 col-sm-2">
+                                <option selected value="Elegir">Elegir.......</option>
+
+                                @foreach (var item in ViewBag.modelosarticulo)
+
+                                {
+                                    <option value=@item.cod_modelos>@item.cod_modelos @item.modelos</option>
+                                }
+
+                            </select>
+                        </div>
+
+                        <!--CODIGO,DESCRIPCION, BUSCAR -->
+
+                        <label for="articulo_select" class="col-2 col-sm-1 col-form-label">Codigo </label>
+                        <div class="col-2 col-sm-2">
+                            <input type="text" class="form-control" name="codigo_articulo_corto" id="codigo_articulo_corto" placeholder="Codigo">
+                        </div>
+
+                        <label for="articulo_select" class="col-2 col-sm-1 col-form-label">Descripcion </label>
+                        <div class="col-2 col-sm-2">
+                            <input type="text" class="form-control" name="descripcion_articulo_corto" id="descripcion_articulo_corto" placeholder="Descripcion">
+
+                        </div>
+                        <div class="col-2  col-sm-2">
+                            @*<button class="btn btn-primary" id="busqueda-corta"> Buscar </button>*@
+                            <button type="button" id="busqueda-corta" onclick="FiltrarArticulos();" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalBusquedaArticulo">
+                                Buscar
+                            </button>
+                        </div>
+
+
+
+
+
+
+                        <!---->
+                        <!--MODAL ARTICULO-->
+                        <!-- Modal cliente -->
+                        <div class="modal fade" id="exampleModalBusquedaArticulo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Busqueda Articulos</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="table-responsive">
+
+                                                    <table id="tabla_art_filtrados" class="table table-sm table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">Codigo</th>
+                                                                <th scope="col">Articulo</th>
+                                                                <th scope="col">Precio</th>
+                                                                <th scope="col">Stock</th>
+                                                                <th scope="col">Elegir</th>
+
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="tabla_art_filtrados_res">
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="form-group col-sm-3">
+                                            <button type="button" id="ASIGANAR_DATA_ARTICULO" class="btn btn-primary">Asignar</button>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Fin Modal Cliente-->
+                        <!-- FIN DEL MODAL ARTICULO-->
+
+
+                        <label for="articulo_select" class="col-3 col-sm-1 col-form-label">Articulo </label>
+                        <div class="col-9 col-sm-11">
+
+
+                            <select id="articulo_select" data-placeholder="Choose one thing" class="custom-select col-9 col-sm-6">
+                                <option selected value="Elegir">Elegir.......</option>
+                                @foreach (var item in ViewBag.articulo)
+
+                                {
+
+                                    <option value=@item.codigo>@item.codigo- @item.nombre- @item.stock</option>
+
+                                }
+                            </select>
+                        </div>
+
+
+
+                        <label for="unidad_articulo" class="col-3 col-sm-1 col-form-label">Unidad </label>
+                        <div class="col-9 col-sm-3">
+                            <input disabled type="text" class="form-control" name="unidad_articulo" id="unidad_articulo" placeholder="Unidad">
+                        </div>
+
+                        <label for="unidad_articulo" class="col-3 col-sm-1 col-form-label">Articulo </label>
+                        <div class="col-9 col-sm-6">
+                            <input type="text" class="form-control" name="nom_articulo_2" id="nom_articulo_2" disabled>
+                        </div>
+
+
+                    </div>
+
+                    <div class="form-group row">
+
+                        <label for="precio_articulo" class="col-3 col-sm-1 col-form-label">Precio </label>
+                        <div class="col-9 col-sm-3">
+                            <input disabled type="text" class="form-control" name="precio_articulo" id="precio_articulo" placeholder="Precio">
+                        </div>
+
+                        <label for="stock_articulo" class="col-3 col-sm-1 col-form-label">Stock </label>
+                        <div class="col-9 col-sm-3">
+                            <input type="text" class="form-control text-white bg-success" name="stock_articulo" id="stock_articulo" placeholder="Stock" value="Stock" disabled>
+                            <input type="hidden" class="form-control" min="1" name="c_disponible" id="codigo_articulo_ocul" placeholder="Cantidad Disponible" required>
+                            <input type="hidden" class="form-control" min="1" name="c_disponible" id="nombre_articulo_ocul" placeholder="Cantidad Disponible" required>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group row">
+
+                        <label for="c_solicitada" class="col-3 col-sm-1 col-form-label">Cant.Req. </label>
+                        <div class="col-9 col-sm-3">
+                            <input type="number" class="form-control" min="1" name="c_solicitada" id="c_solicitada" placeholder="Cantidad Solicitada" required>
+                        </div>
+
+
+                        <label for="c_disponible" class="col-3 col-sm-1 col-form-label">Cant.Disp</label>
+                        <div class="col-9 col-sm-3">
+                            <input disabled type="number" class="form-control" min="1" name="c_disponible" id="c_disponible" placeholder="Cantidad Disponible" required>
+                        </div>
+
+                        <div class="col-3  col-sm-4 ">
+                            <button class="col-sm-6 btn btn-primary" id="adicionar"> Registrar Articulo </button>
+                        </div>
+
+                    </div>
+
+                    <div class="section">
+                        <!----button class="btn btn-primary" id="boton"> JSON</!--button--->
+
+                    </div>
+
+                    <div class="table-responsive">
+
+
+                        <table id="mytable" class="table table-sm table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Codigo</th>
+                                    <th scope="col">Articulo</th>
+                                    <th scope="col">Unidad</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Cant.Req.</th>
+                                    <th scope="col">Cant.Disp</th>
+                                    <th scope="col">Stock</th>
+                                    <th scope="col">Anular</th>
+                                    <th style="visibility:hidden;" scope="col">anular 2 </th>
+                                    <th style="visibility:hidden;" scope="col">Anular 3</th>
+
+                                </tr>
+                            </thead>
+
+                            <tbody id="tabla_detalle_cotizacion_vendedor">
+                            </tbody>
+
+                        </table>
+                    </div>
+
+
+                    <!--FIN DEL CONTENIDO PILL PROFILE--->
+                    <!--FINAL DEL DETALLE COTIZACION -->
+                    <!--button type="button"  OnClientClick = "ObtenerDetalle()" id="BtnRegistrar_Click"  class="btn btn-primary">Registrar Detalle</!--button-->
+                </div>
+
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+
+<script src="~/Assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" type="text/javascript"></script>
+
+
+
+<script type="text/javascript">
+
+
+    //ready de los dos archivos
+
+    $(document).ready(function () {
+
+        $("#selArticulosprueba").select2('');
+        //READY DE ARTICULOS
+        //FiltrarArticulos();
+       // $('#articulo_select').select2('');
+        $('#articulo_select').select2({
+            minimumInputLength: 3 // para buscar a partir del 3er digito
+        });
+        $('#articulo_select_modelo').select2('');
+        $("[id$='articulo_select']").change(function () {
+            //OBTENIES EL ARTICULO
+            var selectArticulo = document.getElementById('articulo_select');
+            var codigoArticulo = selectArticulo.options[selectArticulo.selectedIndex].value;
+            console.log(codigoArticulo);
+            //   var data = { ruccliente: RucCliente };
+            $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("ObtenerArticulo", "Cotizador")",
+
+                data: "{ 'codigo': '" + codigoArticulo + "'}",
+                success: function (data) {
+
+                    if (data.unidad == null) {
+
+                    } else {
+                        //  console.log(data);
+                        var stock = ObtenerStockArticulo();
+                        document.getElementById('unidad_articulo').value = data.unidad;
+                        var precio = parseFloat(data.preciouno);
+                        document.getElementById('precio_articulo').value = precio;
+                        //CONVERT A ENTERO DEL STOCK
+                        document.getElementById('stock_articulo').value = stock;
+                    }
+
+                }
+            });
+        });
+
+        //listar detalle de articulos
+        var codigo1 = document.getElementById("codigocliente").value;
+        listarDetalleCotizacion(codigo1);
+
+        //READY DE ARTICULOS TABLA
+        $('#adicionar').click(function () {
+
+
+            //VALIDAR SI EL ARTICULO YA ESTA REGISTRADO
+
+            var nombre_oculto = document.getElementById("nombre_articulo_ocul").value;
+            var codigo_oculto = document.getElementById("codigo_articulo_ocul").value;
+            var codigo = document.getElementById("articulo_select").value;
+            var codigo1 = document.getElementById("articulo_select");
+            //OBTENER NOMBRE DEL ARTICULO
+            var idx = codigo1.selectedIndex;
+            var articulo = codigo1.options[idx].text;
+            //var articulo = document.getElementById("articulo_select").value;
+            //var text = articulo.find('option[value=' + articulo + ']').text();
+            var arr = articulo.split('-');
+            var articulo_nom = arr[1];
+
+            console.log(articulo + "nombre");
+            ///
+            var unidad = document.getElementById("unidad_articulo").value;
+            var precio = document.getElementById("precio_articulo").value;
+            var cantidad_solicitada = document.getElementById("c_solicitada").value;
+            var cantidad_disponible = document.getElementById("c_disponible").value;
+            var stock = document.getElementById("stock_articulo").value;
+            var cabeceramaster = document.getElementById("codigocliente").value;
+            var motivo = "Registro";
+           // precio.va 
+            console.log(cantidad_solicitada);
+            console.log(cantidad_disponible);
+            if (cantidad_solicitada == "" || cantidad_solicitada == "0" || cantidad_disponible == "" || precio == "0") {
+              // alert("Precio en Cero no puede ser registrado");
+                
+                cantidad_solicitada.required = 'true';
+                cantidad_disponible.required = 'true';
+                var valor = "";
+                switch (valor) {
+                    case precio:
+                        swal.fire("Precio Cero, Articulo no puede ser registrado!");
+                        break;
+                    case cantidad_solicitada:
+                        var cantidad_solicitada_ingresada = parseInt(cantidad_solicitada);
+                        if (cantidad_solicitada_ingresada >= 0) {
+                            swal.fire("Valores menores a 0, Articulo no puede ser registrado!");
+                        }
+                        else {
+                            swal.fire("Valores Vacios, Articulo no puede ser registrado!");
+                        }
+                      
+                        break;
+                   
+                }
+
+
+
+            }
+            else {
+                //verifica que tipo de metodo uso para agregar articulo al detalle
+                if (codigo == "Elegir") {
+                    var i = 1; //contador para asignar id al boton que borrara la fila
+                    //original var fila = '<tr id="row' + i + '"><td>' + nombre + '</td><td>' + apellido + '</td><td>' + cedula + '</td><td><button type="button" name="remove" id="' + i + '" class="btn btn-danger btn_remove">Quitar</button></td></tr>'; //esto seria lo que contendria la fila
+                    //variable que pinta la fila en la tabla
+
+                    var fila = '<tr id="row' + i + '"> <td>' + codigo_oculto + '</td><td>' + nombre_oculto + '</td> <td>' + unidad + '</td><td > ' + precio + '</td><td>' + cantidad_solicitada + '</td> <td>' + cantidad_disponible + '</td> <td>' + stock + '</td> <td><button type="button" name="remove" id="' + i + '" class="btn btn-danger btn_remove">Quitar</button></td>   <td style="visibility:hidden;"> ' + unidad + '</td>  <td style="visibility:hidden;"> ' + cabeceramaster + '</td>     </tr > '; //esto seria lo que contendria la fila
+
+                    i++;
+                    //QUITANDO LO AGREGADO MANUALMENTE
+                   // $('#mytable tr:first').after(fila);
+
+                    $.ajax({
+                        dataType: "json",
+                        type: 'POST',
+                        contentType: "application/json; charset=utf-8",
+                        url: "@Url.Action("AgregarDetalleCoti", "Cotizador")",
+                        data: "{ 'codigo_articulo': '" + codigo_oculto + "','nombre_articulo': '" + nombre_oculto + "','uni': '" + unidad + "', 'preciocotizacion': '" + precio + "','cantidad_solicitada': '" + cantidad_solicitada + "', 'cantidad_disponible': '" + cantidad_disponible + "','stock': '" + stock + "', 'motivo': '" + motivo + "','codigo_cabecera': '" + cabeceramaster + "' }",
+                        success: function (data) {
+                            //si data es true agrega
+                            console.log(data);
+
+                            listarDetalleCotizacion(cabeceramaster);
+
+                        }
+                    });
+                }
+                else {
+
+                    var i = 1; //contador para asignar id al boton que borrara la fila
+                    //original var fila = '<tr id="row' + i + '"><td>' + nombre + '</td><td>' + apellido + '</td><td>' + cedula + '</td><td><button type="button" name="remove" id="' + i + '" class="btn btn-danger btn_remove">Quitar</button></td></tr>'; //esto seria lo que contendria la fila
+                    //variable que pinta la fila en la tabla
+
+                    var fila = '<tr id="row' + i + '"> <td>' + codigo + '</td><td>' + articulo_nom + '</td> <td>' + unidad + '</td><td > ' + precio + '</td><td>' + cantidad_solicitada + '</td> <td>' + cantidad_disponible + '</td> <td>' + stock + '</td> <td><button type="button" name="remove" id="' + i + '" class="btn btn-danger btn_remove">Quitar</button></td>   <td style="visibility:hidden;"> ' + unidad + '</td>  <td style="visibility:hidden;"> ' + cabeceramaster + '</td>     </tr > '; //esto seria lo que contendria la fila
+
+                    i++;
+                    //QUITANDO LO AGREGADO MANUALMENTE
+                    //  $('#mytable tr:first').after(fila);
+
+
+                    $.ajax({
+                        dataType: "json",
+                        type: 'POST',
+                        contentType: "application/json; charset=utf-8",
+                         url: "@Url.Action("AgregarDetalleCoti", "Cotizador")",
+                       data: "{ 'codigo_articulo': '" + codigo + "','nombre_articulo': '" + articulo_nom + "','uni': '" + unidad + "', 'preciocotizacion': '" + precio + "','cantidad_solicitada': '" + cantidad_solicitada + "', 'cantidad_disponible': '" + cantidad_disponible + "','stock': '" + stock + "', 'motivo': '" + motivo + "','codigo_cabecera': '" + cabeceramaster + "' }",
+                        success: function (data) {
+                            //si data es true agrega
+                            console.log(data);
+                            //var cabecera = document.getElementById('codigocliente').value;
+                            listarDetalleCotizacion(cabeceramaster);
+
+                        }
+                    });
+                }
+
+
+
+
+
+                //var i = 1; //contador para asignar id al boton que borrara la fila
+                ////original var fila = '<tr id="row' + i + '"><td>' + nombre + '</td><td>' + apellido + '</td><td>' + cedula + '</td><td><button type="button" name="remove" id="' + i + '" class="btn btn-danger btn_remove">Quitar</button></td></tr>'; //esto seria lo que contendria la fila
+                ////variable que pinta la fila en la tabla
+
+                //var fila = '<tr id="row' + i + '"> <td>' + codigo + '</td><td>' + articulo_nom + '</td> <td>' + unidad + '</td><td > ' + precio + '</td><td>' + cantidad_solicitada + '</td> <td>' + cantidad_disponible + '</td> <td>' + stock + '</td> <td><button type="button" name="remove" id="' + i + '" class="btn btn-danger btn_remove">Quitar</button></td>   <td style="visibility:hidden;"> ' + unidad + '</td>  <td style="visibility:hidden;"> ' + cabeceramaster + '</td>     </tr > '; //esto seria lo que contendria la fila
+
+                //i++;
+                //$('#mytable tr:first').after(fila);
+
+
+                //creando arreglo  crea el arreglo y envia a BD
+                RegistrarDetalle();
+
+                //cerrando arreglo
+
+
+
+                $("#adicionados").text(""); //esta instruccion limpia el div adicioandos para que no se vayan acumulando
+                var nFilas = $("#mytable tr").length;
+                $("#adicionados").append(nFilas - 1);
+                //le resto 1 para no contar la fila del header
+                document.getElementById("articulo_select").value = "";
+                document.getElementById("articulo_select").value = "";
+                document.getElementById("unidad_articulo").value = "";
+                document.getElementById("precio_articulo").value = "";
+                document.getElementById("c_solicitada").value = "";
+                document.getElementById("c_disponible").value = "";
+                document.getElementById("stock_articulo").focus();
+
+
+            }
+        });
+
+        $(document).on('click', '.btn_remove', function () {
+            // alert("Ingrese Motivo De eliminacion");
+
+            ingresar_motivo_anulacion();
+
+            var button_id = $(this).attr("id");
+            //cuando da click obtenemos el id del boton
+            $('#row' + button_id + '').remove(); //borra la fila
+
+            //tambien edita el motivo AJAX PARA EDITAR MOTIVO
+            //$.ajax({
+            //    dataType: "json",
+            //    type: 'POST',
+            //    contentType: "application/json; charset=utf-8",
+            //    url: '/Cotizador/EditarDetalleCotizacion',
+            //    data: "{ 'codigo_cabecera': '" + codigocabecera + "','codigo_articulo': '" + codigoarticulo + "','motivo': '" + motivo + "'}",
+            //    success: function (data) {
+            //        console.log(data);
+
+
+            //    }
+            //});
+
+
+
+            //limpia el para que vuelva a contar las filas de la tabla
+            $("#adicionados").text("");
+            var nFilas = $("#mytable tr").length;
+            $("#adicionados").append(nFilas - 1);
+        });
+
+
+    });
+
+
+
+    //agregar articulo a la tabla
+
+    function RegistrarDetalle() {
+
+   var table = document.getElementById("mytable");
+          for (var i = table.rows.length - 1; i < table.rows.length; i++) {
+            console.log("tamaño de row en la tabla");
+            console.log(table.rows.length);
+            var row = table.rows[i];
+            var Detalle = {};
+
+
+            Detalle.codigo_articulo = row.cells[0].innerHTML;
+            Detalle.nombre_articulo = row.cells[1].innerHTML;
+            Detalle.uni = row.cells[2].innerHTML;
+            Detalle.preciodecotizacion = row.cells[3].innerHTML;
+            Detalle.cantidad_solicitada = row.cells[4].innerHTML;
+            Detalle.cantidad_disponible = row.cells[5].innerHTML;
+            Detalle.stock = row.cells[6].innerHTML;
+
+            //boton es la celda 7
+            Detalle.motivo = row.cells[8].innerHTML;
+            Detalle.codigo_cabecera = row.cells[9].innerHTML;
+            // ListaDetalle.push(Detalle);
+      }
+
+    };
+
+
+    function borrarRegistroDetalle(codigocabecera,codarticulo) {
+        console.log("BORRANDO REGISTRO ARTICULO");
+         $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+
+             url: "@Url.Action("anular_detalle_articulo", "Cotizador")",
+             data: "{ 'codigocabecera': '" + codigocabecera + "','codarticulo': '" + codarticulo + "'}",
+             success: function (data) {
+                 listarDetalleCotizacion(codigocabecera);
+                            }
+        });
+
+        console.log("BORRAR REGSITRO");
+        ingresar_motivo_anulacion();
+
+
+    }
+
+
+    function lista() {
+
+        $("#selArticulosprueba").select2({
+
+            ajax: {
+                url: "@Url.Action("ObtenerArticuloparaSelect", "Cotizador")",
+
+                type: "post",
+                dataType: 'json',
+                delay: 250,
+                data: function (params) {
+                    return {
+                        codigo: params.term // search term
+                    };
+                },
+                processResults: function (response) {
+                    console.log(response.codigo);
+                    return {
+                        results: response
+                    };
+                },
+                cache: true
+            }
+        });
+
+
+    };
+
+    function listarDetalleCotizacion(codigocabecera) {
+        console.log("Listando detalle del codigo " + codigocabecera);
+         $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+            url: "@Url.Action("ListarDetalleCotizacionxCabecera", "Cotizador")",
+            data: "{ 'codigocabecera': '" + codigocabecera + "'}",
+            success: function (data) {
+
+                var mitablacabecera = document.getElementById("tabla_detalle_cotizacion_vendedor");
+                if (mitablacabecera) {
+                    mitablacabecera.innerHTML = ``;
+                }
+                else {
+                    // mitablacabecera.innerHTML = ``;
+                }
+                //recorrer lista de objectos :D
+                mitablacabecera.innerHTML = ``;
+                var codigoanulacion;
+                var mensaje_informativo;
+                for (cab in data) {
+
+                    if (data[cab].cantidad_solicitada > data[cab].cantidad_disponible) {
+                        mensaje_informativo = "Cant. Requerida mayor al Stock";
+                        codigoanulacion = data[cab].codigo_cabecera;
+                        mitablacabecera.innerHTML += ` <tr>
+
+                                  <td>${data[cab].codigo_articulo}</td>
+                                  <td>${data[cab].nombre_articulo}</td>
+                                   <td>${data[cab].uni}</td>
+                                  <td>${data[cab].preciodecotizacion}</td>
+                                  <td>${data[cab].cantidad_solicitada}</td>
+                                  <td>${data[cab].cantidad_disponible}</td>
+                                  <td>${data[cab].stock}</td>
+                                  <td><button  class="btn text-white" onclick="borrarRegistroDetalle(${data[cab].codigo_cabecera},'${data[cab].codigo_articulo}')" style="background-color:#D22B08;"><i class="bi bi-clipboard2-x"></i></button></td>
+                                    <td>${mensaje_informativo}</td>
+
+
+                                </tr>
+                                    `;
+                    }
+                    else {
+                        mensaje_informativo = "";
+
+                        codigoanulacion = data[cab].codigo_cabecera;
+                        mitablacabecera.innerHTML += ` <tr>
+
+                                  <td>${data[cab].codigo_articulo}</td>
+                                  <td>${data[cab].nombre_articulo}</td>
+                                   <td>${data[cab].uni}</td>
+                                  <td>${data[cab].preciodecotizacion}</td>
+                                  <td>${data[cab].cantidad_solicitada}</td>
+                                  <td>${data[cab].cantidad_disponible}</td>
+                                  <td>${data[cab].stock}</td>
+                                  <td><button  class="btn text-white" onclick="borrarRegistroDetalle(${data[cab].codigo_cabecera},'${data[cab].codigo_articulo}')" style="background-color:#D22B08;"><i class="bi bi-clipboard2-x"></i></button></td>
+                                    <td>${mensaje_informativo}</td>
+
+
+                                </tr>
+                                    `;
+                    }
+
+                   
+                   
+
+
+
+                }
+
+
+
+            }
+        });
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+    function AnularArticulo() {
+
+
+
+
+    }
+    //agregar articulo
+    function FiltrarArticulos() {
+        var selectmodArticulo = document.getElementById('articulo_select_modelo');
+        var codigoModArticulo = selectmodArticulo.options[selectmodArticulo.selectedIndex].value;
+
+        var mitablaArtFiltrados = document.getElementById("tabla_art_filtrados_res");
+        var cod_ar = document.getElementById('codigo_articulo_corto').value;
+        var desc_ar = document.getElementById('descripcion_articulo_corto').value;
+        var almacen = "CA01";
+        if (cod_ar == "" && desc_ar == "" && codigoModArticulo == "") {
+            alert("llenar datos");
+        }
+        else {
+            $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                 url: "@Url.Action("ListadoArticulosFiltrado", "Cotizador")",
+
+                data: "{ 'codigo': '" + cod_ar + "','descripcion': '" + desc_ar + "','modelo': '" + codigoModArticulo + "'}",
+                success: function (data) {
+                    //  console.log(data);
+                    mitablaArtFiltrados.innerHTML = ``;
+                    var variablecod;
+                    var stock_int;
+                    var precio_uno_decimal;
+                    for (cab in data) {
+                        console.log(data);
+                        stock_int = parseInt(data[cab].stock);
+                        precio_uno_decimal = parseFloat(data[cab].preciouno);
+                        variablecod = data[cab].codigo;
+                        //  codigoanulacion = codigocotizaciontext + data[cab].codigo;
+                        //  console.log(codigoanulacion);
+                        //console.log("Cotizacion ___________________________");
+                        //console.log("codigo " + data[cab].codigo + " cliente" + data[cab].cliente + " almacen " + data[cab].almacen);
+                        //console.log("_______________________________________");
+                        mitablaArtFiltrados.innerHTML += ` <tr>
+
+                                  <td>${data[cab].codigo}</td>
+                                  <td>${data[cab].nombre}</td>
+                                  <td>${precio_uno_decimal}</td>
+                                 <td>${stock_int}</td>
+    <td><button  id="btn_filtrado" class="btn text-white" onclick="RellenarCamposArt('${data[cab].codigo}')" style="background-color:#09B556;"><i class="bi bi-check2-square"></i></button></td>
+
+                                </tr>
+                                    `;
+
+
+
+                    }
+                }
+            });
+        }
+    }
+
+    function RellenarCamposArt(codarticulo) {
+        $('#articulo_select').val('Elegir').trigger('change.select2');
+        //  alert(codarticulo);
+        //  console.log(codarticulo);
+
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+
+             url: "@Url.Action("ObtenerArticulo", "Cotizador")",
+            data: "{ 'codigo': '" + codarticulo + "'}",
+            success: function (data) {
+                //  console.log(data);
+                // var stock = ObtenerStockArticulo();
+                document.getElementById('unidad_articulo').value = data.unidad;
+                var precio = parseFloat(data.preciouno);
+                document.getElementById('precio_articulo').value = precio;
+                //CONVERT A ENTERO DEL STOCK
+
+                stok = parseInt(data.stock);
+                //console.log(stok);
+                //console.log(data.stock);
+
+                document.getElementById('stock_articulo').value = stok;
+                document.getElementById('codigo_articulo_ocul').value = data.codigo;
+                document.getElementById('nom_articulo_2').value = data.codigo + " - " + data.nombre;
+                document.getElementById('nombre_articulo_ocul').value = data.nombre;
+                document.getElementById('c_disponible').value = stok;
+
+                //$("#popupBusquedaParroquia").modal('hide');//ocultamos el modal
+                //$('body').removeClass('modal-open');//eliminamos la clase del body para poder hacer scroll
+                //$('.modal-backdrop').remove();//eliminamos el backdrop del modal
+
+            }
+        });
+        // document.getElementById('');
+        //ocultar modal articulo
+        $('#exampleModalBusquedaArticulo').modal('hide');
+    }
+    function enviarparametro() {
+
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+
+             url: "@Url.Action("ObtenerArticulo", "Cotizador")",
+            data: "{ 'codigo': '" + codigoArticulo + "'}",
+            success: function (data) {
+
+                document.getElementById('unidad_articulo').value = data.unidad;
+                let precioArticulo = parseInt(data.preciouno, 16);
+                document.getElementById('precio_articulo').value = precioArticulo;
+                //document.getElementById('stock_articulo').value = stock;
+                // document.getElementById('c_disponible').value = stock;
+            }
+        });
+    }
+
+    function ObtenerStockArticulo() {
+        //NECESITAS ARTICULO Y EL ALMACEN
+        var selectArticulo = document.getElementById('articulo_select');
+        var codArticulo = selectArticulo.options[selectArticulo.selectedIndex].value;
+        //var selectAlmacen = document.getElementById('almacen');
+        //var codAlmacen = selectAlmacen.options[selectAlmacen.selectedIndex].value;
+        var codAlmacen = document.getElementById('alamceninput').value;
+        // console.log("CODIGO ALMACEN" + codAlmacen);
+        //var codAlmacen = selectAlmacen.options[selectAlmacen.selectedIndex].value;
+        //console.log("ESTOY HACIENDO ALGO ?");
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+
+            url: "@Url.Action("OnbtenerStockArticulo", "Cotizador")",
+            data: "{ 'codigoarticulo': '" + codArticulo + "','codigoalmacen': '" + codAlmacen + "'}",
+            success: function (data) {
+                if (data.codigo_articulo == null) {
+
+                }
+                else {
+
+                    //  console.log(data);
+                    //FGB:  OBTIENE VALOR DEL STOCK AL SELECCIONAR ARTICULO
+                    //CONVERSION DE STRING A INT
+                    let valorStock = parseInt(data.stock);
+                    var stokkk = document.getElementById('stock_articulo').value = valorStock;
+                    console.log("que marca stock " + stokkk);
+                    document.getElementById('c_disponible').value = valorStock;
+
+                    if (valorStock == 0) {
+                        document.getElementById('c_disponible').setAttribute("disabled", "");
+
+                    }
+                    else {
+
+                        document.getElementById('c_disponible').removeAttribute("disabled", "");
+                        document.getElementById('c_disponible').setAttribute("enabled", "");
+                    }
+                }
+
+            }
+        });
+
+
+    }
+
+    async function ingresar_motivo_anulacion() {
+        cargaMotivos();
+
+    }
+
+    function cargaMotivos() {
+
+        var lista = [];
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+
+            url: "@Url.Action("ListadoMotivos", "Cotizador")",
+            data: "{}",
+            success: function (data) {
+                // console.log(data);
+                let des = { data };
+                let obj = Object.assign({}, des);
+                // console.log("objeto . ." + obj[0].descripcion);
+                console.log(data.id);
+                let motivos_ = {};
+                var i = 1;
+                for (var a in data) {
+
+                    motivos_[i] = data[a].descripcion;
+                    i++;
+                }
+
+                console.log("MOTIVOS . . ." + motivos_);
+                const { value: text } = Swal.fire({
+                    input: 'select',
+                    inputOptions:
+                        motivos_
+                    ,
+                    inputLabel: 'Motivo',
+                    inputPlaceholder: 'Escribe motivo de anulacion...',
+                    inputAttributes: {
+                        'aria-label': 'Type your message here'
+                    },
+                    showCancelButton: true
+                })
+                if (text) {
+                    Swal.fire(text)
+                }
+                else {
+                    console.log("else del swal " + text);
+
+                    var selectArticulo = document.getElementById('swal2-input');
+                    var codArticulo = selectArticulo.options[selectArticulo.selectedIndex].value;
+                    console.log("identificar select " + codArticulo);
+                }
+
+            }
+        });
+
+        return lista;
+    }
+</script>
+

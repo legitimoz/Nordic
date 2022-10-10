@@ -1,0 +1,814 @@
+﻿@using ENTIDAD.VIATICOS
+@{
+    ViewBag.Title = "GerenteLinea";
+    Layout = "~/Views/Layout/_LayoutViatico.cshtml";
+}
+
+
+<main role="main">
+    <div class="jumbotron">
+
+        <div class="container">
+
+            <div class="row">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active col-12 col-sm-12" id="home-tab" data-toggle="tab" href="#solicitud" role="tab" aria-controls="home" aria-selected="true">Cabecera Solicitud</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        @*<a class="nav-link col-12 col-sm-12" id="profile-tab" data-toggle="tab" href="#clientes" role="tab" aria-controls="profile" aria-selected="false">Detalle Clientes</a>*@
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        @*<a class="nav-link col-12 col-sm-12" id="profile-tab" data-toggle="tab" href="#gastos" role="tab" aria-controls="profile" aria-selected="false">Detalle Gastos</a>*@
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content" id="myTabContent">
+
+                <div class="tab-pane fade show active" id="solicitud" role="tabpanel" aria-labelledby="home-tab">
+
+                    <div class="container">
+                        <div class="p-2"></div>
+                        <div class="row">
+
+
+                            <div class="col-md-12 order-md-1">
+                                <h4 class="mb-3"></h4>
+                                <form class="needs-validation" novalidate>
+                                    <div class="row">
+                                        <div class="col-md-8 mb-3">
+                                            @*<label for="firstName">Nombre</label>
+                                                <input disabled type="text" class="form-control" id="v_r_nombre" placeholder="" value="" required>
+                                                <div class="invalid-feedback">
+                                                    Nombre es requerido
+                                                </div>*@
+                                            <label for="username">Representante</label>
+                                            <div class="input-group">
+
+                                                <select class="custom-select d-block w-100" id="via_lista_usuarios" required>
+                                                </select>
+                                                <div class="invalid-feedback" style="width: 100%;">
+                                                    Usuario Requerido
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="country">Linea</label>
+                                            <select class="custom-select d-block w-100" id="via_lin_usr" required>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Linea Requerida
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4 mb-3">
+                                            <label for="country">Fecha Solicitud</label>
+                                            <input type="date" class="form-control" id="via_fecha_solicitud" placeholder="" value="" required>
+                                            <div class="invalid-feedback">
+                                                Fecha Solicitud requerida
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="state">Motivo Viaje</label>
+                                            <select class="custom-select d-block w-100" id="via_mot_viaje" required>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Motivo viaje requerido
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            @*<label for="zip">Monto Solicitado</label>
+                                                <input type="number" class="form-control" id="via_monto_sol" placeholder="" required>
+                                                <div class="invalid-feedback">
+                                                    Monto Solicitud requerido
+                                                </div>*@
+
+                                            <label for="username">Medio de Viaje</label>
+                                            <div class="input-group">
+
+                                                <select class="custom-select d-block w-100" id="via_med_viaje" required>
+                                                </select>
+                                                <div class="invalid-feedback" style="width: 100%;">
+                                                    Medio de Viaje Requerido
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    @*<div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <label for="username">Medio de Viaje</label>
+                                                <div class="input-group">
+
+                                                    <select class="custom-select d-block w-100" id="via_med_viaje" required>
+                                                    </select>
+                                                    <div class="invalid-feedback" style="width: 100%;">
+                                                        Medio de Viaje Requerido
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>*@
+
+
+                                    <hr class="mb-4">
+                                    <h6>Origen</h6>
+
+                                    <div class="row">
+
+
+                                        <div class="col-md-3 mb-3">
+                                            <label for="country">Fecha Y hora Origen</label>
+                                            <input type="datetime-local" class="form-control" id="via_fec_hora_origin" placeholder="" value="" required>
+                                            <div class="invalid-feedback">
+                                                Fecha y Hora requerido
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3 mb-3">
+                                            <label for="country">Departamento</label>
+                                            <select class="custom-select d-block w-100" id="via_dep_origin" required>
+                                                <option selected disabled value="">Seleccione...</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Departamento requerido.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <label for="state">Provincia</label>
+                                            <select class="custom-select d-block w-100" id="via_pro_origin" required>
+                                                <option selected disabled value="">Seleccione...</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Provincia requerida
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <label for="zip">Distrito</label>
+                                            <select class="custom-select d-block w-100" id="via_dis_origin" required>
+
+                                                <option selected disabled value="">Seleccione...</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Distrito  requerido.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h6>Destino</h6>
+                                    <div class="row">
+                                        <div class="col-md-3 mb-3">
+                                            <label for="country">Fecha Y hora Destino</label>
+                                            <input type="datetime-local" class="form-control" id="via_fec_hora_dest" placeholder="" value="" required>
+                                            <div class="invalid-feedback">
+                                                Fecha y Hora requerido
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <label for="country">Departamento</label>
+                                            <select class="custom-select d-block w-100" id="via_dep_dest" required>
+                                                <option selected disabled value="">Seleccione...</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Departamento requerio
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <label for="state">Provincia</label>
+                                            <select class="custom-select d-block w-100" id="via_pro_dest" required>
+                                                <option selected disabled value="">Seleccione...</option>
+
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Provincia requerida
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <label for="zip">Distrito</label>
+                                            <select class="custom-select d-block w-100" id="via_dis_dest" required>
+                                                <option selected disabled value="">Seleccione...</option>
+
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Distrito requerido
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="mb-4">
+
+                                    <div class="row">
+                                        <div class="col-md-3 mb-3">
+                                            <label for="cc-expiration">Fecha Termino Viaje</label>
+                                            <input type="date" class="form-control" id="via_fec_term_viaje" onchange="CalcularDiasViaje();" placeholder="" required>
+                                            <div class="invalid-feedback">
+                                                Fecha termino requerida
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <hr class="mb-4">
+                                    <button class="btn btn-primary btn-lg btn-block" id="btn_reg_via">Registrar Solicitud</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <footer class="my-5 pt-5 text-muted text-center text-small">
+                            <p class="mb-1">&copy; 2021-2023 FGB</p>
+                            <ul class="list-inline">
+                            </ul>
+                        </footer>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="clientes" role="tabpanel" aria-labelledby="contact-tab">
+
+
+
+
+                </div>
+
+                <div class="tab-pane fade" id="gastos" role="tabpanel" aria-labelledby="contact-tab">
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="~/Assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" type="text/javascript"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
+
+<script type="text/javascript">
+
+
+
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+   (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+             }
+              form.classList.add('was-validated');
+             }, false);
+        });
+        }, false);
+        })();
+
+    $(document).ready(function () {
+
+      init();
+
+    });
+
+    $('#via_dep_origin').change(function () {
+        var iddepartamento = document.getElementById('via_dep_origin').value;
+        console.log("id departamento " + document.getElementById('via_dep_origin').value);
+        ListarProvincias_origin(iddepartamento);
+    });
+    $('#via_pro_origin').change(function () {
+        var idprovincia = document.getElementById('via_pro_origin').value;
+        console.log("id distrito " + document.getElementById('via_pro_origin').value);
+        ListarDistritos_origin(idprovincia);
+    });
+    $('#via_dep_dest').change(function () {
+        var iddepartamento = document.getElementById('via_dep_dest').value;
+        console.log("id departamento " + document.getElementById('via_dep_dest').value);
+        ListarProvincias_dest(iddepartamento);
+    });
+    $('#via_pro_dest').change(function () {
+        var idprovincia = document.getElementById('via_pro_dest').value;
+        console.log("id distrito " + document.getElementById('via_pro_dest').value);
+        ListarDistritos_dest(idprovincia);
+    });
+
+   function validar_input_ficharegistro() {
+       var nombre = document.getElementById('v_r_nombre').value;
+
+
+        return true;
+    }
+    function init() {
+       console.log("hola");
+       Registrar_Cabecera_Sol();
+       ListarMediosViaje();
+       ListarMotivosViaje();
+       ListarLineasUsuario();
+       InicializarFechas();
+       ListarDepartamentos();
+       ListadoClientes();
+       ListadoRepresentantes();
+
+
+        $("#via_lista_usuarios").select2({
+            // para buscar a partir del 3er digito
+        });
+        $("#via_lin_usr").select2({
+            // para buscar a partir del 3er digito
+        });
+
+       $("#via_dep_origin").select2({
+            // para buscar a partir del 3er digito
+       });
+       $("#via_pro_origin").select2({
+           // para buscar a partir del 3er digito
+       });
+       $("#via_dis_origin").select2({
+            // para buscar a partir del 3er digito
+       });
+       $("#via_dep_dest").select2({
+           //minimumInputLength: 1 // para buscar a partir del 3er digito
+       });
+       $("#via_pro_dest").select2({
+            // para buscar a partir del 3er digito
+       });
+       $("#via_dis_dest").select2({
+           // para buscar a partir del 3er digito
+       });
+
+
+    }
+
+
+    function validarRegistroCabSol() {
+        var res = false;
+
+        var cod_linea = document.getElementById('via_lin_usr').value;
+
+        var fec_solicitud = document.getElementById('via_fecha_solicitud').value;
+        var cod_mot_viaje = document.getElementById('via_mot_viaje').value;
+      //  var monto_solicitado = document.getElementById('via_monto_sol').value;
+        var cod_med_viaje = document.getElementById('via_med_viaje').value;
+        var id_depart_ori = document.getElementById('via_dep_origin').value;
+        var id_prov_ori = document.getElementById('via_pro_origin').value;
+        var id_distri_ori = document.getElementById('via_dis_origin').value;
+        var fecha_origi = document.getElementById('via_fec_hora_origin').value;
+        var id_depart_dest = document.getElementById('via_dep_dest').value;
+        var id_prov_dest = document.getElementById('via_pro_dest').value;
+        var id_distri_dest = document.getElementById('via_dis_dest').value;
+        var fecha_dest = document.getElementById('via_fec_hora_dest').value;
+        var fecha_term_viaje = document.getElementById('via_fec_term_viaje').value;
+     //   var monto_esperado = document.getElementById('via_mont_esperado').value;
+      //  var cant_dias = document.getElementById('via_cant_dias').value;
+
+        if (fecha_term_viaje!=""&& fecha_dest!="" && id_distri_dest!="" && id_prov_dest!="" && id_depart_dest!="" && id_distri_ori!="" && cod_linea != "" && fec_solicitud != "" && cod_mot_viaje != "" && cod_med_viaje != "" && id_depart_ori != "" && id_prov_ori != "" && fecha_origi != "") {
+
+            res = true;
+
+        }
+        else {
+            res = false;
+        }
+
+        return res;
+    }
+
+   function ListadoClientes() {
+
+      // var via_clientes_select = document.getElementById('via_clie_select');
+       // if (via_clientes_select) {
+            $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("ListadoClientesSoftcom", "Viaticos")",
+
+                success: function (data) {
+
+                var cadena = "";
+                if (data.length > 0) {
+                $.each(data, function (k, v) {
+                cadena += "<option value='" + v.ruc + "'>" + v.ruc + " " + v.nombre + "</option>";
+                });
+                } else {
+                cadena += "<option value=''>NO SE ENCONTRARON REGISTROS</option>";
+                }
+
+                $("#via_clie_select").html(cadena);
+                }
+                });
+
+
+                }
+
+
+
+                function ListadoRepresentantes() {
+
+                // var via_clientes_select = document.getElementById('via_clie_select');
+                // if (via_clientes_select) {
+                $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("ListaUsuarios", "Viaticos")",
+
+                success: function (data) {
+                console.log("lista de usuarios");
+                var cadena = "";
+                if (data.length > 0) {
+                $.each(data, function (k, v) {
+                cadena += "<option value='" + v.codigo + "'>" + v.nombre + "</option>";
+                });
+                } else {
+                cadena += "<option value=''>NO SE ENCONTRARON REGISTROS</option>";
+                }
+
+                $("#via_lista_usuarios").html(cadena);
+                }
+                });
+
+
+                }
+
+
+                function ListarMediosViaje() {
+                var select_med_viaje = document.getElementById('via_med_viaje');
+                if (select_med_viaje) {
+                $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("ListadoMediosViaje", "Viaticos")",
+                // url: '/Viaticos/ListadoMediosViaje',
+                //data: "{}",
+                success: function (data) {
+                console.log(data);
+                for (var i = 0; i < data.length; i++) {
+                var option = document.createElement("option"); //Creamos la opcion
+
+                option.value = data[i].v_med_v_id;
+                option.text = data[i].v_med_v_nombre;
+                select_med_viaje.appendChild(option); //Metemos la opción en el select
+                // console.log("OPTION "+option);
+
+                }
+
+                }
+                });
+                }
+                else {
+
+                }
+                }
+                function ListarMotivosViaje() {
+                var select_mot_viaje = document.getElementById('via_mot_viaje');
+                if (select_mot_viaje) {
+                $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("ListadoMotivosViaje", "Viaticos")",
+                // url: '/Viaticos/ListadoMotivosViaje',
+                //data: "{}",
+                success: function (data) {
+                console.log(data);
+                for (var i = 0; i < data.length; i++) {
+                var option = document.createElement("option"); //Creamos la opcion
+
+                option.value = data[i].v_mot_v_id;
+                option.text = data[i].v_mot_v_nombre;
+                select_mot_viaje.appendChild(option); //Metemos la opción en el select
+                // console.log("OPTION "+option);
+
+                }
+
+                }
+                });
+                }
+                else {
+
+                }
+                }
+                function ListarLineasUsuario() {
+                var select_linea_usr= document.getElementById('via_lin_usr');
+                if (select_linea_usr) {
+                $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("ListadoLineasUsuario", "Viaticos")",
+
+                //data: "{}",
+                success: function (data) {
+                console.log(data);
+                for (var i = 0; i < data.length; i++) {
+                var option = document.createElement("option"); //Creamos la opcion
+
+                option.value = data[i].tg_cclave;
+                option.text = data[i].tg_cdescri;
+                select_linea_usr.appendChild(option); //Metemos la opción en el select
+                // console.log("OPTION "+option);
+
+                }
+
+                }
+                });
+                }
+                else {
+
+                }
+                }
+                function InicializarFechas() {
+                let date = new Date();
+                let fechaseteada = new Date(date.getTime() - (date.getTimezoneOffset() * 60000));
+
+                document.getElementById('via_fecha_solicitud').value = fechaseteada.toJSON().slice(0, 10);
+
+                }
+                function ListarDepartamentos() {
+
+                var select_dep_origin = document.getElementById('via_dep_origin');
+                var select_dep_dest = document.getElementById('via_dep_dest');
+
+                $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("ListadoDepartamentos", "Viaticos")",
+
+                //data: "{}",
+                success: function (data) {
+                console.log(data);
+
+                for (var i = 0; i < data.length; i++) {
+                var option_origin = document.createElement("option"); //Creamos la opcion
+                var option_dest = document.createElement("option"); //Creamos la opcion
+                option_origin.value = data[i].idDepartamento;
+                option_origin.text = data[i].descripcion;
+                option_dest.value = data[i].idDepartamento;
+                option_dest.text = data[i].descripcion;
+                select_dep_origin.appendChild(option_origin); //Metemos la opción en el select
+                select_dep_dest.appendChild(option_dest);
+                }
+                }
+                });
+
+
+                }
+                function ListarProvincias_origin(id_departamento) {
+                var select_prov_origin = document.getElementById('via_pro_origin');
+                //inicie el select vacio
+                for (let i = select_prov_origin.options.length; i >= 0; i--) {
+                select_prov_origin.remove(i);
+                }
+
+                if (select_prov_origin) {
+                $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("ListadoProvincias", "Viaticos")",
+                data: "{ 'id_departamento': '" + id_departamento + "'}",
+                success: function (data) {
+                console.log(data);
+                var option = document.createElement("option"); //Creamos la opcion
+                option.value = "0";
+                option.text = "Seleccione";
+                select_prov_origin.appendChild(option);
+                for (var i = 0; i < data.length; i++) {
+                var option = document.createElement("option"); //Creamos la opcion
+
+                option.value = data[i].idProvincia;
+                option.text = data[i].descripcion;
+                select_prov_origin.appendChild(option); //Metemos la opción en el select
+
+                }
+
+                }
+                });
+                }
+                else {
+
+                }
+                }
+                function ListarDistritos_origin(id_provincia) {
+                var select_dis_origin = document.getElementById('via_dis_origin');
+                //inicie el select vacio
+                for (let i = select_dis_origin.options.length; i >= 0; i--) {
+                select_dis_origin.remove(i);
+                }
+                if (select_dis_origin) {
+                $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("ListadoDistritos", "Viaticos")",
+                data: "{'id_provincia': '" + id_provincia + "'}",
+                success: function (data) {
+                console.log(data);
+                var option = document.createElement("option"); //Creamos la opcion
+                option.value = "";
+                option.text = "Seleccione";
+                select_dis_origin.appendChild(option);
+                for (var i = 0; i < data.length; i++) {
+                var option = document.createElement("option"); //Creamos la opcion
+
+                option.value = data[i].idDistrito;
+                option.text = data[i].descripcion;
+                select_dis_origin.appendChild(option); //Metemos la opción en el select
+
+
+                }
+
+                }
+                });
+                }
+                else {
+
+                }
+                }
+                function ListarProvincias_dest(id_departamento) {
+                var select_prov_dest = document.getElementById('via_pro_dest');
+                //inicie el select vacio
+                for (let i = select_prov_dest.options.length; i >= 0; i--) {
+                select_prov_dest.remove(i);
+                }
+
+                if (select_prov_dest) {
+                $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("ListadoProvincias", "Viaticos")",
+                data: "{ 'id_departamento': '" + id_departamento + "'}",
+                success: function (data) {
+                console.log(data);
+                var option = document.createElement("option"); //Creamos la opcion
+                option.value = "0";
+                option.text = "Seleccione";
+                select_prov_dest.appendChild(option);
+                for (var i = 0; i < data.length; i++) {
+                var option = document.createElement("option"); //Creamos la opcion
+
+                option.value = data[i].idProvincia;
+                option.text = data[i].descripcion;
+                select_prov_dest.appendChild(option); //Metemos la opción en el select
+
+                }
+
+                }
+                });
+                }
+                else {
+
+                }
+                }
+                function ListarDistritos_dest(id_provincia) {
+                var select_dis_dest = document.getElementById('via_dis_dest');
+                //inicie el select vacio
+                for (let i = select_dis_dest.options.length; i >= 0; i--) {
+                select_dis_dest.remove(i);
+                }
+                if (select_dis_dest) {
+                $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("ListadoDistritos", "Viaticos")",
+                data: "{'id_provincia': '" + id_provincia + "'}",
+                success: function (data) {
+                console.log(data);
+                var option = document.createElement("option"); //Creamos la opcion
+                option.value = "";
+                option.text = "Seleccione";
+                select_dis_dest.appendChild(option);
+
+                for (var i = 0; i < data.length; i++) {
+                var option = document.createElement("option"); //Creamos la opcion
+
+                option.value = data[i].idDistrito;
+                option.text = data[i].descripcion;
+                select_dis_dest.appendChild(option); //Metemos la opción en el select
+
+
+                }
+
+                }
+                });
+                }
+                else {
+
+                }
+                }
+
+                function CalcularDiasViaje() {
+                var fecha_origi = document.getElementById('via_fec_hora_origin').value;
+                console.log(fecha_origi);
+                var fecha_term_viaje = document.getElementById('via_fec_term_viaje').value;
+                console.log(fecha_term_viaje);
+                }
+
+                function ViaticoCreado(usr_creacion) {
+                setTimeout(2000);
+                location.href = '@Url.Action("ViaticoCreado", "Viaticos")?usr_creacion=' + usr_creacion;
+
+
+
+                }
+
+                function Registrar_Cabecera_Sol() {
+
+                $('#btn_reg_via').click(function () {
+
+
+                var id_usr_creacion = document.getElementById('via_lista_usuarios').value;
+                //alert(id_usr_creacion);
+                //console.log(cod_linea);
+                var cod_linea = document.getElementById('via_lin_usr').value;
+
+                var fec_solicitud = document.getElementById('via_fecha_solicitud').value;
+                var cod_mot_viaje = document.getElementById('via_mot_viaje').value;
+                // var monto_solicitado = document.getElementById('via_monto_sol').value;
+                var cod_med_viaje = document.getElementById('via_med_viaje').value;
+                var id_depart_ori = document.getElementById('via_dep_origin').value;
+                var id_prov_ori = document.getElementById('via_pro_origin').value;
+                var id_distri_ori = document.getElementById('via_dis_origin').value;
+                var fecha_origi = document.getElementById('via_fec_hora_origin').value;
+                var id_depart_dest = document.getElementById('via_dep_dest').value;
+                var id_prov_dest = document.getElementById('via_pro_dest').value;
+                var id_distri_dest = document.getElementById('via_dis_dest').value;
+                var fecha_dest = document.getElementById('via_fec_hora_dest').value;
+                var fecha_term_viaje = document.getElementById('via_fec_term_viaje').value;
+                //  var monto_esperado = document.getElementById('via_mont_esperado').value;
+                //   var cant_dias = document.getElementById('via_cant_dias').value;
+
+                console.log("VALIDAR DORM " + validarRegistroCabSol());
+                if (validarRegistroCabSol() === false) {
+
+                swal.fire({
+                position: 'center',
+                icon: 'warning',
+                title: 'Datos Incompletos',
+                showConfirmButton: false,
+                timer: 1500
+                });
+                }
+                else {
+                $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+
+                url: "@Url.Action("Registrar_VIA_CAB_SOL_2", "Viaticos")",
+                data: "{'id_usr_creacion': '" + id_usr_creacion + "','idlinea': '" + cod_linea + "','fechasolicitud': '" + fec_solicitud + "','cod_mot_viaje': '" + cod_mot_viaje + "','monto_solicitado': '" + 0 + "','cod_med_viaje': '" + cod_med_viaje + "','id_depart_ori': '" + id_depart_ori + "','id_prov_ori': '" + id_prov_ori + "','id_distri_ori': '" + id_distri_ori + "','fecha_origi': '" + fecha_origi + "','id_depart_dest': '" + id_depart_dest + "','id_prov_dest': '" + id_prov_dest + "','id_distri_dest': '" + id_distri_dest + "','fecha_dest': '" + fecha_dest + "','fecha_term_viaje': '" + fecha_term_viaje + "','monto_esperado': '" + 0 + "','cant_dias': '" + 0 + "'}",
+                success: function (data) {
+
+                if (data === true) {
+                ViaticoCreado(id_usr_creacion);
+                }
+                }
+                });
+                }
+
+
+
+                });
+
+                }
+
+                function sleep(milliseconds) {
+
+                const date = Date.now();
+                let currentDate = null;
+                do {
+
+                currentDate = Date.now();
+                } while (currentDate - date < milliseconds);
+                }
+
+</script>
+
+
+
+
+
+

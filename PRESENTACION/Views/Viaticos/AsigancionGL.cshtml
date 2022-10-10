@@ -1,0 +1,253 @@
+﻿@using ENTIDAD.VIATICOS
+@{
+    ViewBag.Title = "AsigancionGL";
+    Layout = "~/Views/Layout/_LayoutViatico.cshtml";
+}
+
+
+<main role="main">
+    <div class="jumbotron">
+        <div class="container">
+
+            <div class="row">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active col-12 col-sm-12" id="home-tab" data-toggle="tab" href="#solicitud" role="tab" aria-controls="home" aria-selected="true">Cabecera Solicitud</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        @*<a class="nav-link col-12 col-sm-12" id="profile-tab" data-toggle="tab" href="#clientes" role="tab" aria-controls="profile" aria-selected="false">Detalle Clientes</a>*@
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        @*<a class="nav-link col-12 col-sm-12" id="profile-tab" data-toggle="tab" href="#gastos" role="tab" aria-controls="profile" aria-selected="false">Detalle Gastos</a>*@
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content" id="myTabContent">
+
+                <div class="tab-pane fade show active" id="solicitud" role="tabpanel" aria-labelledby="home-tab">
+
+                    <div class="container">
+                        <div class="p-2"></div>
+                        <div class="row">
+
+
+                            <div class="col-md-12 order-md-1">
+                                <h4 class="mb-3"></h4>
+                                @*<form class="needs-validation" novalidate>*@
+
+
+                                    <hr class="mb-4">
+                                    <h6>Origen</h6>
+
+                                    <div class="row">
+
+
+                                        <div class="col-md-3 mb-3">
+                                            <label for="country">Gerente Linea</label>
+                                            <select class="custom-select d-block w-100" id="via_gerente_linea" required>
+                                                <option selected disabled value="">Seleccione...</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Gerente Linea
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <label for="state">Linea</label>
+                                            <select class="custom-select d-block w-100" id="via_lin_usr" required>
+                                                <option selected disabled value="">Seleccione...</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Linea
+                                            </div>
+                                        </div>
+                                       
+                                        @*<div class="col-md-3 mb-3">
+                                            <label for="zip">Detalle Linea</label>
+                                            <select class="custom-select d-block w-100" id="via_dis_origin" required>
+
+                                                <option selected disabled value="">Seleccione...</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Detalle Linea
+                                            </div>
+                                        </div>*@
+                                        
+                                        <div class="col-md-3 mb-3">
+                                            <br />
+                                            <button class="btn btn-primary btn-lg btn-block" id="btn_reg_via" >Asignar Linea</button>
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                @*</form>*@
+                            </div>
+                        </div>
+
+                        <footer class="my-5 pt-5 text-muted text-center text-small">
+                            <p class="mb-1">&copy; 2021-2023 FGB</p>
+                            <ul class="list-inline">
+                            </ul>
+                        </footer>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="~/Assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" type="text/javascript"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<script type="text/javascript">
+
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+
+    $(document).ready(function () {
+
+        init();
+
+    });
+
+    function init() {
+        ListarLineasUsuario();
+        ListadogerentesLinea();
+        registro();
+    }
+
+    function ListadogerentesLinea() {
+
+        var select_gerente_linea = document.getElementById('via_gerente_linea');
+        if (select_gerente_linea) {
+            $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                 url: "@Url.Action("ListadoGerenteLineas", "Viaticos")",
+
+                //data: "{}",
+                success: function (data) {
+                    console.log(data);
+                    for (var i = 0; i < data.length; i++) {
+                        var option = document.createElement("option"); //Creamos la opcion
+
+                        option.value = data[i].usr_id;
+                        option.text = data[i].usr_nombre;
+                        select_gerente_linea.appendChild(option); //Metemos la opción en el select
+                        // console.log("OPTION "+option);
+
+                    }
+
+                }
+            });
+        }
+        else {
+
+        }
+
+    }
+
+    function ListarLineasUsuario() {
+        var select_linea_usr= document.getElementById('via_lin_usr');
+         if (select_linea_usr) {
+            $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                 url: "@Url.Action("ListadoLineasUsuario", "Viaticos")",
+
+                //data: "{}",
+                success: function (data) {
+                    console.log(data);
+                    for (var i = 0; i < data.length; i++) {
+                        var option = document.createElement("option"); //Creamos la opcion
+
+                        option.value = data[i].tg_cclave;
+                        option.text = data[i].tg_cdescri;
+                        select_linea_usr.appendChild(option); //Metemos la opción en el select
+                        // console.log("OPTION "+option);
+
+                    }
+
+                }
+            });
+        }
+        else {
+
+        }
+    }
+
+
+    function registro() {
+        var id_linea;
+        var id_gerente;
+        $('#via_lin_usr').change(function () {
+             id_linea = document.getElementById("via_lin_usr").value;
+        });
+
+        $('#via_gerente_linea').change(function () {
+             id_gerente = document.getElementById("via_gerente_linea").value;
+        });
+
+        //var id_linea = document.getElementById("via_lin_usr").value;
+        //var id_gerente = document.getElementById("via_gerente_linea").value;
+
+
+        $('#btn_reg_via').click(function () {
+
+            $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+
+                 url: "@Url.Action("Asignar_Linea", "Viaticos")",
+                data: "{ 'id_linea': '" + id_linea + "','id_gerente': '" + id_gerente + "'}",
+                       success: function (data) {
+                           console.log(data);
+                           if (data === true) {
+                              // ViaticoCreado();
+                           }
+                   }
+            });
+        });
+
+    }
+</script>
+

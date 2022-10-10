@@ -1,0 +1,70 @@
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\LN\bin\Release\LN.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\LN\bin\Release\LN.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\LN\bin\Release\DAO.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\LN\bin\Release\ENTIDAD.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\LN\bin\Release\DAO.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\LN\bin\Release\ENTIDAD.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\LN\obj\Release\LN.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\LN\obj\Release\LN.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\LN\obj\Release\LN.csproj.CopyComplete
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\LN\obj\Release\LN.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\LN\obj\Release\LN.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\LN\bin\Release\LN.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\LN\bin\Release\LN.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\LN\bin\Release\DAO.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\LN\bin\Release\ENTIDAD.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\LN\bin\Release\DAO.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\LN\bin\Release\ENTIDAD.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\LN\obj\Release\LN.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\LN\obj\Release\LN.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\LN\obj\Release\LN.csproj.CopyComplete
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\LN\obj\Release\LN.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\LN\obj\Release\LN.pdb
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\LN\bin\Release\LN.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\LN\bin\Release\LN.pdb
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\LN\bin\Release\DAO.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\LN\bin\Release\ENTIDAD.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\LN\bin\Release\DAO.pdb
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\LN\bin\Release\ENTIDAD.pdb
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\LN\obj\Release\LN.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\LN\obj\Release\LN.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\LN\obj\Release\LN.csproj.CopyComplete
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\LN\obj\Release\LN.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\LN\obj\Release\LN.pdb
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\LN\bin\Release\LN.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\LN\bin\Release\LN.pdb
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\LN\bin\Release\DAO.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\LN\bin\Release\ENTIDAD.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\LN\bin\Release\DAO.pdb
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\LN\bin\Release\ENTIDAD.pdb
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\LN\obj\Release\LN.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\LN\obj\Release\LN.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\LN\obj\Release\LN.csproj.CopyComplete
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\LN\obj\Release\LN.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\LN\obj\Release\LN.pdb
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\LN\bin\Release\LN.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\LN\bin\Release\LN.pdb
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\LN\bin\Release\DAO.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\LN\bin\Release\ENTIDAD.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\LN\bin\Release\Newtonsoft.Json.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\LN\bin\Release\DAO.pdb
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\LN\bin\Release\ENTIDAD.pdb
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\LN\bin\Release\Newtonsoft.Json.xml
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\LN\obj\Release\LN.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\LN\obj\Release\LN.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\LN\obj\Release\LN.csproj.CopyComplete
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\LN\obj\Release\LN.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\LN\obj\Release\LN.pdb
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\LN\bin\Release\LN.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\LN\bin\Release\LN.pdb
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\LN\bin\Release\DAO.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\LN\bin\Release\ENTIDAD.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\LN\bin\Release\Newtonsoft.Json.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\LN\bin\Release\DAO.pdb
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\LN\bin\Release\ENTIDAD.pdb
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\LN\bin\Release\Newtonsoft.Json.xml
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\LN\obj\Release\LN.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\LN\obj\Release\LN.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\LN\obj\Release\LN.csproj.CopyComplete
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\LN\obj\Release\LN.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\LN\obj\Release\LN.pdb

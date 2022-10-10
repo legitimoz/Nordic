@@ -1,0 +1,1111 @@
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\PRESENTACION.dll.config
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\PRESENTACION.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\PRESENTACION.pdb
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\csc.exe
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\csc.exe.config
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\csc.rsp
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\csi.exe
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\csi.exe.config
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\csi.rsp
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.AppContext.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.Console.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.IO.Compression.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.Net.Http.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.Net.Sockets.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.ValueTuple.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\vbc.exe
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\vbc.exe.config
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\vbc.rsp
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\VBCSCompiler.exe
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\ENTIDAD.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\LN.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\System.Web.Helpers.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\System.Web.Mvc.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\System.Web.Razor.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\System.Web.Webpages.Deployment.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\System.Web.Webpages.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\System.Web.Webpages.Razor.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\DAO.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\ENTIDAD.pdb
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\LN.pdb
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\System.Web.Razor.xml
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\System.Web.Webpages.xml
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\System.Web.Webpages.Deployment.xml
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\System.Web.Webpages.Razor.xml
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\System.Web.Helpers.xml
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\System.Web.Mvc.xml
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\DAO.pdb
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\es\System.Web.Razor.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\es\System.Web.Webpages.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\es\System.Web.Helpers.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\bin\es\System.Web.Mvc.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\obj\Debug\PRESENTACION.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\obj\Debug\PRESENTACION.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\obj\Debug\PRESENTACION.csproj.CopyComplete
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\obj\Debug\PRESENTACION.dll
+C:\Users\jose.gutierrez\source\repos\BASE\PRESENTACION\obj\Debug\PRESENTACION.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\PRESENTACION.dll.config
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\PRESENTACION.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\PRESENTACION.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\csc.exe
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\csc.exe.config
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\csc.rsp
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\csi.exe
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\csi.exe.config
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\csi.rsp
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.AppContext.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.Console.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.IO.Compression.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.Net.Http.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.Net.Sockets.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.ValueTuple.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\vbc.exe
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\vbc.exe.config
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\vbc.rsp
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\VBCSCompiler.exe
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\ENTIDAD.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\LN.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\System.Web.Helpers.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\System.Web.Mvc.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\System.Web.Razor.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\System.Web.Webpages.Deployment.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\System.Web.Webpages.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\System.Web.Webpages.Razor.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\DAO.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\ENTIDAD.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\LN.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\System.Web.Razor.xml
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\System.Web.Webpages.xml
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\System.Web.Webpages.Deployment.xml
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\System.Web.Webpages.Razor.xml
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\System.Web.Helpers.xml
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\System.Web.Mvc.xml
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\DAO.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\es\System.Web.Razor.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\es\System.Web.Webpages.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\es\System.Web.Helpers.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\bin\es\System.Web.Mvc.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\obj\Debug\PRESENTACION.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\obj\Debug\PRESENTACION.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\obj\Debug\PRESENTACION.csproj.CopyComplete
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\obj\Debug\PRESENTACION.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\PRESENTACION\obj\Debug\PRESENTACION.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\PRESENTACION.dll.config
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\PRESENTACION.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\PRESENTACION.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\csc.exe
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\csc.exe.config
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\csc.rsp
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\csi.exe
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\csi.exe.config
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\csi.rsp
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.AppContext.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.Console.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.IO.Compression.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.Net.Http.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.Net.Sockets.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.ValueTuple.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\vbc.exe
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\vbc.exe.config
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\vbc.rsp
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\VBCSCompiler.exe
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\ENTIDAD.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\LN.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\System.Web.Helpers.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\System.Web.Mvc.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\System.Web.Razor.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\System.Web.Webpages.Deployment.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\System.Web.Webpages.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\System.Web.Webpages.Razor.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\DAO.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\ENTIDAD.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\LN.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\System.Web.Razor.xml
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\System.Web.Webpages.xml
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\System.Web.Webpages.Deployment.xml
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\System.Web.Webpages.Razor.xml
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\System.Web.Helpers.xml
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\System.Web.Mvc.xml
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\DAO.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\es\System.Web.Razor.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\es\System.Web.Webpages.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\es\System.Web.Helpers.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\bin\es\System.Web.Mvc.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\obj\Debug\PRESENTACION.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\obj\Debug\PRESENTACION.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\obj\Debug\PRESENTACION.csproj.CopyComplete
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\obj\Debug\PRESENTACION.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\PRESENTACION\obj\Debug\PRESENTACION.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\PRESENTACION.dll.config
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\PRESENTACION.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\PRESENTACION.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\csc.exe
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\csc.exe.config
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\csc.rsp
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\csi.exe
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\csi.exe.config
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\csi.rsp
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.AppContext.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.Console.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.IO.Compression.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.Net.Http.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.Net.Sockets.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.ValueTuple.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\vbc.exe
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\vbc.exe.config
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\vbc.rsp
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\VBCSCompiler.exe
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\ENTIDAD.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\LN.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\System.Web.Helpers.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\System.Web.Mvc.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\System.Web.Razor.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\System.Web.Webpages.Deployment.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\System.Web.Webpages.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\System.Web.Webpages.Razor.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\DAO.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\ENTIDAD.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\LN.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\System.Web.Razor.xml
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\System.Web.Webpages.xml
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\System.Web.Webpages.Deployment.xml
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\System.Web.Webpages.Razor.xml
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\System.Web.Helpers.xml
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\System.Web.Mvc.xml
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\DAO.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\es\System.Web.Razor.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\es\System.Web.Webpages.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\es\System.Web.Helpers.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\bin\es\System.Web.Mvc.resources.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\obj\Debug\PRESENTACION.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\obj\Debug\PRESENTACION.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\obj\Debug\PRESENTACION.csproj.CopyComplete
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\obj\Debug\PRESENTACION.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\PRESENTACION\obj\Debug\PRESENTACION.pdb
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\PRESENTACION.dll.config
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\PRESENTACION.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\PRESENTACION.pdb
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csc.exe
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csc.exe.config
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csc.rsp
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csi.exe
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csi.exe.config
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csi.rsp
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.AppContext.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Console.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.IO.Compression.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Net.Http.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Net.Sockets.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.ValueTuple.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\vbc.exe
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\vbc.exe.config
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\vbc.rsp
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\VBCSCompiler.exe
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\ENTIDAD.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\LN.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Helpers.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Mvc.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Razor.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Deployment.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Razor.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\DAO.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\ENTIDAD.pdb
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\LN.pdb
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Razor.xml
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.xml
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Deployment.xml
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Razor.xml
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Helpers.xml
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Mvc.xml
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\DAO.pdb
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Razor.resources.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.resources.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Helpers.resources.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Mvc.resources.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.CopyComplete
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.pdb
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\PRESENTACION.dll.config
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\PRESENTACION.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\PRESENTACION.pdb
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csc.exe
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csc.exe.config
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csc.rsp
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csi.exe
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csi.exe.config
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csi.rsp
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.AppContext.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Console.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.IO.Compression.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Net.Http.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.ValueTuple.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\vbc.exe
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\vbc.exe.config
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\vbc.rsp
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\VBCSCompiler.exe
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\ENTIDAD.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\LN.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Helpers.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Mvc.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Razor.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Razor.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\DAO.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\ENTIDAD.pdb
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\LN.pdb
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Razor.xml
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.xml
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Razor.xml
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Helpers.xml
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Mvc.xml
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\DAO.pdb
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Razor.resources.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.resources.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.AssemblyReference.cache
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.CoreCompileInputs.cache
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.CopyComplete
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.pdb
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\PRESENTACION.dll.config
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\PRESENTACION.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\PRESENTACION.pdb
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csc.exe
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csc.exe.config
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csc.rsp
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csi.exe
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csi.exe.config
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csi.rsp
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.AppContext.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Console.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.IO.Compression.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Net.Http.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Net.Sockets.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.ValueTuple.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\vbc.exe
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\vbc.exe.config
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\vbc.rsp
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\VBCSCompiler.exe
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\ENTIDAD.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\LN.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Helpers.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Mvc.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Razor.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Deployment.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Razor.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\DAO.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\ENTIDAD.pdb
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\LN.pdb
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Razor.xml
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.xml
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Deployment.xml
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Razor.xml
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Helpers.xml
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Mvc.xml
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\DAO.pdb
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Razor.resources.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.resources.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Helpers.resources.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Mvc.resources.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.CopyComplete
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.pdb
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\PRESENTACION.dll.config
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\PRESENTACION.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\PRESENTACION.pdb
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csc.exe
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csc.exe.config
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csc.rsp
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csi.exe
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csi.exe.config
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\csi.rsp
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.AppContext.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Console.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.IO.Compression.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Net.Http.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Net.Sockets.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.ValueTuple.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\vbc.exe
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\vbc.exe.config
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\vbc.rsp
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\VBCSCompiler.exe
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\ENTIDAD.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\LN.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Helpers.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Mvc.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Razor.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Deployment.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Razor.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\DAO.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\ENTIDAD.pdb
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\LN.pdb
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Razor.xml
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.xml
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Deployment.xml
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Razor.xml
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Helpers.xml
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\System.Web.Mvc.xml
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\DAO.pdb
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Razor.resources.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.resources.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Helpers.resources.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\bin\es\System.Web.Mvc.resources.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.CopyComplete
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.pdb
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\PRESENTACION.dll.config
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\PRESENTACION.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\PRESENTACION.pdb
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\csc.exe
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\csc.exe.config
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\csc.rsp
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\csi.exe
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\csi.exe.config
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\csi.rsp
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.AppContext.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Console.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.IO.Compression.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Net.Http.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.ValueTuple.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\vbc.exe
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\vbc.exe.config
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\vbc.rsp
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\VBCSCompiler.exe
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\ENTIDAD.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\LN.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Helpers.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Mvc.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Razor.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Webpages.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Razor.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\DAO.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\ENTIDAD.pdb
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\LN.pdb
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Razor.xml
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Webpages.xml
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Razor.xml
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Helpers.xml
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Mvc.xml
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\DAO.pdb
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\es\System.Web.Razor.resources.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.resources.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.AssemblyReference.cache
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.CoreCompileInputs.cache
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.CopyComplete
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.pdb
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\csc.exe
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\PRESENTACION.dll.config
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\PRESENTACION.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\PRESENTACION.pdb
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\csc.exe.config
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\csc.rsp
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\csi.exe
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\csi.exe.config
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\csi.rsp
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.AppContext.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Console.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.IO.Compression.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Net.Http.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Net.Sockets.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.ValueTuple.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\vbc.exe
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\vbc.exe.config
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\vbc.rsp
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\VBCSCompiler.exe
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\ENTIDAD.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\LN.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\SunatMVB.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Helpers.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Mvc.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Razor.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Deployment.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Webpages.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Razor.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\DAO.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\ENTIDAD.pdb
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\LN.pdb
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Razor.xml
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Webpages.xml
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Deployment.xml
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Razor.xml
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Helpers.xml
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\System.Web.Mvc.xml
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\DAO.pdb
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\es\System.Web.Razor.resources.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.resources.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\es\System.Web.Helpers.resources.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\es\System.Web.Mvc.resources.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.CopyComplete
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.pdb
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\Newtonsoft.Json.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\PRESENTACION\bin\Newtonsoft.Json.xml
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\PRESENTACION.dll.config
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\PRESENTACION.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\PRESENTACION.pdb
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\csc.exe
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\csc.exe.config
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\csc.rsp
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\csi.exe
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\csi.exe.config
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\csi.rsp
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.AppContext.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Console.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.IO.Compression.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Net.Http.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Net.Sockets.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.ValueTuple.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\vbc.exe
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\vbc.exe.config
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\vbc.rsp
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\VBCSCompiler.exe
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\ENTIDAD.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\LN.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\Newtonsoft.Json.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\SunatMVB.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Helpers.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Mvc.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Razor.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Deployment.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Webpages.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Razor.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\DAO.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\ENTIDAD.pdb
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\LN.pdb
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\Newtonsoft.Json.xml
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Razor.xml
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Webpages.xml
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Deployment.xml
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Razor.xml
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Helpers.xml
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Mvc.xml
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\DAO.pdb
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\es\System.Web.Razor.resources.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.resources.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\es\System.Web.Helpers.resources.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\bin\es\System.Web.Mvc.resources.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.AssemblyReference.cache
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.CoreCompileInputs.cache
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.CopyComplete
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.pdb
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\PRESENTACION.dll.config
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\PRESENTACION.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\PRESENTACION.pdb
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\csc.exe
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\csc.exe.config
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\csc.rsp
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\csi.exe
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\csi.exe.config
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\csi.rsp
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.AppContext.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Console.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.IO.Compression.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Net.Http.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Net.Sockets.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.ValueTuple.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\vbc.exe
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\vbc.exe.config
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\vbc.rsp
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\VBCSCompiler.exe
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\ENTIDAD.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\LN.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\Newtonsoft.Json.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\SunatMVB.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Helpers.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Mvc.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Razor.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Deployment.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Webpages.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Razor.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\DAO.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\ENTIDAD.pdb
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\LN.pdb
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\Newtonsoft.Json.xml
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Razor.xml
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Webpages.xml
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Deployment.xml
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Razor.xml
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Helpers.xml
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\System.Web.Mvc.xml
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\DAO.pdb
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\es\System.Web.Razor.resources.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.resources.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\es\System.Web.Helpers.resources.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\bin\es\System.Web.Mvc.resources.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.CopyComplete
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.pdb
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\PRESENTACION.dll.config
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\PRESENTACION.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\PRESENTACION.pdb
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\csc.exe
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\csc.exe.config
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\csc.rsp
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\csi.exe
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\csi.exe.config
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\csi.rsp
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.AppContext.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.Console.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.IO.Compression.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.Net.Http.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.Net.Sockets.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.ValueTuple.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\vbc.exe
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\vbc.exe.config
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\vbc.rsp
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\VBCSCompiler.exe
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\ClosedXML.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\DocumentFormat.OpenXml.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\ENTIDAD.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\ExcelNumberFormat.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\LN.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\Newtonsoft.Json.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\SunatMVB.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\System.Web.Helpers.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\System.Web.Mvc.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\System.Web.Razor.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Deployment.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\System.Web.Webpages.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Razor.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\DAO.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\ENTIDAD.pdb
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\LN.pdb
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\ClosedXML.pdb
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\ClosedXML.xml
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\DocumentFormat.OpenXml.xml
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\ExcelNumberFormat.xml
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\Newtonsoft.Json.xml
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\System.Web.Razor.xml
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\System.Web.Webpages.xml
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Deployment.xml
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\System.Web.Webpages.Razor.xml
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\System.Web.Helpers.xml
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\System.Web.Mvc.xml
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\DAO.pdb
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\es\System.Web.Razor.resources.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.resources.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\es\System.Web.Helpers.resources.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\bin\es\System.Web.Mvc.resources.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.csproj.CopyComplete
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\PRESENTACION\obj\Debug\PRESENTACION.pdb

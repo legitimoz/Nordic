@@ -1,0 +1,27 @@
+[
+  {
+    "razonsocial": "EMPRESA A ",
+    "codigo": "206012121233",
+    "direccion": " CALLE ARICA N 359 - ICA - NAZCA - NAZCA",
+    "formadepago": "CREDITO A 30 DIAS"
+  },
+  {
+    "razonsocial": "EMPRESA B ",
+    "codigo": "1034567890",
+    "direccion": " CALLE ARICA N 359 - ICA - NAZCA - NAZCA",
+    "formadepago": "CONTADO"
+  },
+  {
+    "razonsocial": "EMPRESA C ",
+    "codigo": "2034567890",
+    "direccion": " CALLE ARICA N 359 - ICA - NAZCA - NAZCA",
+    "formadepago": "CREDITO 30 DIAS"
+  },
+  {
+    "razonsocial": "EMPRESA D ",
+    "codigo": "2034567120",
+    "direccion": " CALLE ARICA N 359 - ICA - NAZCA - NAZCA",
+    "formadepago": "CREDITO 30 DIAS"
+  }
+
+]

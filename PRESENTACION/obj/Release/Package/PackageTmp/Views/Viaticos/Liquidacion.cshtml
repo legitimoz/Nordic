@@ -1,0 +1,678 @@
+﻿@{
+    ViewBag.Title = "Liquidacion";
+    Layout = "~/Views/Layout/_LayoutViatico.cshtml";
+}
+
+<h2>Liquidacion</h2>
+
+<!--Registro Clientes-->
+<h4 class="mb-3"></h4>
+<div class="form-group row">
+    <label for="via_clie_select" class="col-2 col-sm-1 col-form-label">Numero Solicitud #50 </label>
+    <div class="col-7 col-sm-7">
+        <input disabled id="codigo_via_liquidacion" value="@ViewBag.Cod">
+    </div>
+</div>
+
+
+<div class="row">
+
+
+    <div class="col-md-12 order-md-1">
+        <h4 class="mb-3"></h4>
+        @*<form class="needs-validation" novalidate>*@
+
+
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="country">Fecha Comprobante</label>
+                <input type="date" class="form-control" id="liq_fec_com" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                    Fecha Solicitud requerida
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="state">Concepto Gasto</label>
+                <select class="custom-select d-block w-100" id="liq_con_gasto" required>
+                </select>
+                <div class="invalid-feedback">
+                    Motivo viaje requerido
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="username">Medio de Viaje</label>
+                <div class="input-group">
+
+                    <select class="custom-select d-block w-100" id="liq_med_via" required>
+                    </select>
+                    <div class="invalid-feedback" style="width: 100%;">
+                        Medio de Viaje Requerido
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <hr class="mb-4">
+
+        <h6>Datos Empresa </h6>
+        <div class="row">
+            <div class="col-md-2 mb-2">
+                <label for="country">Tipo Comprobante</label>
+                <select id="liq_tipo_comprobante" class="col-md-12 form-control">
+                    <option value="BL">Boleta</option>
+                    <option selected value="FT">Factura</option>
+                    <option value="DV">Devolucion</option>
+                    <option value="MNF">Movilidad No Facturable</option>
+                </select>
+                
+            </div>
+            <div class="col-md-1 mb-1">
+                <label for="country">#Serie</label>
+                <input type="text" class="form-control" id="liq_serie" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                    Fecha y Hora requerido
+                </div>
+            </div>
+            <div class="col-md-2 mb-2">
+                <label for="country"># Comprobante</label>
+                <input type="text" class="form-control" id="liq_num_com" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                    Fecha y Hora requerido
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="country">RUC</label>
+                <input type="text" class="form-control" name="liq_ruc_pro" id="liq_ruc_pro" placeholder="" value="" onkeypress="return valideKey(event);" maxlength="11" required>
+                <button class="btn btn-primary btn-lg btn-block" onclick="validarRuc();" id="liq_ruc_pro_btn">Validar RUC</button>
+
+                <div class="invalid-feedback">
+                    Razon Social
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+
+                <label for="country">Razon Social</label>
+                <input disabled class="form-control" id="razon_social_liq" placeholder="" value="" required>
+
+
+                <div class="invalid-feedback">
+                   Razon Social
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="zip">Importe Total </label>
+                <input class="form-control"  id="liq_imp_tot" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                    Importe
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3 offset-md-5">
+                <label for="zip">Saldo a Liquidar</label>
+                <input class="form-control" style="font-size:20px;" id="saldo_liquidacion" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                    Importe
+                </div>
+            </div>
+        </div>
+        <hr class="mb-4">
+        <h6>Documentos Fisicos </h6>
+        <div class="row">
+
+            <div class="input-group col-md-5 mb-5">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="foto_liquidacion">
+
+                    <label class="custom-file-label" for="foto_liquidacioa" aria-describedby="inputGroupFileAddon02">Selecciones Comprobante Fisico</label>
+                </div>
+                <div class="input-group-append">
+                    <span class="input-group-text" id="foto_liquidaciom">Adjuntar</span>
+                </div>
+                <div class="invalid-feedback">
+                    Fecha y Hora requerido
+                </div>
+
+                <input type="hidden" id="foto_liquidacion_ninja">
+            </div>
+
+
+        </div>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" id="liq_btn_reg">Registrar Liquidacion</button>
+        </form>
+    </div>
+</div>
+
+
+
+<div class="table-responsive">
+    <table id="mytable" class="table table-sm table-hover">
+        <thead>
+            <tr>
+
+                <th scope="col">Fecha</th>
+                <th scope="col">Concepto</th>
+                <th scope="col">Nº Comprobante</th>
+                <th scope="col">Tipo Comprobante</th>
+                <th scope="col">Nº Serie</th>
+                <th scope="col">RUC</th>
+                <th scope="col">Razon Social</th>
+                <th scope="col">Medio</th>
+                <th scope="col">importe</th>
+                <th scope="col">Documento</th>
+
+            </tr>
+        </thead>
+
+        <tbody id="tabla_det_gastos">
+        </tbody>
+
+    </table>
+</div>
+
+<div class="modal fade" id="exampleModalCenter_ad" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Agregar archivos adjuntos</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+
+                <form action="/" method="post" enctype="multipart/form-data">
+
+
+
+                    <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Adjunto</label>
+                    <div class="col-9 col-sm-8">
+                        <input type="hidden" id="codigocabecera_adjunto">
+                        <div class="custom-file ">
+                            <input type="file" name="txtAdjunto_listar_ctz_ven" class="custom-file-input" id="customFileLang" lang="es" multiple>
+                            <input type="hidden" id="imgNinja">
+                            <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
+                        </div>
+                    </div>
+
+
+                    <div class="card-group">
+                        <div class="card">
+                            <div id="listadeimagenes"></div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" id="subir_archivos_pdf" class="btn btn-primary">Guardar Cambios</button>
+            </div>
+
+         
+        </div>
+    </div>
+</div>
+
+<!---->
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="~/Assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" type="text/javascript"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script type="text/javascript">
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+
+
+    $(document).ready(function () {
+        init();
+        ListadoDetGastos();
+
+
+
+    });
+
+    function validarRegistroLiquidacion() {
+        var res = false;
+
+        var codigo_via_liquidacion = document.getElementById('codigo_via_liquidacion').value;
+
+        var liq_fec_com = document.getElementById('liq_fec_com').value;
+        var liq_con_gasto = document.getElementById('liq_con_gasto').value;
+        var liq_med_via = document.getElementById('liq_med_via').value;
+        var liq_num_com = document.getElementById('liq_num_com').value;
+        var liq_ruc_pro = document.getElementById('liq_ruc_pro').value;
+        var liq_rs_pro = document.getElementById('razon_social_liq').value;
+        var liq_imp_tot = document.getElementById('liq_imp_tot').value;
+        var tipo_comprobante = document.getElementById('liq_tipo_comprobante').value;
+        var serie = document.getElementById('liq_serie').value;
+        var foto = document.getElementById('foto_liquidacion').value;
+
+
+        if (codigo_via_liquidacion != "" && liq_fec_com != ""  && liq_con_gasto != "" && liq_med_via != "" &&
+            liq_num_com != "" && liq_ruc_pro != "" && liq_rs_pro != "" && liq_imp_tot != "" &&
+            tipo_comprobante != "" && serie != "" && foto!=""
+        ) {
+            console.log("FEC COM TRUE " +"FECHA " +liq_fec_com, "gasto"+ liq_con_gasto, "viaje "+liq_med_via,"COmrpo" +liq_num_com, "ruc "+ liq_ruc_pro,"Raz social "+ liq_rs_pro,"importe "+ liq_imp_tot," Tipo Compr"+ tipo_comprobante,"Serie"+ serie);
+            res = true;
+
+        }
+
+        else if (tipo_comprobante == "DV"){
+       
+        res = true;
+        }
+        else {
+            res = false;
+            console.log("FEC COM TRUE " + "FECHA " + liq_fec_com, "gasto" + liq_con_gasto, "viaje " + liq_med_via, "COmrpo" + liq_num_com, "ruc " + liq_ruc_pro, "Raz social " + liq_rs_pro, "importe " + liq_imp_tot, "T Compr" + tipo_comprobante, "Serie" + serie);
+        }
+
+        return res;
+    }
+
+    function RegistroLiquidacion() {
+    $('#liq_btn_reg').click(function () {
+
+    //var cod_linea = document.getElementById('').value;
+    var codigo_via_liquidacion = document.getElementById('codigo_via_liquidacion').value;
+
+        var liq_fec_com = document.getElementById('liq_fec_com').value;
+        var liq_con_gasto = document.getElementById('liq_con_gasto').value;
+        var liq_med_via = document.getElementById('liq_med_via').value;
+        var liq_num_com = document.getElementById('liq_num_com').value;
+        var liq_ruc_pro = document.getElementById('liq_ruc_pro').value;
+        var liq_rs_pro = document.getElementById('razon_social_liq').value;
+        var liq_imp_tot = document.getElementById('liq_imp_tot').value;
+        var tipo_comprobante = document.getElementById('liq_tipo_comprobante').value;
+        var serie = document.getElementById('liq_serie').value;
+        var foto = document.getElementById('foto_liquidacion_ninja').value;
+        console.log(foto);
+
+        if (validarRegistroLiquidacion() === false) {
+            swal.fire({
+                position: 'center',
+                icon: 'warning',
+                title: 'Datos Incompletos',
+                showConfirmButton: false,
+                timer: 1500
+            });
+
+        }
+
+        else {
+                $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("AgregarDetConGastos", "Viaticos")",
+                    data: "{ 'vcs_id': '" + codigo_via_liquidacion + "','vcg_id': '" + liq_con_gasto + "','fechacomprobante': '" + liq_fec_com + "','id_med_viaje': '" + liq_med_via + "','numComprobante': '" + liq_num_com + "','rucProveedor': '" + liq_ruc_pro + "','RazonSocial': '" + liq_rs_pro + "','ImporteTotal': '" + liq_imp_tot + "','tipo_comprobante': '" + tipo_comprobante + "','serie': '" + serie + "','foto': '" + foto + "' }",
+        /* data: "{ 'vcs_id': '" + 1 + "','vcg_id': '" + liq_con_gasto + "','fechacomprobante': '" + liq_fec_com + "','id_med_viaje': '" + liq_med_via + "','numComprobante': '" + liq_num_com + "','rucProveedor': '" + liq_ruc_pro + "','RazonSocial': '" + liq_rs_pro + "','preciolista': '" + liq_imp_tot + "','foto': '" + 1 + "'}",*/
+                success: function (data) {
+                console.log(data);
+
+                    swal.fire("Registro exitoso");
+                    LimpiarCampos();
+
+                    ListadoDetGastos();
+                    ObtenerSaldo();
+
+    }
+    });
+
+        }
+
+
+
+    });
+    }
+
+    function valideKey(evt) {
+        // code is the decimal ASCII representation of the pressed key.
+        var code = (evt.which) ? evt.which : evt.keyCode;
+
+        if (code == 8) { // backspace.
+            return true;
+        } else if (code >= 48 && code <= 57) { // is a number.
+            return true;
+        } else { // other keys.
+            return false;
+        }
+    }
+    function LimpiarCampos() {
+
+
+        liq_fec_com = document.getElementById('liq_fec_com').value = "";
+        liq_con_gasto = document.getElementById('liq_con_gasto').value = "";
+        liq_med_via = document.getElementById('liq_med_via').value = "";
+        liq_num_com = document.getElementById('liq_num_com').value = "";
+        liq_ruc_pro = document.getElementById('liq_ruc_pro').value = "";
+        liq_rs_pro = document.getElementById('razon_social_liq').value = "";
+        liq_imp_tot = document.getElementById('liq_imp_tot').value = "";
+    }
+
+
+    function ListadoDetGastos() {
+
+        var vcs_id = document.getElementById('codigo_via_liquidacion').value;
+        if (vcs_id=="") {
+            swal.fire("No existe una solicitud");
+        }
+        else {
+        $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                 url: "@Url.Action("ListadoDetGastos", "Viaticos")",
+            data: "{'vcs_id': '" + vcs_id + "'}",
+                success: function (data) {
+                console.log(data);
+                    var mitablaviaticoscreados = document.getElementById("tabla_det_gastos");
+
+                    mitablaviaticoscreados.innerHTML = ``;
+
+                    for (cab in data) {
+
+
+                          mitablaviaticoscreados.innerHTML += ` <tr>
+
+                            <td>${data[cab].vdcg_fechacomprobante}</td>
+
+                            <td>${data[cab].nombreconceptopgasto}</td>
+                            <td>${data[cab].vdcg_numcomprobante}</td>
+                            <td>${data[cab].vdcg_tipo_comprobante}</td>
+                            <td>${data[cab].vdcg_serie}</td>
+                            <td>${data[cab].vdcg_rucproveedor}</td>
+                            <td>${data[cab].vdcg_razonsocial}</td>
+                            <td>${data[cab].nombremedioviaje}</td>
+                            <td>${data[cab].vdcg_precio_propuesto}</td>
+
+
+
+                            <td><button class="btn text-white"  data-toggle="modal" data-target="#exampleModalCenter_ad" style="background-color:#278DE9;"><i class="bi bi-pencil-square"></i></button></td>
+                            <td><button class="btn text-white" style="background-color:#09B556;"><i class="bi bi-check2-square"></i></button></td>
+
+
+
+                </tr>
+                `;
+
+
+
+
+
+
+
+                }
+
+                }
+        });
+        }
+                }
+
+    function validarRegistroCabSol() {
+        var res = false;
+
+        var cod_linea = document.getElementById('liq_fec_com').value;
+       // var fec_solicitud = document.getElementById('via_fecha_solicitud').value;
+        //var cod_mot_viaje = document.getElementById('via_mot_viaje').value;
+        //var monto_solicitado = document.getElementById('via_monto_sol').value;
+        //var cod_med_viaje = document.getElementById('via_med_viaje').value;
+        //var id_depart_ori = document.getElementById('via_dep_origin').value;
+        //var id_prov_ori = document.getElementById('via_pro_origin').value;
+        //var id_distri_ori = document.getElementById('via_dis_origin').value;
+        //var fecha_origi = document.getElementById('via_fec_hora_origin').value;
+        //var id_depart_dest = document.getElementById('via_dep_dest').value;
+        //var id_prov_dest = document.getElementById('via_pro_dest').value;
+        //var id_distri_dest = document.getElementById('via_dis_dest').value;
+        //var fecha_dest = document.getElementById('via_fec_hora_dest').value;
+        //var fecha_term_viaje = document.getElementById('via_fec_term_viaje').value;
+        //var monto_esperado = document.getElementById('via_mont_esperado').value;
+        var cant_dias = document.getElementById('liq_fec_com').value;
+
+        if (cod_linea != "" || cant_dias != "") {
+
+            res = true;
+
+        }
+        else {
+            res = false;
+        }
+
+        return res;
+    }
+
+    function init() {
+        $("#liq_med_via").select2({
+            // para buscar a partir del 3er digito
+        });
+        ListarMediosViaje();
+        ListarConceptosGasto();
+        RegistroLiquidacion();
+        ObtenerSaldo();
+    }
+
+    function ListarMediosViaje() {
+        var select_med_viaje = document.getElementById('liq_med_via');
+        if (select_med_viaje) {
+            $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("ListadoMediosViaje", "Viaticos")",
+               // url: '/Viaticos/ListadoMediosViaje',
+                //data: "{}",
+                success: function (data) {
+                    console.log(data);
+                    for (var i = 0; i < data.length; i++) {
+                        var option = document.createElement("option"); //Creamos la opcion
+
+                        option.value = data[i].v_med_v_id;
+                        option.text = data[i].v_med_v_nombre;
+                        select_med_viaje.appendChild(option); //Metemos la opción en el select
+                        // console.log("OPTION "+option);
+
+                    }
+
+                }
+            });
+        }
+        else {
+
+        }
+    }
+
+    function ListarConceptosGasto() {
+        var select_mot_viaje = document.getElementById('liq_con_gasto');
+        if (select_mot_viaje) {
+            $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("ListadoConceptoGasto", "Viaticos")",
+                //url: '/Viaticos/ListadoMotivosViaje',
+                //data: "{}",
+                success: function (data) {
+                    console.log(data);
+                    for (var i = 0; i < data.length; i++) {
+                        var option = document.createElement("option"); //Creamos la opcion
+
+                        option.value = data[i].vcg_id;
+                        option.text = data[i].vcg_nombre;
+                        select_mot_viaje.appendChild(option); //Metemos la opción en el select
+                        // console.log("OPTION "+option);
+
+                    }
+
+                }
+            });
+        }
+        else {
+
+        }
+    }
+
+
+    function validarRuc() {
+
+
+        var ruc = document.getElementById("liq_ruc_pro").value;
+       // alert(ruc);
+        if (ruc == "" || ruc.length <= 10 || ruc.length >= 12) {
+            if (ruc == "") {
+                Swal.fire("Neceseta # RUC", "", "");
+            }
+            else if (ruc.length <= 10) {
+                Swal.fire("Datos del RUC Incompletos", "", "");
+            }
+            else if (ruc.length >= 12) {
+                Swal.fire("RUC mayor a 12 digitos", "", "");
+            }
+        }
+        else {
+
+
+                $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("ListaRuc_API", "Viaticos")",
+
+                    data: "{'ruc': '" + ruc + "'}",
+                success: function (data) {
+                    console.log(data);
+                   // alert(data.razonSocial);
+                    if (data.razonSocial==null) {
+                        Swal.fire("Ruc no existe", "", "");
+                    }
+                    else {
+                        document.getElementById('razon_social_liq').value = data.razonSocial;
+                    }
+
+
+
+
+
+                    }
+
+
+            });
+        }
+    }
+
+    document.getElementById('foto_liquidacion').addEventListener('change', function (e) {
+
+        var canvas = document.createElement('canvas')
+        var canvasContext = canvas.getContext('2d')
+        canvas.setAttribute("style", 'opacity:0;position:absolute;z-index:-1;top: -100000000;left:-1000000000;width:320px;height:240px;')
+        document.body.appendChild(canvas);
+
+        var img = new Image;
+        img.onload = function () {
+
+
+            var MAX_WIDTH = 600;
+            var MAX_HEIGHT = 600;
+            var width = img.width;
+            var height = img.height;
+
+            if (width > height) {
+                if (width > MAX_WIDTH) {
+                    height *= MAX_WIDTH / width;
+                    width = MAX_WIDTH;
+                }
+            } else {
+                if (height > MAX_HEIGHT) {
+                    width *= MAX_HEIGHT / height;
+                    height = MAX_HEIGHT;
+                }
+            }
+            canvas.width = width;
+            canvas.height = height;
+
+
+
+            canvasContext.drawImage(img, 0, 0, width, height);
+
+            var base64Image = canvas.toDataURL('image/png')
+            // console.log(base64Image)
+            document.getElementById("foto_liquidacion_ninja").value = base64Image;
+            // Post to server
+            // sendImage(base64Image)
+
+            document.body.removeChild(canvas)
+            URL.revokeObjectURL(img.src)
+        }
+        img.src = URL.createObjectURL(e.target.files[0]);
+    })
+
+
+    function ObtenerSaldo() {
+        var cod = document.getElementById("codigo_via_liquidacion").value;
+         $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("Saldo_liquidacion", "Viaticos")",
+
+                data: "{'id_solicitud': '" + cod + "'}",
+                success: function (data) {
+                    console.log(data);
+
+                    var respuesta = data.split('-');
+                    var presupuestado = parseInt(respuesta[2]);
+
+                    if (respuesta[1] == "") {
+                        var msg = parseInt(respuesta[0]);
+                        var liquidado = 0;
+                       
+
+                        document.getElementById("saldo_liquidacion").value =presupuestado - liquidado;
+
+                    }
+
+                    else {
+
+                        var liquidado = parseInt(respuesta[1]);
+                        document.getElementById("saldo_liquidacion").value = presupuestado - liquidado;
+                    }
+                    
+                   
+                  
+
+
+
+
+
+                    }
+
+
+            });
+
+
+        
+    }
+
+</script>

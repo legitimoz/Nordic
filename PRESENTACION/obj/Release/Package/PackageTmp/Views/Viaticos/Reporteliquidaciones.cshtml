@@ -1,0 +1,238 @@
+﻿
+@{
+    ViewBag.Title = "Reporte Liquidaciones";
+    Layout = "~/Views/Layout/_LayoutViatico.cshtml";
+}
+
+
+<main>
+    <div class="container">
+        <h2>Reporte Liquidaciones</h2>
+        <div class="row   text-white" style="background-color: #e9ecef; ">
+
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-1">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Fecha Inicio</span>
+                    </div>
+                    <input type="date" class="form-control" id="lc_dt_fec_ini" aria-describedby="basic-addon3">
+                </div>
+            </div>
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Fecha Fin</span>
+                    </div>
+                    <input type="date" class="form-control" id="lc_dt_fec_fin" aria-describedby="basic-addon3">
+                </div>
+            </div>
+
+
+            <div class="col-sm-4 col-6">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Representantes</label>
+                    </div>
+                    <select class="custom-select" id="via_lista_usuarios">
+                        <option selected>Elija...</option>
+
+                    </select>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-3 col-3">
+                <!--BOTON BUSCAR POR FECHA-->
+                <button type="button" id="lc_btn_fec" class="btn btn-dark"><i class="bi bi-search"></i>Buscar</button>
+                <input type="text" name="name" id="log" value="" />
+                <button type="button" id="generar_excel" onclick="GenerarExcel();" class="btn btn-dark"><i class="bi bi-search"></i>generar excel</button>
+            </div>
+
+        </div>
+
+        <h4></h4>
+
+        <div class="row">
+
+            <div class="table-responsive table-responsive-md table-responsive-lg">
+                <table class="table table-sm table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#Solicitud</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Linea</th>
+                            <th scope="col">Fecha Solicitud</th>
+                            <th scope="col">Motivo Viaje</th>
+                            <th scope="col">Monto Solicitado</th>
+                            <th scope="col">Medio Viaje</th>
+                            <th scope="col">Origen</th>
+                            <th scope="col">Destino</th>
+                            <th scope="col">VerDetalle</th>
+                        
+                        </tr>
+                    </thead>
+                    <tbody id="tabla_cabecera_liquidaciones">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+    </div>
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="~/Assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" type="text/javascript"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
+
+<script type="text/javascript">
+
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+
+    $(document).ready(function () {
+        $("#via_lista_usuarios").select2({
+            // para buscar a partir del 3er digito
+        });
+
+        ListadoRepresentantes();
+        ListadoLiquidaciones();
+
+    });
+
+    function ListadoRepresentantes() {
+
+                // var via_clientes_select = document.getElementById('via_clie_select');
+                // if (via_clientes_select) {
+                $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("ListaUsuarios", "Viaticos")",
+
+                success: function (data) {
+                console.log("lista de usuarios");
+                var cadena = "";
+                if (data.length > 0) {
+                $.each(data, function (k, v) {
+                cadena += "<option value='" + v.codigo + "'>" + v.nombre + "</option>";
+                });
+                } else {
+                cadena += "<option value=''>NO SE ENCONTRARON REGISTROS</option>";
+                }
+
+                $("#via_lista_usuarios").html(cadena);
+                }
+                });
+
+
+                }
+
+
+    function ListadoLiquidaciones(repre, f_ini, f_fin) {
+
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+             url: "@Url.Action("ListadoLiquidaciones", "Viaticos")",
+            data: "{'repre': '" + 1323 + "', 'f_ini': '" + 1 + "','f_fin': '" + 1 + "'}",
+            success: function (data) {
+                console.log(data);
+                var mitabladetcliente = document.getElementById("tabla_cabecera_liquidaciones");
+
+                mitabladetcliente.innerHTML = ``;
+
+                for (cab in data) {
+
+
+
+
+                        mitabladetcliente.innerHTML += ` <tr>
+
+                                        <td>${data[cab].nombreconceptopgasto}</td>
+                                        <td>${data[cab].vdcg_precio_propuesto}</td>
+
+                                        <td>${data[cab].vdcg_tipo_comprobante}</td>
+                                        <td>${data[cab].vdcg_numcomprobante}</td>
+                                        <td>${data[cab].vdcg_serie}</td>
+                                        <td>${data[cab].vdcg_razonsocial}</td>
+
+                                        <td>${data[cab].vdcg_fechacomprobante}</td>
+                                        <td>${data[cab].vcg_cnt_conta}</td>
+                                        <td>${data[cab].vcs_id}</td>
+
+
+
+
+
+
+                                  <td><button class="btn text-white" onclick="ModificarMotivoViaje(${data[cab].v_med_v_id})" style="background-color:#D22B08;"><i class="bi bi-clipboard2-x"></i></button></td>
+
+
+
+                                </tr>
+                                    `;
+
+
+
+
+
+
+
+
+                }
+
+
+
+            }
+        });
+
+
+    }
+
+    function GenerarExcel() {
+
+        alert("data");
+          $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("GenerarExcel", "Viaticos")",
+
+              success: function (data) {
+                  console.log(data);
+                  window.downloadFile = data.FileDownloadName;
+                  var url = "../" + data.FileDownloadName;
+                  var url_ = "https://localhost:44330/:44330/" + data.FileDownloadName;
+                  window.open(url ,'Download');
+                  document.getElementById("log").value = data.FileDownloadName;
+              }
+          });
+
+    }
+</script>

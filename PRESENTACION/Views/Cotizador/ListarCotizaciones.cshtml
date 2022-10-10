@@ -1,0 +1,2102 @@
+﻿@using ENTIDAD;
+@{
+    ViewBag.Title = "ListarCotizaciones";
+    Layout = "~/Views/Layout/_LayoutMenu.cshtml";
+    string nombre_completo = "";
+}
+
+<main>
+    <div class="container">
+        <h3 class="text-center">Visor de cotizaciones para vendedores </h3>
+        <div class="row   text-white" style="background-color: #e9ecef; ">
+
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-1">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Fecha Inicio</span>
+                    </div>
+                    <input type="date" class="form-control" id="lc_dt_fec_ini" aria-describedby="basic-addon3">
+                </div>
+            </div>
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Fecha Fin</span>
+                    </div>
+                    <input type="date" class="form-control" id="lc_dt_fec_fin" aria-describedby="basic-addon3">
+                </div>
+            </div>
+
+
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Estados</label>
+                    </div>
+                    <select class="custom-select" id="cot_est_ven">
+                        <option selected>Elija...</option>
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <!--input class="form-control" type="search" placeholder="Buscar" aria-label="Search"-->
+                        <!-- prueba-->
+                        <!--- FIN DE PRUEBA-->
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row  mb-1 p-2 text-white" style="background-color: #e9ecef; ">
+
+
+            <div class="col-sm-4 col-4">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Cliente</label>
+                    <input class="col-9 col-sm-12 form-control" name="clientes" list="listas">
+                </div>
+                <datalist class="col-sm-6 col-6" id="listas">
+
+                    @foreach (var item in ViewBag.clienteDataTable)
+                    {
+                        nombre_completo = @item.ruc + " " + @item.razonsocial;
+                        <option data-codigo="@item.ruc" value="@nombre_completo"></option>
+                    }
+
+                </datalist>
+                @*Asociamos al input la datalist 'listas'*@
+
+            </div>
+            <div class="col-sm-3 col-3">
+                <!--BOTON BUSCAR POR FECHA-->
+                <button type="button" id="limpiar" class="btn btn-dark"><i class="bi bi-search"></i>Limpiar</button>
+            </div>
+            <div class="col-sm-3 col-3">
+                <!--BOTON BUSCAR POR FECHA-->
+                <button type="button" id="lc_btn_fec" class="btn btn-dark"><i class="bi bi-search"></i>Buscar</button>
+            </div>
+
+        </div>
+
+        <h4>Lista de cotizaciones </h4> <br />
+
+        <div class="row">
+
+            <div class="table-responsive table-responsive-md table-responsive-lg">
+                <table class="table table-sm table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Numero</th>
+                            <th scope="col">Cliente</th>
+                            <th scope="col">Almacen</th>
+                            <th scope="col">Vendedor</th>
+                            <th scope="col">For Pago</th>
+                            <th scope="col">Fec Emision</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Direccion</th>
+                            <th scope="col">Archivar</th>
+                            <th scope="col">Editar</th>
+                            <th scope="col">G.PDF</th>
+                            <th scope="col">Finalizar</th>
+                            <th scope="col">Adjuntar Abono</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla_cabecera_cotizacion_vendedor">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- MODAL EDITAR-->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Editar Cotizacion</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!--Cotizacion a Modificar--->
+                        <main role="main">
+                            <div class="jumbotron">
+
+                                <div class="container">
+                                    <h3 class="text-center"></h3>
+                                    <div class="row">
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link active col-12 col-sm-12" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Datos Generales</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link col-12 col-sm-12" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Detalle Articulos</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content" id="myTabContent">
+
+                                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                            <!--INICIO CONTENIDO DEL PILL HOME -->
+                                            <div class="p-3">
+
+                                            </div>
+                                            <!----form--->
+                                            @*@using (Html.BeginForm("InsertarCabeceraCotizacion", "Cotizador", FormMethod.Post))*@
+                                            @*//{*@
+                                        <div class="form-group row">
+                                            <label for="codigocliente" class="col-3 col-sm-1 col-form-label">Numero</label>
+                                            <div class="col-9 col-sm-5">
+                                                <input type="text" class="form-control" name="txtCliente2" id="codigo_cabecera_edit" value="" disabled>
+                                                <input type="hidden" class="form-control" name="txtCliente2" id="codigo_cabecera_edit_o">
+                                            </div>
+
+                                            <label for="codigocliente" class="col-3 col-sm-1 col-form-label">Estado</label>
+                                            <div class="col-9 col-sm-5">
+                                                <input type="text" class="form-control" name="estado" id="estado" value="" disabled>
+                                                <select id="estado_edit" name="estado_edit" class="custom-select" >
+                                                    <option value="5">Archivado</option>
+                                                    <option value="5">Pendiente</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                           
+
+                                            <div class="form-group row">
+                                                <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Cliente </label>
+                                                <div class="col-9 col-sm-7">
+                                                    <input type="hidden" class="form-control" id="q" onkeyup="traerDatosClientes()" placeholder="Cliente">
+                                                    @*<select id="clienteres3" name="clienteres3" onchange="RellenarDatosCliente();" class="col-12 custom-select js-example-basic-single">*@
+
+                                                    <input disabled type="text" class="form-control" id="codigo_cliente_edit" value="" placeholder="Cliente">
+                                                    @* <select id="clienteres3" name="txtCliente" class="col-12 custom-select js-example-basic-single" required>*@
+
+                                                    @*@foreach (var item in ViewBag.Cabecera)
+                        {
+
+                            <option value=@item.codigo>@item.almacen</option>
+                        }
+
+                    </select>*@
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="direcion_cliente" class="col-3 col-sm-1 col-form-label">Direccion </label>
+                                                <div class="col-9 col-sm-9">
+                                                    <input type="text" class="form-control" name="txtDireccion_" id="direcion_cliente_edit" value="" placeholder="Direccion" required>
+                                                    <select id="direccion_cliente_se_edit" name="txtDireccionse_" class="custom-select" required>
+                                                        @*@foreach (var item in ViewBag.direcciones)
+                                 {
+                        <option value=@item.codigoUbicacion>@item.nombre</option>
+                             }*@
+                                                    </select>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="formapago" class="col-3 col-sm-1 col-form-label"> Pago </label>
+                                                <div class="col-9 col-sm-4">
+                                                    <input disabled type="text" class="form-control" name="txtFormaPago_" id="forma_pago_edit" placeholder="Forma de pago" value="" required>
+                                                    <select id="formapago_edit" name="formapago_edit__" class="custom-select">
+                                                        @foreach (var item in ViewBag.formaventa2)
+                                                        {
+
+                                                            <option value=@item.codigo>@item.nombre</option>
+
+                                                        }
+                                                    </select>
+                                                </div>
+
+                                                <!--artificio espacio entre filas para celular-->
+                                                <div class="col-12 col-sm-auto">
+                                                    <div class="form-group row"></div>
+                                                </div>
+                                                <!--FIN artificio espacio entre filas para celular-->
+                                                <!--Documentos por tipo de  pago-->
+
+
+                                                <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Adjunto</label>
+                                                <div class="col-9 col-sm-4">
+                                                    <div class="custom-file ">
+                                                        
+                                                        <input type="file" name="txtAdjunto" class="custom-file-input" value="" id="adjunto_edit" lang="es" disabled>
+                                                        <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
+                                                    </div>
+
+                                                 
+                                                </div>
+
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Vendedor </label>
+                                                <div class="col-9 col-sm-4">
+
+                                                    <input disabled type="text" class="form-control" name="vendedor_edit" id="vendedor_edit" placeholder="" required>
+
+                                                    <select id="vendedores_edit" name="txtVendedor__" class="col-12 custom-select" required>
+                                                        @foreach (var item in ViewBag.vendedor2)
+                                                        {
+
+                                                            <option value=@item.codigo>@item.nombre</option>
+
+                                                        }
+
+
+                                                    </select>
+                                                </div>
+
+                                                <!--artificio espacio entre filas para celular-->
+                                                <div class="col-12 col-sm-auto">
+                                                    <div class="form-group row"></div>
+                                                </div>
+                                                <!--FIN artificio espacio entre filas para celular-->
+
+                                                <label for="inputPassword3" class="col-3 col-sm-1 col-form-label"> Emision </label>
+                                                <div class="col-9 col-sm-4">
+
+                                                    <input type="text" id="fecha_emitida_cot_edit" class="form-control" placeholder="" value="" disabled>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="form-group row">
+
+                                                <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Moneda </label>
+                                                <div class="col-9 col-sm-4">
+
+                                                    <input disabled type="text" class="form-control" name="txtFormaPago_" id="modena_edit" placeholder="Forma de pago" value="NUEVOS SOLES" required>
+                                                </div>
+
+                                                <!--artificio espacio entre filas para celular-->
+                                                <div class="col-12 col-sm-auto">
+                                                    <div class="form-group row"></div>
+                                                </div>
+                                                <!--FIN artificio espacio entre filas para celular-->
+
+                                                <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Glosa</label>
+                                                <div class="col-9 col-sm-4">
+                                                    <input type="text" class="form-control" id="glosa_edit" name="txtGlosa" placeholder="Glosa">
+                                                </div>
+
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Almacen </label>
+                                                <div class="col-9 col-sm-4">
+                                                    <!--envio el ID para almacen y el nombre para mostrar-->
+                                                    <input type="hidden" class="form-control" name="txtFormaPago" id="almaceninput_edit" placeholder="Forma de pago" value="">
+                                                    <input disabled type="text" class="form-control" name="txtFormaPago" id="almacen_edit" placeholder="Forma de pago" value="" required>
+                                                    @*<select name="txtAlmacen" id="almacen" class="custom-select">
+                        @foreach (var item in ViewBag.almacen)
+                        {
+
+                            <option value=@item.codigo>@item.nombre</option>
+
+                        }
+
+                    </select>*@
+                                                </div>
+                                            </div>
+
+                                            <!--CAMBIO DE FECHA EN LA FILA DE ARRIBA-->
+                                            @*<div class="form-group row">
+                <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Fecha Creacion </label>
+                <div class="col-9 col-sm-5">
+                    <input type="date" class="form-control" id="inputPassword3" placeholder="Fecha Creacion">
+                </div>
+            </div>*@
+                                            <!--FIN DE CAMBIO-->
+
+                                            <div class="form-group row">
+                                                <div class="col-sm-10">
+                                                    <button type="submit" id="cabeceracoti_editar" class="btn btn-primary">Guardar Edicion  </button>
+                                                </div>
+                                            </div>
+
+                                            <!----/!--form---->
+                                            <!--FIN DEL CONTENIDO PILL HOME--->
+                                        </div>
+
+                                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                            <div class="p-3">
+
+                                            </div>
+                                            <!--INICIO DEL CONTENIDO PILL PROFILE--->
+
+
+                                            <div class="form-group row">
+                                                <label for="articulo_select_modelo" class="col-3 col-sm-1 col-form-label">Modelos </label>
+
+                                                <div class="col-9 col-sm-3">
+
+                                                    <select id="articulo_select_modelo" data-placeholder="Choose one thing" class="custom-select col-8 col-sm-2">
+                                                        <option selected value="Elegir">Elegir.......</option>
+
+                                                        @foreach (var item in ViewBag.modelosarticulo)
+
+                                                        {
+                                                            <option value=@item.cod_modelos>@item.cod_modelos @item.modelos</option>
+                                                        }
+
+                                                    </select>
+                                                </div>
+
+                                                <!--CODIGO,DESCRIPCION, BUSCAR -->
+
+                                                <label for="articulo_select" class="col-2 col-sm-1 col-form-label">Codigo </label>
+                                                <div class="col-2 col-sm-2">
+                                                    <input type="text" class="form-control" name="codigo_articulo_corto" id="codigo_articulo_corto" placeholder="Codigo">
+                                                </div>
+
+                                                <label for="articulo_select" class="col-2 col-sm-1 col-form-label">Descripcion </label>
+                                                <div class="col-2 col-sm-2">
+                                                    <input type="text" class="form-control" name="descripcion_articulo_corto" id="descripcion_articulo_corto" placeholder="Descripcion">
+
+                                                </div>
+                                                <div class="col-2  col-sm-2">
+                                                    @*<button class="btn btn-primary" id="busqueda-corta"> Buscar </button>*@
+                                                    <button type="button" id="busqueda-corta" onclick="FiltrarArticulos();" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalBusquedaArticulo">
+                                                        Buscar
+                                                    </button>
+                                                </div>
+
+
+
+
+
+
+                                                <!---->
+                                                <!--MODAL ARTICULO-->
+                                                <!-- Modal cliente -->
+                                                <div class="modal fade" id="exampleModalBusquedaArticulo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Busqueda Articulos</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+
+                                                                <div class="row">
+                                                                    <div class="col-sm-12">
+                                                                        <div class="table-responsive">
+
+                                                                            <table id="tabla_art_filtrados" class="table table-sm table-hover">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th scope="col">Codigo</th>
+                                                                                        <th scope="col">Articulo</th>
+                                                                                        <th scope="col">Precio</th>
+                                                                                        <th scope="col">Stock</th>
+                                                                                        <th scope="col">Elegir</th>
+
+
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody id="tabla_art_filtrados_res">
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+
+                                                                <div class="form-group col-sm-3">
+                                                                    <button type="button" id="ASIGANAR_DATA_ARTICULO" class="btn btn-primary">Asignar</button>
+                                                                </div>
+
+
+
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Fin Modal Cliente-->
+                                                <!-- FIN DEL MODAL ARTICULO-->
+
+
+                                                <label for="articulo_select" class="col-3 col-sm-1 col-form-label">Articulo </label>
+                                                <div class="col-9 col-sm-11">
+
+
+                                                    <select id="articulo_select" data-placeholder="Choose one thing" class="custom-select col-9 col-sm-6">
+                                                        <option selected value="Elegir">Elegir.......</option>
+                                                        @foreach (var item in ViewBag.articulo)
+
+                                                        {
+
+                                                            <option value=@item.codigo>@item.codigo- @item.nombre- @item.stock</option>
+
+                                                        }
+                                                    </select>
+                                                </div>
+
+
+
+                                                <label for="unidad_articulo" class="col-3 col-sm-1 col-form-label">Unidad </label>
+                                                <div class="col-9 col-sm-3">
+                                                    <input disabled type="text" class="form-control" name="unidad_articulo" id="unidad_articulo" placeholder="Unidad">
+                                                </div>
+
+                                                <label for="unidad_articulo" class="col-3 col-sm-1 col-form-label">Articulo </label>
+                                                <div class="col-9 col-sm-6">
+                                                    <input type="text" class="form-control" name="nom_articulo_2" id="nom_articulo_2" disabled>
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="form-group row">
+
+                                                <label for="precio_articulo" class="col-3 col-sm-1 col-form-label">Precio </label>
+                                                <div class="col-9 col-sm-3">
+                                                    <input disabled type="text" class="form-control" name="precio_articulo" id="precio_articulo" placeholder="Precio">
+                                                </div>
+
+                                                <label for="stock_articulo" class="col-3 col-sm-1 col-form-label">Stock </label>
+                                                <div class="col-9 col-sm-3">
+                                                    <input type="text" class="form-control text-white bg-success" name="stock_articulo" id="stock_articulo" placeholder="Stock" value="Stock" disabled>
+                                                    <input type="hidden" class="form-control" min="1" name="c_disponible" id="codigo_articulo_ocul" placeholder="Cantidad Disponible" required>
+                                                    <input type="hidden" class="form-control" min="1" name="c_disponible" id="nombre_articulo_ocul" placeholder="Cantidad Disponible" required>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="form-group row">
+
+                                                <label for="c_solicitada" class="col-3 col-sm-1 col-form-label">Cant.Req. </label>
+                                                <div class="col-9 col-sm-3">
+                                                    <input type="number" class="form-control" min="1" name="c_solicitada" id="c_solicitada" placeholder="Cantidad Solicitada" required>
+                                                </div>
+
+
+                                                <label for="c_disponible" class="col-3 col-sm-1 col-form-label">Cant.Disp</label>
+                                                <div class="col-9 col-sm-3">
+                                                    <input disabled type="number" class="form-control" min="1" name="c_disponible" id="c_disponible" placeholder="Cantidad Disponible" required>
+                                                </div>
+
+                                                <div class="col-3  col-sm-4 ">
+                                                    <button class="col-sm-6 btn btn-primary" id="adicionar"> Registrar Articulo </button>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="section">
+                                                <!----button class="btn btn-primary" id="boton"> JSON</!--button--->
+
+                                            </div>
+
+                                            <div class="table-responsive">
+
+
+                                                <table id="mytable" class="table table-sm table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Codigo</th>
+                                                            <th scope="col">Articulo</th>
+                                                            <th scope="col">Unidad</th>
+                                                            <th scope="col">Precio</th>
+                                                            <th scope="col">Cant.Req.</th>
+                                                            <th scope="col">Cant.Disp</th>
+                                                            <th scope="col">Stock</th>
+                                                            <th scope="col">Anular</th>
+                                                            <th style="visibility:hidden;" scope="col">anular 2 </th>
+                                                            <th style="visibility:hidden;" scope="col">Anular 3</th>
+
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody id="tabla_detalle_cotizacion_vendedor">
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+
+                                            <!--FIN DEL CONTENIDO PILL PROFILE--->
+                                            <!--FINAL DEL DETALLE COTIZACION -->
+                                            <!--button type="button"  OnClientClick = "ObtenerDetalle()" id="BtnRegistrar_Click"  class="btn btn-primary">Registrar Detalle</!--button-->
+                                        </div>
+
+                                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+
+
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+
+                            </div>
+
+
+
+                        </main>
+                        <!--FIN --->
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FIN MODAL EDITAR-->
+        <!--MODAL ADJUNTO-->
+
+        <div class="modal fade" id="exampleModalCenter_ad" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Agregar archivos adjuntos</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+
+                        <form action="/" method="post" enctype="multipart/form-data">
+
+
+
+                            <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Adjunto</label>
+                            <div class="col-9 col-sm-8">
+                                <input type="hidden" id="codigocabecera_adjunto">
+                                <div class="custom-file ">
+                                    <input type="file" name="txtAdjunto_listar_ctz_ven" class="custom-file-input" id="customFileLang" lang="es" multiple>
+                                    <input type="hidden" id="imgNinja">
+                                    <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
+                                </div>
+                            </div>
+
+                           
+                                <div class="card-group">
+                                    <div class="card">
+                                        <div id="listadeimagenes"></div>
+                                        </div>
+                                    </div>
+                           
+
+</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" id="subir_archivos_pdf" class="btn btn-primary">Guardar Cambios</button>
+                    </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</main>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="~/Assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!--SELECT 2-->
+
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" type="text/javascript"></script>
+
+<script src="~/Assets/dist/jsPDF-1.3.2/dist/jspdf.min.js"></script>
+<script src="~/Assets/dist/jsPDF-1.3.2/dist/jspdf.plugin.autotable.min.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        init();
+        init_arituclo();
+        listar_estados();
+        inicializar_select();
+        ListarCotizacionesVendedor(3);
+        //modales();
+        EditarCabeceraCotizacion();
+        inicializar_file_adjunto();
+        FiltrarCotizacionesVendedor_fecha();
+        //FALTA VALIDAR TOTALIZAR A PARTIR DEL ADJUNTO DE DOCUMENTOS  PAGO CONTADO 
+        var valid_Totalizar = document.getElementById('imagenexiste');
+        $("#cot_est_ven").on('change', function () {
+            var idestado = document.getElementById('cot_est_ven').value;
+            ListarCotizacionesVendedor(idestado);
+            // console.log("cambio estados " + idestado);
+        });
+    });
+
+    function listar_estados() {
+        var select_estados = document.getElementById('cot_est_ven');
+        if (select_estados) {
+            $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                 url: "@Url.Action("ListarEstados", "Cotizador")",
+
+                // data: "{ 'codigo': '" + codigoArticulo + "'}",
+                success: function (data) {
+
+                    for (var i = 0; i < data.length; i++) {
+                        var option = document.createElement("option"); //Creamos la opcion
+
+                        option.value = data[i].cod;
+                        option.text = data[i].descripcion;
+                        select_estados.appendChild(option); //Metemos la opción en el select
+                        // console.log("OPTION "+option);
+
+                    }
+
+                }
+            });
+        }
+        else {
+
+        }
+
+    }
+
+    function init() {
+        $('input[name=clientes]').focusin(function () {
+            $('input[name=clientes]').val('');
+        });
+        $('#limpiar').click(function () {
+            $('input[name=clientes]').val('');
+
+        });
+
+    }
+
+    function inicializar_file_adjunto() {
+        $("#customFileLang").on('change', function () {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+
+        //subir archivo a servidor
+        $('#subir_archivos_pdf').click(function () {
+            console.log("Subiendo archivos");
+            //var codigo_cabecera = document.getElementById("codigo_cabecera_edit_o").value;
+            var selectFile = ($("#customFileLang"))[0].files[0];
+           // var selectFile1 = ($("#customFileLang"))[1].files[1];
+
+            // selectFile.
+            console.log("que es select file " + selectFile.name);
+            console.log("que es select file " + selectFile.size);
+            console.log("que es select file " + selectFile.type);
+
+
+            var dataString = new FormData();
+
+            dataString.append("cargaArchivo", selectFile);
+            $.ajax({
+                // dataType: "json",
+                type: 'POST',
+                // contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("CargarArchivo", "Cotizador")",
+
+                data: dataString,
+                contentType: false,
+                processData: false,
+                async: false,
+                // data: "{ 'cargaArchivo': '" + selectFile.name + "'}",
+                success: function (data) {
+                    console.log(data);
+                   // window.location.href = '/Cotizador/ListarCotizaciones';
+                     window.location.href="@Url.Action("ListarCotizaciones", "Cotizador")";
+                    //FALTA QUE MUESTRE EL ARCHIVO PERO YA ESXISTE
+                }
+            });
+        });
+    }
+
+    function ObtenerDetalleCotizacion_mayor_cero(codigoCabecera) {
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+
+            url: "@Url.Action("Listado_Detalle_stock_mayor_cero", "Cotizador")",
+            data: "{ 'codigo': '" + codigoCabecera + "'}",
+            success: function (data) {
+               // console.log(data);
+
+                //LOGO SSENDA
+                var doc = new jsPDF();
+
+                //variables de inicializacion letra 14
+                doc.setFontSize(10);
+                doc.setFont('Calibri');
+                var logo = new Image();
+                logo.src = '../Assets/brand/logo_comprimax.png';
+
+                var ncuentas = new Image();
+                ncuentas.src = '../Assets/dist/js/n_cuentas2.png';
+
+                //doc.addImage(logo, 'png', 20, 10, 50, 70);
+                // console.log(logo.src);
+                //COLUMNA , FILA CABECERA COTIZACION  IZQUIERDA
+
+                //       X    Y   AN   LAR   CUADRO VACIO
+                doc.rect(140, 5, 40, 15); // empty square
+                //doc.text(150, 10, 'RUC 20517206955');
+                doc.text(150, 10, 'COTIZACION');
+                doc.text(150, 16, 'CTZ-00' + codigoCabecera);
+                //Detalle Debajo del Logo
+                doc.setFontSize(7);
+                doc.text(40, 20, 'HEARMARK CORPORATION SAC');
+                doc.text(25, 25, 'AV. NICOLAS AYLLON NRO. 4671 Z.I EL ASESOR LIMA- ATE');
+                doc.text(19, 30, 'Central Telefonica (01) 612-7282 / 494-2173 Email:ventas@ssenda.com');
+                doc.text(50, 35, 'www.ssenda.com');
+
+                for (var i = 0; i < 1; i++) {
+
+
+                    //variables de inicializacion letra 10
+                    doc.setFontSize(9);
+                    //       X    Y   AN   LAR   CUADRO VACIO
+                    doc.rect(15, 38, 180, 40); // empty square
+                    doc.text(20, 45, 'Señor(es)');
+                    doc.text(50, 45, ':');
+                    doc.text(52, 45, data[0].nombre_cliente);
+
+                    doc.text(20, 50, 'RUC');
+                    doc.text(50, 50, ':');
+                    doc.text(52, 50, data[0].ruc_cliente);
+
+
+                    doc.text(20, 55, 'Direccion Envio');
+                    doc.text(50, 55, ':');
+                    doc.setFontSize(7);
+                    doc.text(52, 55, data[0].direccion);
+
+
+                    doc.setFontSize(9);
+
+                    doc.text(20, 60, 'Fecha Emision');
+                    doc.text(50, 60, ':');
+                    var fecha_mostrada = data[0].fecha_registro.slice(0,10);
+                    doc.text(52, 60, fecha_mostrada);
+
+                    doc.text(20, 65, 'Forma Pago');
+                    doc.text(50, 65, ':');
+                    doc.text(52, 65, data[0].forma_pago);
+
+                    doc.text(20, 70, 'Vendedor');
+                    doc.text(50, 70, ':');
+                    //let vendedor_c = data.vendedor;
+                    // console.log("vendedor " + vendedor_c);
+                    doc.text(52, 70, data[0].vendedor);
+                   // doc.text(100, 70, 'Datos vendedor :');
+                    doc.text(105, 70, 'Celular:');
+                    doc.text(119, 70, data[0].telefono_vendedor);
+                    doc.text(20, 75, 'Correo');
+                    doc.text(50, 75, ':');
+                    doc.text(52, 75, data[0].correo_vendedor);
+
+                }
+
+                //variables de inicializacion letra 10
+                doc.setFontSize(10);
+                doc.text(20, 85, 'Lista de articulos ');
+                var columnas = ["Codigo Articulo", "Nombre", "P. Lista", "P.Venta", "Cant. Solic.", "Total"];
+                var data_c = [
+                    //[1, "Hola", "hola@gmail.com", "Mexico"],
+                    //[2, "Hello", "hello@gmail.com", "Estados Unidos"],
+                    //[3, "Otro", "otro@gmail.com", "Otro"]
+                ];
+
+                //COLUMNA , FILA DETALLE
+                var fila = 85;
+                var total_final = 0;
+                var precio = "10";
+
+                for (cab in data) {
+
+                    var cant_solic = data[cab].cantidad_solicitada;
+                    var precio_cot = data[cab].preciodecotizacion;
+
+
+                    var precio_entero = parseFloat(precio_cot);
+                    var total_articulo = cant_solic * precio_entero;
+                    var total_articulo_string = total_articulo + "";
+                    var cant_solic_string = cant_solic + "";
+                    //  doc.text(20, fila, data[cab].codigo_articulo);
+                    // doc.text(60, fila, data[cab].nombre_articulo);
+                    //  doc.text(120, fila, data[cab].preciodecotizacion.slice(0, 6));
+                    //   doc.text(140, fila, cant_solic_string.slice(0,3));
+                    //   doc.text(160, fila, precio);
+                    fila = fila +8;
+                    total_final = total_final + parseFloat(total_articulo);
+                    console.log("total " + total_final);
+                    let extraida = data[cab].nombre_articulo.substring(0, 35);
+                    data_c[cab] = [data[cab].codigo_articulo, extraida, precio_entero + 39, data[cab].preciodecotizacion.slice(0, 6), cant_solic_string, total_articulo_string];
+                }
+                console.log("que tiene" + data_c);
+
+                //? GENERAR TABLA APARTIR DE LOS DATOS OBTENIDOS
+                doc.autoTable(columnas, data_c, { margin: { top: 90 } });
+
+                //variables de inicializacion letra 10
+                doc.setFontSize(10);
+                var penultimo = fila + 20;
+                doc.text(160, penultimo, "Total S/: " + total_final + ".00");
+                //doc.text(60, 80, 'ACEITE  4T 5000 HSAA');
+                //doc.text(120, 80, '30.00');
+                //doc.text(140, 80, '10.00');
+                //doc.text(160, 80, '300.00');
+
+
+                doc.setFontSize(10);
+                penultimo_1 = penultimo + 20;
+                doc.text(20, penultimo_1, 'Vigencia 10 dias calendario y sujeto a disponibilidad de stock');
+                doc.text(20, penultimo_1 + 10, 'Los presion Incluyen IGV ');
+                penultimo_2 = penultimo_1 + 5;
+
+                //ESPACIO EN BLANCO ENTRE ARTICULOS Y CUENTAS BANCARIAS
+
+
+
+                //carga de imagen en documento
+                logo.onload = function () {
+                   sleep(1000);
+                    doc.addImage(logo, 'png', 25, 5, 35, 10);
+                };
+
+                if (penultimo_2 > 200) {
+                    ncuentas.onload = function () {
+                        doc.addPage();
+                        penultimo_2 = 0 // Restart height position
+                        doc.text(20, penultimo_2 +10, 'Número de cuentas bancarias ');
+                        penultimo_3 = penultimo_2 + 20;
+                        doc.addImage(ncuentas, 'png', 25, penultimo_3, 160, 50);
+                        doc.text(85, penultimo_3 + 60, 'WWWW.SSENDA.COM');
+                        doc.save('CTZ-00' + codigoCabecera + '.pdf');
+                    }
+
+                }
+                else {
+                    ncuentas.onload = function () {
+                      //  doc.addPage();
+                      //  penultimo_2 = 0 // Restart height position
+                        doc.text(20, penultimo_2 + 70, 'Número de cuentas bancarias ');
+                        penultimo_3 = penultimo_2 + 75;
+                        doc.addImage(ncuentas, 'png', 25, penultimo_3, 160, 50);
+                        doc.text(85, penultimo_3 + 60, 'WWWW.SSENDA.COM');
+                        doc.save('CTZ-00' + codigoCabecera + '.pdf');
+                    }
+
+                }
+
+
+
+            }
+        });
+
+    }
+
+    function sleep(milliseconds) {
+        const date = Date.now();
+        let currentDate = null;
+        do {
+            currentDate = Date.now();
+        } while (currentDate - date < milliseconds);
+    }
+    function modales() {
+        console.log("MODALS CLICK");
+        const openEls = document.querySelectorAll("[data-open]");
+        const closeEls = document.querySelectorAll("[data-close]");
+        const isVisible = "is-visible";
+
+        for (const el of openEls) {
+            el.addEventListener("click", function () {
+                const modalId = this.dataset.open;
+                console.log(modalId);
+                document.getElementById(modalId).classList.add(isVisible);
+            });
+        }
+
+        for (const el of closeEls) {
+            el.addEventListener("click", function () {
+                this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+            });
+        }
+
+        document.addEventListener("click", e => {
+            if (e.target == document.querySelector(".modal.is-visible")) {
+                document.querySelector(".modal.is-visible").classList.remove(isVisible);
+            }
+        });
+
+        document.addEventListener("keyup", e => {
+            // if we press the ESC
+            if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
+                document.querySelector(".modal.is-visible").classList.remove(isVisible);
+            }
+        });
+    }
+    function ListarCotizacionesVendedor(estado) {
+        var codigoanulacion;
+        var botonanular = "";
+        //estado = 4;
+        //   console.log("Estamos en Listado cabeceras");
+        //var mitablacabecera = document.getElementById("tabla_cabecera_cotizacion_vendedor");
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+            url: "@Url.Action("ListarCotizacionesVendedor", "Cotizador")",
+
+            data: "{ 'estado': '" + estado + "'}",
+            success: function (data) {
+
+                var mitablacabecera = document.getElementById("tabla_cabecera_cotizacion_vendedor");
+                if (mitablacabecera) {
+                    mitablacabecera.innerHTML = ``;
+                }
+                else {
+                    // mitablacabecera.innerHTML = ``;
+                }
+                //recorrer lista de objectos :D
+                mitablacabecera.innerHTML = ``;
+                var codigocotizaciontext = "CTZ-00";
+                for (cab in data) {
+
+
+                    // console.log(data);
+                    codigoanulacion = codigocotizaciontext + data[cab].codigo;
+                    //  console.log(codigoanulacion);
+                    //console.log("Cotizacion ___________________________");
+                    //console.log("codigo " + data[cab].codigo + " cliente" + data[cab].cliente + " almacen " + data[cab].almacen);
+                    //console.log("_______________________________________");
+                    mitablacabecera.innerHTML += ` <tr>
+                                  <td scope='row'>${codigocotizaciontext}${data[cab].codigo}</td>
+                                  <td>${data[cab].cliente}</td>
+                                  <td>${data[cab].almacen}</td>
+                                  <td>${data[cab].vendedor}</td>
+                                  <td>${data[cab].formapago}</td>
+                                  <td>${data[cab].fecharegistro}</td>
+
+                                    <td>${data[cab].id_estado}</td>
+                                  <td >${data[cab].direccion}</td>
+                                  <td><button id="${codigoanulacion}" class="btn text-white" onclick="AnularCotizacion(${data[cab].codigo})" style="background-color:#D22B08;"><i class="bi bi-clipboard2-x"></i></button></td>
+                                <td><button id="${codigoanulacion}" class="btn text-white" onclick="EnviarcodigoEdit(${data[cab].codigo})" data-toggle="modal" data-target="#exampleModalCenter" style="background-color:#278DE9;"><i class="bi bi-pencil-square"></i></button></td>
+                                <td><button id="${codigoanulacion}" class="btn text-white" onclick="GenerarPdf(${data[cab].codigo})" style="background-color:#D22B08;"><i class="bi bi-file-earmark-pdf"></i></button></td>
+                                <td><button disabled id="accion_totalizar" class="btn text-white" onclick="TotalizarCotizacion(${data[cab].codigo})" style="background-color:#09B556;"><i class="bi bi-check2-square"></i></button></td>
+                                <td><button id="${codigoanulacion}" class="btn text-white" onclick="cargarfoto_ctz(${data[cab].codigo}); verImagendeabonoporCtz(${data[cab].codigo});" data-toggle="modal" data-target="#exampleModalCenter_ad" style="background-color:#09B556;"><i class="bi bi-check2-square"></i></button></td>
+
+                                </tr>
+                                    `;
+
+
+
+                }
+
+
+
+            }
+        });
+
+    }
+
+
+    function EnviarcodigoEdit(codigocabecera) {
+        listarDetalleCotizacion(codigocabecera);
+
+
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+            data: "{ 'codigo': '" + codigocabecera + "'}",
+              url: "@Url.Action("traer_dato_para_codigo", "Cotizador")",
+            //url: '/Cotizador/traer_dato_para_codigo',
+            success: function (data) {
+                console.log(data.cliente);
+                document.getElementById("codigo_cabecera_edit").value = data.codigo;
+                document.getElementById("codigo_cliente_edit").value = data.cliente;
+                document.getElementById("direcion_cliente_edit").value = data.direccion;
+                document.getElementById("forma_pago_edit").value = data.formapago;
+                //document.getElementById("adjunto_edit").value = data.codigo;
+                document.getElementById("vendedor_edit").value = data.vendedor;
+                document.getElementById("almaceninput_edit").value = data.glosa;
+                document.getElementById("almacen_edit").value = data.almacen;
+                document.getElementById("fecha_emitida_cot_edit").value = data.fechaemision;
+                //document.getElementById("glosa_edit").value = data.dato_extra;
+                if (data.moneda == "NS") {
+                    document.getElementById("modena_edit").value = "NUEVOS SOLES";
+                }
+                //SELECIONAR EL VENDEDOOR DE LA CABECERA
+                $('#vendedores_edit').val(data.cod_ven).trigger('change.select2');
+                //SELECCIONAR LA FORMA DE PAGO DE LA CABECERA
+                $('#formapago_edit').val(data.cod_for_pag).trigger('change.select2');
+                //LISTA LAS DIRECCIONES DEL CLIENTE
+                $('#direccion_cliente_se_edit').val(data.cod_dir_ubi);
+                rellenarDirecciones_mod_editar(data.dato_extra);
+                //SELECCIONA LA DIRECCION CORRECTA
+                //ocula el id
+                document.getElementById("codigo_cabecera_edit_o").value = data.codigo;
+                console.log("ENCABEZADO FIN");
+            }
+        });
+    }
+
+    function AnularCotizacion(codigo) {
+
+      //  borrarRegistroDetalle(codigo);
+
+
+        // console.log("ejecutando alertar");
+        Swal.fire({
+            title: '¿Esta seguro en Anular Cotizacion? CTZ-00 ' + codigo,
+            showDenyButton: false,
+            showCancelButton: true,
+            confirmButtonText: 'ANULAR',
+            denyButtonText: 'DATO DE NEGAR',
+        }).then((result) => {
+            cargaMotivos();
+            //ingresar_motivo_anulacion();
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+
+                Swal.fire('Anulado CTZ-00' + codigo, '', 'success')
+                anularporajax(codigo);
+            } else if (result.isDenied) {
+                Swal.fire('Cambios no Guardados', '', 'info')
+            }
+        })
+
+    }
+
+    function TotalizarCotizacion(codigo) {
+
+      
+        console.log("valor de Accion Totalizar " + valid_Totalizar);
+        if (valid_Totalizar) {
+
+            document.getElementById('accion_totalizar').removeAttribute("disabled", "");
+            document.getElementById('accion_totalizar').setAttribute("enabled", "");
+            Swal.fire({
+                title: '¿Esta seguro en Finalizar Cotizacion? CTZ-00 ' + codigo,
+                showDenyButton: false,
+                showCancelButton: false,
+                confirmButtonText: 'TOTALIZAR',
+                denyButtonText: 'DATO DE NEGAR',
+            }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                    Swal.fire('Finalizar CTZ-00' + codigo, '', 'success')
+                    totalizarporajax(codigo);
+
+                    //if (verificardocumentosadjuntos()==false) {
+                    //    Swal.fire('No puede Finalizar CTZ-00' + codigo+' Falta Adjuntar Pago', '', 'danger')
+                    //}
+                    //else {
+                    //    totalizarporajax(codigo);
+                    //}
+
+                } else if (result.isDenied) {
+                    Swal.fire('Cambios no Guardados', '', 'info')
+                }
+            })
+
+        }
+        else {
+           // SwalFire("No puede Totalizar, falta adjuntar Voucher de Pago");
+            console.log("valor de Accion Totalizar " + valid_Totalizar);
+        }
+
+
+      
+
+    }
+    function verificardocumentosadjuntos() {
+         $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+            data: "{ 'codigo': '" + codigocotizacion + "','estado': '" + '5' + "'}",
+            url: "@Url.Action("verificardocumentosadjuntos", "Cotizador")",
+
+             success: function (data) {
+                 documentos.getElementById('checkoutDocumentos').value=1;
+             }
+        });
+    }
+
+    function GenerarPdf(codigo) {
+
+        // console.log("ejecutando alertar");
+        Swal.fire({
+            title: 'Generar PDF Cotizacion CTZ-00 ' + codigo,
+            showDenyButton: false,
+            showCancelButton: true,
+            confirmButtonText: 'GENERAR',
+            denyButtonText: 'DATO DE NEGAR',
+        }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+
+                ObtenerDetalleCotizacion_mayor_cero(codigo);
+
+
+
+                Swal.fire('Cotizacion CTZ-00' + codigo, '', 'success')
+                // anularporajax(codigo);
+
+
+            } else if (result.isDenied) {
+                Swal.fire('Cambios no Guardados', '', 'info')
+            }
+        })
+
+    }
+
+    function anularporajax(codigocotizacion) {
+        console.log("anulando internamnete");
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+            data: "{ 'codigo': '" + codigocotizacion + "','estado': '" + '5' + "'}",
+            url: "@Url.Action("AnularCotiVendedor", "Cotizador")",
+
+            success: function (data) {
+                console.log("ANULADO ?:" + data);
+                ListarCotizacionesVendedor(3);
+
+            }
+        });
+    }
+
+    function totalizarporajax(codigocotizacion) {
+        console.log("Totalizando internamnete");
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+            data: "{ 'codigo': '" + codigocotizacion + "','estado': '" + '4' + "'}",
+
+             url: "@Url.Action("TotalizarCotiVendedor", "Cotizador")",
+            success: function (data) {
+                console.log("TOTALIZAR ?:" + data);
+                ListarCotizacionesVendedor(3);
+
+            }
+        });
+    }
+
+    function mostrarDetalleCotizacion(cliente, codigoCtz) {
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+            url: "@Url.Action("ListarDetallesctz", "Cotizador")",
+
+            data: "{ 'cliente': '" + cliente + "','codigocotizacion': '" + codigoCtz + "'}",
+            success: function (data) {
+
+                let mitabladetalle = document.getElementById("tabla_detalle_cotizacion");
+                //recorrer lista de objectos :D Bellisimo
+                mitabladetalle.innerHTML = ``;
+                var codigocotizaciondetalletext = "CTZ-00";
+                for (cab in data) {
+                    codigoanulacion_detalle = codigocotizaciondetalletext + data[cab].codigo;
+                    console.log(codigoanulacion_detalle);
+                    //console.log("Cotizacion ___________________________");
+                    //console.log("codigo " + data[cab].codigo + " cliente" + data[cab].cliente + " almacen " + data[cab].almacen);
+                    //console.log("_______________________________________");
+                    mitabladetalle.innerHTML += ` <tr>
+                                  <td scope='row'>${codigocotizaciondetalletext}${data[cab].codigo}</td>
+                                  <td>${data[cab].cliente}</td>
+                                  <td>${data[cab].almacen}</td>
+                                  <td>${data[cab].vendedor}</td>
+                                  <td>${data[cab].formapago}</td>
+                                  <td>${data[cab].fecharegistro}</td>
+                                  <td >${data[cab].direccion}</td>
+                                  <td><button id="${codigoanulacion_detalle}" class="btn text-white" onclick="AnularCotizacion(${data[cab].codigo})" style="background-color:#D22B08;">ANULAR</button></td>
+                                  <td><button id="${codigoanulacion_detalle}" class="btn text-white" onclick="GenerarPdf(${data[cab].codigo})" style="background-color:#D22B08;">PDF</button></td>
+                                </tr>
+                                    `;
+
+                }
+
+
+
+
+            }
+        });
+
+    }
+
+    function rellenarDirecciones_mod_editar(codigo) {
+        ///FGB: RELLENA DATOS DE DIRECCIONES DEL CLIENTE
+        var select = document.getElementById('direccion_cliente_se_edit');
+        //inicie el select vacio
+        for (let i = select.options.length; i >= 0; i--) {
+            select.remove(i);
+        }
+
+        //var SelectCliente = document.getElementById('codigo_cliente_edit').value;
+        //var RucCliente = SelectCliente.options[SelectCliente.selectedIndex].value;
+        // console.log("RUC CLIENTE " + RucCliente);
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+
+             url: "@Url.Action("ListarDireccionesCliente", "Cotizador")",
+            data: "{ 'ruccliente': '" + codigo + "'}",
+            success: function (data) {
+                //   console.log(data);
+
+                // llene el select Direcciones
+                for (var i = 0; i < data.length; i++) {
+                    var option = document.createElement("option"); //Creamos la opcion
+                    option.value = data[i].codigoUbicacion;
+                    option.text = data[i].nombre;
+                    select.appendChild(option); //Metemos la opción en el select
+                }
+            },
+
+        });
+
+    }
+
+    function inicializar_select() {
+        $('#vendedores_edit').select2('');
+        $('#formapago_edit').select2('');
+        //$('#direccion_cliente_se_edit').select2('');
+
+    }
+
+    function EditarCabeceraCotizacion() {
+        console.log("ENCABEZADO");
+        $('#cabeceracoti_editar').click(function () {
+            var codigo_cabecera = document.getElementById("codigo_cabecera_edit_o").value;
+
+            var direccion = document.getElementById("direccion_cliente_se_edit").value;
+            var formapago = document.getElementById("formapago_edit").value;
+            var vendedor = document.getElementById("vendedores_edit").value;
+            var glosa = document.getElementById("glosa_edit").value;
+
+            console.log("cod cab " + codigo_cabecera + "dir " + direccion + "form pa " + formapago + "vende " + vendedor + "glosa " + glosa);
+
+            $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                data: "{ 'codigo_cabecera': '" + codigo_cabecera + "','direccion': '" + direccion + "','formapago': '" + formapago + "', 'vendedor': '" + vendedor + "','glosa': '" + glosa + "' }",
+
+                url: "@Url.Action("EditarCabeceraCotizacion", "Cotizador")",
+                success: function (data) {
+                    console.log(data);
+                    //inicializar_select();
+                    ListarCotizacionesVendedor(3);
+                    //cambios FGB
+                    //window.location.href = '/Cotizador/ListarCotizaciones';
+                    window.location.href="@Url.Action("ListarCotizaciones", "Cotizador")";
+                }
+            });
+
+        });
+
+    }
+
+    function sumarDias(fecha, dias) {
+        fecha.setDate(fecha.getDate() + dias);
+        return fecha;
+    }
+
+    function FiltrarCotizacionesVendedor_fecha() {
+        //COLOCAR FECHAS EL DIA DE HOY POR DEFECTO
+        var date = new Date();
+        let fechainicioseteada = new Date(date.getTime() - (date.getTimezoneOffset() * 60000));
+        console.log("date time " + date.getTime());
+        console.log("gettime zone " + date.getTimezoneOffset() * 60000);
+        console.log(fechainicioseteada);
+
+
+        //SUMAR DIAS
+        var d = new Date(fechainicioseteada.toJSON().slice(0, 10));
+        // alert(sumarDias(d,0));
+
+        // document.getElementById("lc_dt_fec_ini").value = fechainicioseteada.toJSON().slice(0, 10);
+        // document.getElementById("lc_dt_fec_fin").value = fechainicioseteada.toJSON().slice(0, 10);
+
+        document.getElementById("lc_dt_fec_ini").value = sumarDias(d, -1).toJSON().slice(0, 10);
+        document.getElementById("lc_dt_fec_fin").value = sumarDias(d, 2).toJSON().slice(0, 10);
+        //FIN COLOCAR FECHAS EL DIA DE HOY POR DEFECTO
+
+        $('#lc_btn_fec').click(function () {
+            var parametro = 1;
+            var fecha_inicio = document.getElementById("lc_dt_fec_ini").value;
+            var fecha_fin = document.getElementById("lc_dt_fec_fin").value;
+            var fecha_i = fecha_inicio.split('-');
+            var fecha_f = fecha_fin.split('-');
+
+
+            var fecha_parseada_inicio = fecha_i[2] + "-" + fecha_i[1] + "-" + fecha_i[0];
+            var fecha_parseada_fin = fecha_f[2] + "-" + fecha_f[1] + "-" + fecha_f[0];
+
+
+            // alert(fecha_parseada_inicio + " " + fecha_parseada_fin);
+            // console.log(fecha_inicio + fecha_fin);
+            if (fecha_fin != "" || fecha_inicio != "") {
+
+                var mitablacabecera = document.getElementById("tabla_cabecera_cotizacion_vendedor");
+                $.ajax({
+                    dataType: "json",
+                    type: 'POST',
+                    contentType: "application/json; charset=utf-8",
+                    data: "{ 'fecha_inicio': '" + fecha_parseada_inicio + "','fecha_fin': '" + fecha_parseada_fin + "','parametro': '" + parametro + "'}",
+
+                    url: "@Url.Action("ListarCotizacionesVendedor_parametro", "Cotizador")",
+                    success: function (data) {
+                        console.log(data);
+
+                        //recorrer lista de objectos :D
+                        mitablacabecera.innerHTML = ``;
+                        var codigocotizaciontext = "CTZ-00";
+                        for (cab in data) {
+
+                            // console.log(data);
+                            codigoanulacion = codigocotizaciontext + data[cab].codigo;
+                            //  console.log(codigoanulacion);
+                            //console.log("Cotizacion ___________________________");
+                            //console.log("codigo " + data[cab].codigo + " cliente" + data[cab].cliente + " almacen " + data[cab].almacen);
+                            //console.log("_______________________________________");
+                            mitablacabecera.innerHTML += ` <tr>
+                                  <td scope='row'>${codigocotizaciontext}${data[cab].codigo}</td>
+                                  <td>${data[cab].cliente}</td>
+                                  <td>${data[cab].almacen}</td>
+                                  <td>${data[cab].vendedor}</td>
+                                  <td>${data[cab].formapago}</td>
+                                  <td>${data[cab].fecharegistro}</td>
+
+                                   <td>${data[cab].id_estado}</td>
+                                  <td >${data[cab].direccion}</td>
+                                  <td><button id="${codigoanulacion}" class="btn text-white" onclick="AnularCotizacion(${data[cab].codigo})" style="background-color:#D22B08;"><i class="bi bi-clipboard2-x"></i></button></td>
+                                <td><button id="${codigoanulacion}" class="btn text-white" onclick="EnviarcodigoEdit(${data[cab].codigo})" data-toggle="modal" data-target="#exampleModalCenter" style="background-color:#278DE9;"><i class="bi bi-pencil-square"></i></button></td>
+                                <td><button id="${codigoanulacion}" class="btn text-white" onclick="GenerarPdf(${data[cab].codigo})" style="background-color:#D22B08;"><i class="bi bi-file-earmark-pdf"></i></button></td>
+                                <td><button id="${codigoanulacion}" class="btn text-white" onclick="TotalizarCotizacion(${data[cab].codigo})" style="background-color:#09B556;"><i class="bi bi-check2-square"></i></button></td>
+                                <td><button id="${codigoanulacion}" class="btn text-white" data-toggle="modal" data-target="#exampleModalCenter_ad" style="background-color:#09B556;"><i class="bi bi-check2-square"></i></button></td>
+
+                                </tr>
+                                    `;
+
+
+
+                        }
+
+
+
+                    }
+
+                });
+
+            }
+            else {
+                alert("NO DEBERIA FUNCIONAR");
+            }
+
+
+        });
+
+    }
+
+    function LlenadoCabeceraPDF() {
+
+        //doc.rect(15, 43, 180, 40); // empty square
+        //doc.text(20, 50, 'Señor(es)');
+        //doc.text(50, 50, ':');
+        //doc.text(52, 50, 'EMPRESA ABC');
+    }
+
+
+    var dataimage = "";
+    function leerArchivo() {
+       /* var codi = cargarfoto_ctz();*/
+        var codigocabecera = document.getElementById('codigocabecera_adjunto').value;
+        if (this.files && this.files[0]) {
+            var FR = new FileReader();
+            FR.onload = function (e) {
+                document.getElementById("imgNinja").value = e.target.result;
+                dataimage = document.getElementById("imgNinja").value;
+                //NO ES AQUI - FALTA MOSOTRAR GUARDADO
+
+                   $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+             data: "{ 'codigocotizacion': '" + codigocabecera + "','dataimage': '" + dataimage + "' }",
+                url: "@Url.Action("CargarImagen_Cotizacion", "Cotizador")",
+                success: function (data) {
+                    console.log(data);
+
+                }
+            });
+
+
+
+                console.log(e.target.result);
+            };
+            FR.readAsDataURL(this.files[0]);
+
+            //FR.readAsDataURL(this.files[1]);
+        }
+    }
+
+    function cargarfoto_ctz(codigocabecera) {
+
+        document.getElementById('codigocabecera_adjunto').value = codigocabecera;
+       // document.getElementById("customFileLang").addEventListener("change", leerArchivo(codigocabecera), false);
+
+      // var dataimage_2 = document.getElementById("imgNinja").value;
+         @*$.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+             data: "{ 'codigocotizacion': '" + codigocabecera + "','dataimage': '" + dataimage_2 + "' }",
+                url: "@Url.Action("CargarImagen_Cotizacion", "Cotizador")",
+                success: function (data) {
+                    console.log(data);
+
+                }
+            });*@
+    }
+
+ document.getElementById("customFileLang").addEventListener("change", leerArchivo, false);
+
+
+
+
+    ///movimiento articulos
+        //agregar articulo a la tabla
+    function init_arituclo() {
+
+        $("#selArticulosprueba").select2('');
+        //READY DE ARTICULOS
+        //FiltrarArticulos();
+       // $('#articulo_select').select2('');
+        $('#articulo_select').select2({
+            minimumInputLength: 3 // para buscar a partir del 3er digito
+        });
+        $('#articulo_select_modelo').select2('');
+        $("[id$='articulo_select']").change(function () {
+            //OBTENIES EL ARTICULO
+            var selectArticulo = document.getElementById('articulo_select');
+            var codigoArticulo = selectArticulo.options[selectArticulo.selectedIndex].value;
+            console.log(codigoArticulo);
+            //   var data = { ruccliente: RucCliente };
+            $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("ObtenerArticulo", "Cotizador")",
+
+                data: "{ 'codigo': '" + codigoArticulo + "'}",
+                success: function (data) {
+
+                    if (data.unidad == null) {
+
+                    } else {
+                        //  console.log(data);
+                        var stock = ObtenerStockArticulo();
+                        document.getElementById('unidad_articulo').value = data.unidad;
+                        var precio = parseFloat(data.preciouno);
+                        document.getElementById('precio_articulo').value = precio;
+                        //CONVERT A ENTERO DEL STOCK
+                        document.getElementById('stock_articulo').value = stock;
+                    }
+
+                }
+            });
+        });
+
+        //listar detalle de articulos
+
+        //READY DE ARTICULOS TABLA
+        $('#adicionar').click(function () {
+
+            var nombre_oculto = document.getElementById("nombre_articulo_ocul").value;
+            var codigo_oculto = document.getElementById("codigo_articulo_ocul").value;
+            var codigo = document.getElementById("articulo_select").value;
+            var codigo1 = document.getElementById("articulo_select");
+            //OBTENER NOMBRE DEL ARTICULO
+            var idx = codigo1.selectedIndex;
+            var articulo = codigo1.options[idx].text;
+            //var articulo = document.getElementById("articulo_select").value;
+            //var text = articulo.find('option[value=' + articulo + ']').text();
+            var arr = articulo.split('-');
+            var articulo_nom = arr[1];
+
+            console.log(articulo + "nombre");
+            ///
+            var unidad = document.getElementById("unidad_articulo").value;
+            var precio = document.getElementById("precio_articulo").value;
+            var cantidad_solicitada = document.getElementById("c_solicitada").value;
+            var cantidad_disponible = document.getElementById("c_disponible").value;
+            var stock = document.getElementById("stock_articulo").value;
+            var cabeceramaster = document.getElementById("codigo_cabecera_edit").value;
+            var motivo = "Registro";
+            console.log(cantidad_solicitada);
+            console.log(cantidad_disponible);
+            if (cantidad_solicitada == "" || cantidad_disponible == "") {
+                cantidad_solicitada.required = 'true';
+                cantidad_disponible.required = 'true';
+
+            }
+            else {
+                //verifica que tipo de metodo uso para agregar articulo al detalle
+                if (codigo == "Elegir") {
+                    var i = 1; //contador para asignar id al boton que borrara la fila
+                    //original var fila = '<tr id="row' + i + '"><td>' + nombre + '</td><td>' + apellido + '</td><td>' + cedula + '</td><td><button type="button" name="remove" id="' + i + '" class="btn btn-danger btn_remove">Quitar</button></td></tr>'; //esto seria lo que contendria la fila
+                    //variable que pinta la fila en la tabla
+
+                    var fila = '<tr id="row' + i + '"> <td>' + codigo_oculto + '</td><td>' + nombre_oculto + '</td> <td>' + unidad + '</td><td > ' + precio + '</td><td>' + cantidad_solicitada + '</td> <td>' + cantidad_disponible + '</td> <td>' + stock + '</td> <td><button type="button" name="remove" id="' + i + '" class="btn btn-danger btn_remove">Quitar</button></td>   <td style="visibility:hidden;"> ' + unidad + '</td>  <td style="visibility:hidden;"> ' + cabeceramaster + '</td>     </tr > '; //esto seria lo que contendria la fila
+
+                    i++;
+                    //QUITANDO LO AGREGADO MANUALMENTE
+                   // $('#mytable tr:first').after(fila);
+
+                    $.ajax({
+                        dataType: "json",
+                        type: 'POST',
+                        contentType: "application/json; charset=utf-8",
+                        url: "@Url.Action("AgregarDetalleCoti", "Cotizador")",
+                        data: "{ 'codigo_articulo': '" + codigo_oculto + "','nombre_articulo': '" + nombre_oculto + "','uni': '" + unidad + "', 'preciocotizacion': '" + precio + "','cantidad_solicitada': '" + cantidad_solicitada + "', 'cantidad_disponible': '" + cantidad_disponible + "','stock': '" + stock + "', 'motivo': '" + motivo + "','codigo_cabecera': '" + cabeceramaster + "' }",
+                        success: function (data) {
+                            //si data es true agrega
+                            console.log(data);
+
+                            listarDetalleCotizacion(cabeceramaster);
+
+                        }
+                    });
+                }
+                else {
+
+                    var i = 1; //contador para asignar id al boton que borrara la fila
+                    //original var fila = '<tr id="row' + i + '"><td>' + nombre + '</td><td>' + apellido + '</td><td>' + cedula + '</td><td><button type="button" name="remove" id="' + i + '" class="btn btn-danger btn_remove">Quitar</button></td></tr>'; //esto seria lo que contendria la fila
+                    //variable que pinta la fila en la tabla
+
+                    var fila = '<tr id="row' + i + '"> <td>' + codigo + '</td><td>' + articulo_nom + '</td> <td>' + unidad + '</td><td > ' + precio + '</td><td>' + cantidad_solicitada + '</td> <td>' + cantidad_disponible + '</td> <td>' + stock + '</td> <td><button type="button" name="remove" id="' + i + '" class="btn btn-danger btn_remove">Quitar</button></td>   <td style="visibility:hidden;"> ' + unidad + '</td>  <td style="visibility:hidden;"> ' + cabeceramaster + '</td>     </tr > '; //esto seria lo que contendria la fila
+
+                    i++;
+                    //QUITANDO LO AGREGADO MANUALMENTE
+                    //  $('#mytable tr:first').after(fila);
+
+
+                    $.ajax({
+                        dataType: "json",
+                        type: 'POST',
+                        contentType: "application/json; charset=utf-8",
+                         url: "@Url.Action("AgregarDetalleCoti", "Cotizador")",
+                       data: "{ 'codigo_articulo': '" + codigo + "','nombre_articulo': '" + articulo_nom + "','uni': '" + unidad + "', 'preciocotizacion': '" + precio + "','cantidad_solicitada': '" + cantidad_solicitada + "', 'cantidad_disponible': '" + cantidad_disponible + "','stock': '" + stock + "', 'motivo': '" + motivo + "','codigo_cabecera': '" + cabeceramaster + "' }",
+                        success: function (data) {
+                            //si data es true agrega
+                            console.log(data);
+                            //var cabecera = document.getElementById('codigocliente').value;
+                            listarDetalleCotizacion(cabeceramaster);
+
+                        }
+                    });
+                }
+
+
+
+
+
+                //var i = 1; //contador para asignar id al boton que borrara la fila
+                ////original var fila = '<tr id="row' + i + '"><td>' + nombre + '</td><td>' + apellido + '</td><td>' + cedula + '</td><td><button type="button" name="remove" id="' + i + '" class="btn btn-danger btn_remove">Quitar</button></td></tr>'; //esto seria lo que contendria la fila
+                ////variable que pinta la fila en la tabla
+
+                //var fila = '<tr id="row' + i + '"> <td>' + codigo + '</td><td>' + articulo_nom + '</td> <td>' + unidad + '</td><td > ' + precio + '</td><td>' + cantidad_solicitada + '</td> <td>' + cantidad_disponible + '</td> <td>' + stock + '</td> <td><button type="button" name="remove" id="' + i + '" class="btn btn-danger btn_remove">Quitar</button></td>   <td style="visibility:hidden;"> ' + unidad + '</td>  <td style="visibility:hidden;"> ' + cabeceramaster + '</td>     </tr > '; //esto seria lo que contendria la fila
+
+                //i++;
+                //$('#mytable tr:first').after(fila);
+
+
+                //creando arreglo  crea el arreglo y envia a BD
+                RegistrarDetalle();
+
+                //cerrando arreglo
+
+
+
+                $("#adicionados").text(""); //esta instruccion limpia el div adicioandos para que no se vayan acumulando
+                var nFilas = $("#mytable tr").length;
+                $("#adicionados").append(nFilas - 1);
+                //le resto 1 para no contar la fila del header
+                document.getElementById("articulo_select").value = "";
+                document.getElementById("articulo_select").value = "";
+                document.getElementById("unidad_articulo").value = "";
+                document.getElementById("precio_articulo").value = "";
+                document.getElementById("c_solicitada").value = "";
+                document.getElementById("c_disponible").value = "";
+                document.getElementById("stock_articulo").focus();
+
+
+            }
+        });
+
+        $(document).on('click', '.btn_remove', function () {
+            // alert("Ingrese Motivo De eliminacion");
+
+            ingresar_motivo_anulacion();
+
+            var button_id = $(this).attr("id");
+            //cuando da click obtenemos el id del boton
+            $('#row' + button_id + '').remove(); //borra la fila
+
+            //tambien edita el motivo AJAX PARA EDITAR MOTIVO
+            //$.ajax({
+            //    dataType: "json",
+            //    type: 'POST',
+            //    contentType: "application/json; charset=utf-8",
+            //    url: '/Cotizador/EditarDetalleCotizacion',
+            //    data: "{ 'codigo_cabecera': '" + codigocabecera + "','codigo_articulo': '" + codigoarticulo + "','motivo': '" + motivo + "'}",
+            //    success: function (data) {
+            //        console.log(data);
+
+
+            //    }
+            //});
+
+
+
+            //limpia el para que vuelva a contar las filas de la tabla
+            $("#adicionados").text("");
+            var nFilas = $("#mytable tr").length;
+            $("#adicionados").append(nFilas - 1);
+        });
+
+    }
+
+    function RegistrarDetalle() {
+
+   var table = document.getElementById("mytable");
+          for (var i = table.rows.length - 1; i < table.rows.length; i++) {
+            console.log("tamaño de row en la tabla");
+            console.log(table.rows.length);
+            var row = table.rows[i];
+            var Detalle = {};
+
+
+            Detalle.codigo_articulo = row.cells[0].innerHTML;
+            Detalle.nombre_articulo = row.cells[1].innerHTML;
+            Detalle.uni = row.cells[2].innerHTML;
+            Detalle.preciodecotizacion = row.cells[3].innerHTML;
+            Detalle.cantidad_solicitada = row.cells[4].innerHTML;
+            Detalle.cantidad_disponible = row.cells[5].innerHTML;
+            Detalle.stock = row.cells[6].innerHTML;
+
+            //boton es la celda 7
+            Detalle.motivo = row.cells[8].innerHTML;
+            Detalle.codigo_cabecera = row.cells[9].innerHTML;
+            // ListaDetalle.push(Detalle);
+      }
+
+    };
+
+
+    function borrarRegistroDetalle(codigocabecera, codarticulo) {
+         console.log("BORRANDO REGISTRO ARTICULO");
+         $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+
+             url: "@Url.Action("anular_detalle_articulo", "Cotizador")",
+             data: "{ 'codigocabecera': '" + codigocabecera + "','codarticulo': '" + codarticulo + "'}",
+             success: function (data) {
+                 listarDetalleCotizacion(codigocabecera);
+                            }
+        });
+
+        console.log("BORRAR REGSITRO");
+        ingresar_motivo_anulacion();
+        console.log("BORRAR REGSITRO");
+        ingresar_motivo_anulacion();
+
+
+    }
+
+
+    function lista() {
+
+        $("#selArticulosprueba").select2({
+
+            ajax: {
+                url: "@Url.Action("ObtenerArticuloparaSelect", "Cotizador")",
+
+                type: "post",
+                dataType: 'json',
+                delay: 250,
+                data: function (params) {
+                    return {
+                        codigo: params.term // search term
+                    };
+                },
+                processResults: function (response) {
+                    console.log(response.codigo);
+                    return {
+                        results: response
+                    };
+                },
+                cache: true
+            }
+        });
+
+
+    };
+
+    function listarDetalleCotizacion(codigocabecera) {
+        console.log("Listando detalle del codigo " + codigocabecera);
+         $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+            url: "@Url.Action("ListarDetalleCotizacionxCabecera", "Cotizador")",
+            data: "{ 'codigocabecera': '" + codigocabecera + "'}",
+            success: function (data) {
+
+                var mitablacabecera = document.getElementById("tabla_detalle_cotizacion_vendedor");
+                if (mitablacabecera) {
+                    mitablacabecera.innerHTML = ``;
+                }
+                else {
+                    // mitablacabecera.innerHTML = ``;
+                }
+                //recorrer lista de objectos :D
+                mitablacabecera.innerHTML = ``;
+                var codigoanulacion;
+                for (cab in data) {
+
+                    // console.log(data);
+                    codigoanulacion = data[cab].codigo_cabecera;
+                    //  console.log(codigoanulacion);
+                    //console.log("Cotizacion ___________________________");
+                    //console.log("codigo " + data[cab].codigo + " cliente" + data[cab].cliente + " almacen " + data[cab].almacen);
+                    //console.log("_______________________________________");
+                    mitablacabecera.innerHTML += ` <tr>
+
+                                  <td>${data[cab].codigo_articulo}</td>
+                                  <td>${data[cab].nombre_articulo}</td>
+                                   <td>${data[cab].uni}</td>
+                                  <td>${data[cab].preciodecotizacion}</td>
+                                  <td>${data[cab].cantidad_solicitada}</td>
+                                  <td>${data[cab].cantidad_disponible}</td>
+                                  <td>${data[cab].stock}</td>
+                                  <td><button  class="btn text-white" onclick="borrarRegistroDetalle(${data[cab].codigo_cabecera},'${data[cab].codigo_articulo}')" style="background-color:#D22B08;"><i class="bi bi-clipboard2-x"></i></button></td>
+
+
+                                </tr>
+                                    `;
+
+
+
+                }
+
+
+
+            }
+        });
+
+    }
+
+    function AnularArticulo(codigo) {
+        console.log("Anulando Articulo "+codigo);
+    }
+    //agregar articulo
+    function FiltrarArticulos() {
+        var selectmodArticulo = document.getElementById('articulo_select_modelo');
+        var codigoModArticulo = selectmodArticulo.options[selectmodArticulo.selectedIndex].value;
+
+        var mitablaArtFiltrados = document.getElementById("tabla_art_filtrados_res");
+        var cod_ar = document.getElementById('codigo_articulo_corto').value;
+        var desc_ar = document.getElementById('descripcion_articulo_corto').value;
+        var almacen = document.getElementById('almacen_edit').value;
+        if (cod_ar == "" && desc_ar == "" && codigoModArticulo == "") {
+            alert("llenar datos");
+        }
+        else {
+            $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                 url: "@Url.Action("ListadoArticulosFiltrado_edit", "Cotizador")",
+
+                data: "{ 'codigo': '" + cod_ar + "','almacen': '" + almacen + "', 'descripcion': '" + desc_ar + "','modelo': '" + codigoModArticulo + "'}",
+                success: function (data) {
+                    //  console.log(data);
+                    mitablaArtFiltrados.innerHTML = ``;
+                    var variablecod;
+                    for (cab in data) {
+                        console.log(data);
+                        variablecod = data[cab].codigo;
+                        //  codigoanulacion = codigocotizaciontext + data[cab].codigo;
+                        //  console.log(codigoanulacion);
+                        //console.log("Cotizacion ___________________________");
+                        //console.log("codigo " + data[cab].codigo + " cliente" + data[cab].cliente + " almacen " + data[cab].almacen);
+                        //console.log("_______________________________________");
+                        mitablaArtFiltrados.innerHTML += ` <tr>
+
+                                  <td>${data[cab].codigo}</td>
+                                  <td>${data[cab].nombre}</td>
+                                  <td>${data[cab].preciouno}</td>
+                                 <td>${data[cab].stock}</td>
+    <td><button  id="btn_filtrado" class="btn text-white" onclick="RellenarCamposArt('${data[cab].codigo}')" style="background-color:#09B556;"><i class="bi bi-check2-square"></i></button></td>
+
+                                </tr>
+                                    `;
+
+
+
+                    }
+                }
+            });
+        }
+    }
+
+    function RellenarCamposArt(codarticulo) {
+        $('#articulo_select').val('Elegir').trigger('change.select2');
+        //  alert(codarticulo);
+        //  console.log(codarticulo);
+
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+
+             url: "@Url.Action("ObtenerArticulo", "Cotizador")",
+            data: "{ 'codigo': '" + codarticulo + "'}",
+            success: function (data) {
+                //  console.log(data);
+                // var stock = ObtenerStockArticulo();
+                document.getElementById('unidad_articulo').value = data.unidad;
+                var precio = parseFloat(data.preciouno);
+                document.getElementById('precio_articulo').value = precio;
+                //CONVERT A ENTERO DEL STOCK
+
+                stok = parseInt(data.stock);
+                //console.log(stok);
+                //console.log(data.stock);
+
+                document.getElementById('stock_articulo').value = stok;
+                document.getElementById('codigo_articulo_ocul').value = data.codigo;
+                document.getElementById('nom_articulo_2').value = data.codigo + " - " + data.nombre;
+                document.getElementById('nombre_articulo_ocul').value = data.nombre;
+                document.getElementById('c_disponible').value = stok;
+
+                //$("#popupBusquedaParroquia").modal('hide');//ocultamos el modal
+                //$('body').removeClass('modal-open');//eliminamos la clase del body para poder hacer scroll
+                //$('.modal-backdrop').remove();//eliminamos el backdrop del modal
+
+            }
+        });
+        // document.getElementById('');
+        //ocultar modal articulo
+        $('#exampleModalBusquedaArticulo').modal('hide');
+    }
+    function enviarparametro() {
+
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+
+             url: "@Url.Action("ObtenerArticulo", "Cotizador")",
+            data: "{ 'codigo': '" + codigoArticulo + "'}",
+            success: function (data) {
+
+                document.getElementById('unidad_articulo').value = data.unidad;
+                let precioArticulo = parseInt(data.preciouno, 16);
+                document.getElementById('precio_articulo').value = precioArticulo;
+                //document.getElementById('stock_articulo').value = stock;
+                // document.getElementById('c_disponible').value = stock;
+            }
+        });
+    }
+
+    function ObtenerStockArticulo() {
+        //NECESITAS ARTICULO Y EL ALMACEN
+        var selectArticulo = document.getElementById('articulo_select');
+        var codArticulo = selectArticulo.options[selectArticulo.selectedIndex].value;
+        //var selectAlmacen = document.getElementById('almacen');
+        //var codAlmacen = selectAlmacen.options[selectAlmacen.selectedIndex].value;
+        var codAlmacen = document.getElementById('almaceninput_edit').value;
+        // console.log("CODIGO ALMACEN" + codAlmacen);
+        //var codAlmacen = selectAlmacen.options[selectAlmacen.selectedIndex].value;
+        //console.log("ESTOY HACIENDO ALGO ?");
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+
+            url: "@Url.Action("OnbtenerStockArticulo", "Cotizador")",
+            data: "{ 'codigoarticulo': '" + codArticulo + "','codigoalmacen': '" + codAlmacen + "'}",
+            success: function (data) {
+                if (data.codigo_articulo == null) {
+
+                }
+                else {
+
+                    //  console.log(data);
+                    //FGB:  OBTIENE VALOR DEL STOCK AL SELECCIONAR ARTICULO
+                    //CONVERSION DE STRING A INT
+                    let valorStock = parseInt(data.stock);
+                    var stokkk = document.getElementById('stock_articulo').value = valorStock;
+                    console.log("que marca stock " + stokkk);
+                    document.getElementById('c_disponible').value = valorStock;
+
+                    if (valorStock == 0) {
+                        document.getElementById('c_disponible').setAttribute("disabled", "");
+
+                    }
+                    else {
+
+                        document.getElementById('c_disponible').removeAttribute("disabled", "");
+                        document.getElementById('c_disponible').setAttribute("enabled", "");
+                    }
+                }
+
+            }
+        });
+
+
+    }
+
+    async function ingresar_motivo_anulacion() {
+        cargaMotivos();
+
+    }
+
+    function cargaMotivos() {
+
+        var lista = [];
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+
+            url: "@Url.Action("ListadoMotivos", "Cotizador")",
+            data: "{}",
+            success: function (data) {
+                // console.log(data);
+                let des = { data };
+                let obj = Object.assign({}, des);
+                // console.log("objeto . ." + obj[0].descripcion);
+                console.log(data.id);
+                let motivos_ = {};
+                var i = 1;
+                for (var a in data) {
+
+                    motivos_[i] = data[a].descripcion;
+                    i++;
+                }
+
+                console.log("MOTIVOS . . ." + motivos_);
+                const { value: text } = Swal.fire({
+                    input: 'select',
+                    inputOptions:
+                        motivos_
+                    ,
+                    inputLabel: 'Motivo',
+                    inputPlaceholder: 'Escribe motivo de anulacion...',
+                    inputAttributes: {
+                        'aria-label': 'Type your message here'
+                    },
+                    showCancelButton: true
+                })
+                if (text) {
+                    Swal.fire(text)
+                }
+                else {
+                    console.log("else del swal " + text);
+
+                    var selectArticulo = document.getElementById('swal2-input');
+                    var codArticulo = selectArticulo.options[selectArticulo.selectedIndex].value;
+                    console.log("identificar select " + codArticulo);
+                }
+
+            }
+        });
+
+        return lista;
+    }
+
+    function verImagendeabonoporCtz(codigocotizacion) {
+
+        var select_imagenes = document.getElementById('listadeimagenes').innerHTML = '';
+        //inicie la lista vacia de imagenes mostrada
+        //for (let i = select_imagenes.options.length; i >= 0; i--) {
+        //    select_imagenes.remove(i);
+        //}
+         $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+             data: "{ 'codigocotizacion': '" + codigocotizacion + "'}",
+            url: "@Url.Action("lIstadodeimagenesabonos", "Cotizador")",
+
+            success: function (data) {
+               //cargarimagenes en html
+
+                console.log(data);
+                 document.getElementById("listadeimagenes").value="";
+                for (cab in data)
+
+                {
+                    //document.getElementById("imagencargada").src = data[cab].imgagenBs;
+
+                    var x = document.createElement("IMG");
+                    x.setAttribute("class","img-thumbnail");
+                    x.setAttribute("src", data[cab].imgagenBs);
+                    x.setAttribute("height", "100");
+                    x.setAttribute("width", "200");
+                    x.setAttribute("alt", "suppp");
+                    x.setAttribute("id", "imagenexiste")
+                    document.getElementById("listadeimagenes").appendChild(x);
+
+                }
+
+            }
+        });
+
+
+    }
+
+</script>

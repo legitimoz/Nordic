@@ -1,0 +1,953 @@
+﻿@using ENTIDAD;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Layout/_LayoutMenu.cshtml";
+    string nombre_completo = "", almacen_completo = "", vendedor_completo = "", transportista_completo="";
+    string clase = "";
+}
+
+
+<main role="main">
+    <div class="jumbotron">
+
+        <div class="container">
+            <h3 class="text-center">COTIZADOR </h3>
+
+            <div class="row">
+
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active col-12 col-sm-12" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Datos Generales</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link col-12 col-sm-12" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Detalle Articulos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content" id="myTabContent">
+
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <!--INICIO CONTENIDO DEL PILL HOME -->
+                    <div class="p-3">
+
+                    </div>
+                    <!----form--->
+                    @using (Html.BeginForm("InsertarCabeceraCotizacion", "Cotizador", FormMethod.Post))
+                    {
+                        
+                        <div class="form-group row">
+                            <label for="codigocliente" class="col-3 col-sm-1 col-form-label">Numero</label>
+                            <div class="col-9 col-sm-5">
+                                <input type="text" class="form-control" name="txtCliente2" id="codigocliente" placeholder="Numero" disabled>
+                            </div>
+                        </div>
+                   
+                        <div class="form-group row">
+                            <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Cliente </label>
+                            <div class="col-9 col-sm-7">
+                                <input type="hidden" class="form-control" id="q" onkeyup="traerDatosClientes()" placeholder="Cliente">
+
+                                <select id="clienteres3" name="txtCliente" class="col-12 custom-select js-example-basic-single" required>
+                                    <option value="Elegir ">Eliger......</option>
+                                    @foreach (var item in ViewBag.clienteDataTable)
+                                    {
+                                        nombre_completo = @item.ruc + " " + @item.razonsocial;
+                                        <option value=@item.ruc>@nombre_completo</option>
+                                    }
+                                </select>
+
+                                <!--<datalist id="listas">
+                                    
+                                        @foreach (var item in ViewBag.clienteDataTable)
+                                        {
+                                            nombre_completo = @item.ruc + " " + @item.razonsocial;
+                                        <option value="@item.ruc" label="@nombre_completo"></option>
+                                    }
+
+                                    </datalist>-->
+
+                                <!-- Asociamos al input la datalist 'listas' -->
+                                <!--<input name="color" list="listas">-->
+
+                                <button type="button" class="col-2 btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                    +
+                                </button>
+                            </div>
+                            <button style='width:50px; height:25px' id="rg_ctz_btn_fnz" type="button" class="col-2 btn btn-primary" data-toggle="modal" data-target="#exampleModal_estadofinaciero">
+                                Estado Financiero
+                            </button>
+                            <!-- Modal Estado Financiero -->
+                            <div class="modal fade" id="exampleModal_estadofinaciero" tabindex="-1" aria-labelledby="exampleModal_estadofinaciero" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Detalle Financiero Cliente</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                            <div class="row">
+
+                              <div class="form-group col-6 col-sm-6">
+                                          <label>Razon Social Crediticio</label>
+                                            <input type="text" class="form-control" id="rs_dt_fnz" placeholder="RUC">
+                                           </div>
+                             <div class="form-group col-3 col-sm-3">
+                                          <label>Limite Crediticio</label>
+                                         <input type="text" class="form-control" id="Lim_cred_cli">
+                                         </div>
+                             <div class="form-group col-3 col-sm-3">
+                                 <label>Total Deuda</label>
+                                 <input type="text" class="form-control" id="deuda_cred_cli">
+
+                                 <label>Saldo Disponible</label>
+                                 <input type="text" class="form-control" id="saldo-disponible_cred_cli" value="8850.00">
+                             </div>
+
+
+                                            </div>
+
+                                            <div class="row">
+
+                                                <div class="col-sm-12">
+                                                    <h7>Documentos Pendientes de pago</h7>
+                                                    <div class="table-wrapper-scroll-y my-custom-scrollbar">
+                                                        <div class="table-responsive">
+
+                                                            <table id="tabla-doc-vencidos" class="table table-sm table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col">TD</th>
+                                                                        <th scope="col">ND</th>
+                                                                        <th scope="col">VND</th>
+                                                                        <th scope="col">Fec.Emision</th>
+                                                                        <th scope="col">Fec.Can</th>
+                                                                        <th scope="col">Mot</th>
+                                                                        <th scope="col">Importe</th>
+                                                                        <th scope="col">Saldo</th>
+                                                                        <th scope="col">Ven</th>
+                                                                        <th scope="col">TDR</th>
+                                                                        <th scope="col">N D ref.</th>
+
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody id="tabla-doc-vencidos-res">
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Fin Modal Estado Financiero-->
+                            <!-- Modal cliente -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Agregar Cliente</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+
+
+                                            <div class="form-group col-12 col-sm-12">
+
+                                                <input type="text" class="form-control" id="rsocial_cl_new" placeholder="Razon Social">
+                                            </div>
+                                            <div class="form-group col-12 col-sm-12">
+
+                                                <input type="text" class="form-control" id="ruc_cl_new" placeholder="RUC">
+                                            </div>
+
+                                            <div class="form-group col-12 col-sm-12">
+
+                                                <input type="text" class="form-control" id="dire_cl_new" placeholder="Direccion">
+                                            </div>
+                                            <div class="form-group col-12 col-sm-12">
+
+                                                <input type="text" class="form-control" id="tel_cl_new" placeholder="Telefono">
+                                            </div>
+                                            <div class="form-group col-12 col-sm-12">
+
+                                                <input type="text" class="form-control" id="correo_cl_new" placeholder="Correo">
+                                            </div>
+
+                                            <div class="form-group col-12 col-sm-12">
+                                                <input type="hidden" class="form-control" id="ti_cl_new" placeholder="Tipo Cliente">
+                                            </div>
+
+
+
+                                            <div class="form-group col-sm-3">
+                                                <button type="button" id="boton_cliente_nuevo" class="btn btn-primary">Registrar</button>
+                                            </div>
+
+
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                            <button type="button" class="btn btn-primary">Registrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Fin Modal Cliente-->
+
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="direcion_cliente" class="col-3 col-sm-1 col-form-label">Direccion Envio </label>
+                            <div class="col-9 col-sm-9">
+                                @*<input type="text" class="form-control" name="txtDireccion" id="direcion_cliente" placeholder="Direccion" required>*@
+
+                                <select id="direccion_cliente_se" name="txtDireccionse" class="custom-select" required>
+                                    @*@foreach (var item in ViewBag.direcciones)
+                                        {
+
+                                            <option value=@item.codigoUbicacion>@item.nombre</option>
+
+                                        }*@
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group row">
+                            <label for="formapago" class="col-3 col-sm-1 col-form-label"> Forma Pago </label>
+                            <div class="col-9 col-sm-4">
+                                <!--input type="text" class="form-control" name="txtFormaPago" id="formapago" placeholder="Forma de pago" required-->
+
+                                <select id="formapago" name="txtFormaPago" class="custom-select" required>
+
+                                     <option value="" codigo></option>
+                                    @*@foreach (var item in ViewBag.formaventa)
+                                    {
+
+                                        <option value=@item.codigo>@item.nombre</option>
+
+                                    }*@
+                                </select>
+                            </div>
+
+                            <!--artificio espacio entre filas para celular-->
+                            <div class="col-12 col-sm-auto">
+                                <div class="form-group row"></div>
+                            </div>
+                            <!--FIN artificio espacio entre filas para celular-->
+                            <!--Documentos por tipo de  pago-->
+                            <!--se oculto el adjunto-->
+                            @*<label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Adjunto OCULTO</label>*@
+                            <div class="col-9 col-sm-4">
+                                <div class="custom-file ">
+                                    <input disabled type="hidden" name="txtAdjunto" class="custom-file-input" id="customFileLang" lang="es">
+                                    @*<label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>*@
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Vendedor </label>
+                            <div class="col-9 col-sm-4">
+                                <select id="vendedores" name="txtVendedor" class="col-12 custom-select" required>
+
+                                    @foreach (var item in ViewBag.vendedor)
+                                    {
+                                        vendedor_completo = @item.codigo + " " + @item.nombre;
+                                        <option value=@item.codigo>@vendedor_completo</option>
+
+                                    }
+
+
+                                </select>
+                            </div>
+
+                            <!--artificio espacio entre filas para celular-->
+                            <div class="col-12 col-sm-auto">
+                                <div class="form-group row"></div>
+                            </div>
+                            <!--FIN artificio espacio entre filas para celular-->
+
+                            <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Fecha Emision </label>
+                            <div class="col-9 col-sm-4">
+                                <input type="datetime-local" class="form-control" id="txtFechaEmision" name="txtFechaEmision" placeholder="" disabled>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group row">
+
+                            <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Moneda </label>
+                            <div class="col-9 col-sm-4">
+                                <select class="col-12 custom-select" name="txtMoneda">
+                                    <option value="MN" class="col-2" selected>NUEVOS SOLES</option>
+                                    <option value="US" class="col-2" disabled>DOLARES</option>
+                                </select>
+                            </div>
+
+                            <!--artificio espacio entre filas para celular-->
+                            <div class="col-12 col-sm-auto">
+                                <div class="form-group row"></div>
+                            </div>
+                            <!--FIN artificio espacio entre filas para celular-->
+
+                            <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Glosa</label>
+                            <div class="col-9 col-sm-4">
+                                <input type="text" class="form-control" id="direcion" name="txtGlosa" placeholder="Glosa">
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group row">
+                            <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Almacen </label>
+                            <div class="col-9 col-sm-4">
+                                <select name="txtAlmacen" id="almacen" class="custom-select">
+                                    @foreach (var item in ViewBag.almacen)
+                                    {
+                                        almacen_completo = @item.codigo + " " + @item.nombre;
+                                        <option value=@item.codigo>@almacen_completo</option>
+
+                                    }
+
+                                </select>
+                            </div>
+
+                            <!--artificio espacio entre filas para celular-->
+                            <div class="col-12 col-sm-auto">
+                                <div class="form-group row"></div>
+                            </div>
+                            <!--FIN artificio espacio entre filas para celular-->
+
+                            <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Transportista </label>
+                            <div class="col-9 col-sm-4">
+                                <select name="txtTransportista" id="transportista" class="custom-select" required>
+                                    @foreach (var item in ViewBag.transportista)
+                                    {
+                                        transportista_completo = @item.codigo + " " + @item.nombre;
+                                        <option value=@item.codigo>@transportista_completo</option>
+
+                                    }
+
+                                </select>
+                            </div>
+
+
+
+                        </div>
+
+                        <!--CAMBIO DE FECHA EN LA FILA DE ARRIBA-->
+                        @*<div class="form-group row">
+                                <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Fecha Creacion </label>
+                                <div class="col-9 col-sm-5">
+                                    <input type="date" class="form-control" id="inputPassword3" placeholder="Fecha Creacion">
+                                </div>
+                            </div>*@
+                        <!--FIN DE CAMBIO-->
+
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <button type="submit" id="cabeceracoti" class="btn btn-primary">Guardar Cotizacion </button>
+                            </div>
+                        </div>
+
+                        <!----/!--form---->
+                    }
+                    <!--FIN DEL CONTENIDO PILL HOME--->
+                </div>
+
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="p-3">
+
+                    </div>
+                    <!--INICIO DEL CONTENIDO PILL PROFILE--->
+                    <div class="form-group row">
+
+
+
+
+                        <label for="articulo_select" class="col-3 col-sm-1 col-form-label">Articulo </label>
+                        <div class="col-9 col-sm-3">
+                            <select id="articulo_select" class="custom-select" disabled>
+
+                                @foreach (var item in ViewBag.articulo)
+                                {
+
+                                    <option value=@item.codigo>@item.nombre</option>
+
+                                }
+                            </select>
+                        </div>
+
+                        @*<select id="selArticulosprueba" name="selArticulosprueba" class="select_articulos col-3 col-sm-1 col-form-label">
+                                <option value="value">text</option>
+                            </select>*@
+
+
+                        <label for="unidad_articulo" class="col-3 col-sm-1 col-form-label">Unidad </label>
+                        <div class="col-9 col-sm-3">
+                            <input type="text" class="form-control" name="unidad_articulo" disabled id="unidad_articulo" placeholder="">
+                        </div>
+
+                    </div>
+
+                    <div class="form-group row">
+
+                        <label for="precio_articulo" class="col-3 col-sm-1 col-form-label">Precio </label>
+                        <div class="col-9 col-sm-3">
+                            <input type="text" class="form-control" name="precio_articulo" disabled id="precio_articulo" placeholder="">
+                        </div>
+
+                        <label for="stock_articulo" class="col-3 col-sm-1 col-form-label">Stock </label>
+                        <div class="col-9 col-sm-3">
+                            <input type="text" class="form-control " name="stock_articulo_des" id="stock_articulo_des" placeholder="" value="" disabled>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group row">
+
+                        <label for="c_solicitada" class="col-3 col-sm-1 col-form-label">Cant.Req. </label>
+                        <div class="col-9 col-sm-3">
+                            <input type="number" class="form-control" name="c_solicitada" id="c_solicitada" disabled placeholder="" required>
+                        </div>
+
+
+                        <label for="c_disponible" class="col-3 col-sm-1 col-form-label">Cant.Disp</label>
+                        <div class="col-9 col-sm-3">
+                            <input type="number" class="form-control" name="c_disponible" id="c_disponible" disabled placeholder="" required>
+                        </div>
+
+                        <div class="col-3  col-sm-4 ">
+                            <button class="col-sm-6 btn btn-primary" disabled> Registrar Articulo </button>
+                        </div>
+
+                    </div>
+
+                    <div class="section">
+                        <!----button class="btn btn-primary" id="boton"> JSON</!--button--->
+
+                    </div>
+
+                    <div class="table-responsive">
+
+
+                        <table id="mytable" class="table table-sm table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Codigo</th>
+                                    <th scope="col">Articulo</th>
+                                    <th scope="col">Unidad</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Cant.Req.</th>
+                                    <th scope="col">Cant.Disp</th>
+                                    <th scope="col">Stock</th>
+                                    <th scope="col">Anular</th>
+
+                                </tr>
+                            </thead>
+                            <tbody id="res">
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <!--FIN DEL CONTENIDO PILL PROFILE--->
+                    <!--FINAL DEL DETALLE COTIZACION -->
+                    <!---button type="button" id="final-detalle-coti" class="btn btn-primary">Gaurdar Cambios</!--button>-->
+                </div>
+
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="~/Assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!--SELECT 2-->
+
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" type="text/javascript"></script>
+
+
+
+<script type="text/javascript">
+    var baserul = "";
+
+    // In your Javascript (external .js resource or <script> tag)
+    $(document).ready(function () {
+        // var fecha_emision_new= document.getElementById('txtFechaEmision');
+
+        var date = new Date();
+        // let formatted_date = current_datetime.getFullYear() + "-" + (current_datetime.getMonth() + 1) + "-" + current_datetime.getDate() + " " + current_datetime.getHours() + ":" + current_datetime.getMinutes() + ":" + current_datetime.getSeconds();
+        const formatDate = (current_datetime) => {
+            let formatted_date = current_datetime.getDate() + "/" + "0" + (current_datetime.getMonth() + 1) + "/" + current_datetime.getFullYear() + " " + current_datetime.getHours() + ":" + current_datetime.getMinutes();
+            return formatted_date;
+        }
+        // console.log(formatDate(date));
+        let hoy = formatDate(date);
+        var fecha = new Date();
+        // console.log(fecha.toJSON(), new Date(date.getTime() - (date.getTimezoneOffset() * 60000)).toJSON());
+
+        let fechaseteada = new Date(date.getTime() - (date.getTimezoneOffset() * 60000));
+
+        let Fechaemision = document.getElementById("txtFechaEmision");
+        if (Fechaemision) {
+            Fechaemision = document.getElementById("txtFechaEmision").value = fechaseteada.toJSON().slice(0, 16);
+        }
+
+        // console.log("selector de clientes");
+        $('#clienteres3').select2({
+            minimumInputLength: 3
+           // placeholder: "Busqueda minima 3 Digitos",
+          //  allowClear: true
+        });
+        $('#bd_select').select2('');
+      //  $('#clienteres3').select2('');
+        //RellenarDatosCliente();
+        $('#vendedores').select2('');
+        $('#transportista').select2('');
+
+        $('#formapago').select2('');
+        $('#almacen').select2('');
+        $('#almacen').val('CA01').trigger('change.select2');
+        // $('#formapago').select2('');
+        // $('#direccion_cliente_se').select2('');
+
+
+
+        $("[id$='clienteres3']").change(function () {
+            rellenarDirecciones();
+            //alert('Hola estoy entrando al evento selecteindex');
+            var SelectCliente = document.getElementById('clienteres3');
+            var RucCliente = SelectCliente.options[SelectCliente.selectedIndex].value;
+            //    console.log(RucCliente);
+            //   var data = { ruccliente: RucCliente };
+            $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("Buscar", "Cotizador")",
+                data: "{ 'ruccliente': '" + RucCliente + "'}",
+                success: function (data) {
+                    //var formaventa= document.getElementById('formapago');
+                    // var option = document.createElement("option"); //Creamos la opcion
+                    // option.value = data.tipoventa;
+                    // option.text = data.tipoventa;
+                    // formaventa.appendChild(option);
+                    //FGB : RELLEAR FORMA DE VENTA CLIENTE
+                // RellenarFormaVenta(data.value_tipoventa, data.tipoventa);
+                    RellenarFormaVenta_con_ajax(data.diasdeventa);
+                    // alert(data.tipoventa);
+                    //document.getElementById('formapago').value = data.tipoventa;
+                    $("#vendedores").select2('data', { id: data.ruc, text: data.vendedor });
+                    //necesito tener el valor de forma de pago aqui lo obtiene y lo coloca
+                    //  if () {}
+
+                    // $('#formapago').val('C01').trigger('change.select2');
+                    //  document.getElementById("txtFechaEmision").value = usDate;
+                    // console.log("FECHA EMISION " + fecha.toJSON().slice(0, 16));
+                    // console.log("FECHA EMISION 2 " + usDate);
+                    Fechaemision = document.getElementById("txtFechaEmision").value = fechaseteada.toJSON().slice(0, 16);
+
+                    MostrarDataFinancieraCliente(data.ruc, data.razonsocial);
+                    MostrarDocumentosPendientes(data.ruc, data.razonsocial);
+                    ObtenerTransportistaUltimaGuia(data.ruc);
+                }
+            });
+        });
+
+        $('#boton_cliente_nuevo').click(function () {
+            //console.log("CLICK REGISTRAR CLIENTE NUEVO");
+            var ruc = document.getElementById("ruc_cl_new").value;
+            var razonsocial = document.getElementById("rsocial_cl_new").value;
+            var direccion = document.getElementById("dire_cl_new").value;
+            var telefono = document.getElementById("tel_cl_new").value;
+            var correo = document.getElementById("correo_cl_new").value;
+            var tipocliente = document.getElementById("ti_cl_new").value;
+            console.log(ruc + razonsocial + direccion + telefono + correo + tipocliente);
+
+            $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+
+                 url: "@Url.Action("AgregarClienteNuevo", "Cotizador")",
+                data: "{ 'ruccliente': '" + ruc + "','razonsocial': '" + razonsocial + "','direccion': '" + direccion + "', 'telefono': '" + telefono + "','correo': '" + correo + "','vendedor': '" + tipocliente + "' }",
+                success: function (data) {
+                    if (data === true) {
+                        // alert("CLIENTE AGREGADO CORRECTAMENTE");
+                       window.location.href="@Url.Action("Index","Cotizador")";
+                    }
+
+
+                }
+            });
+
+        });
+    });
+
+    function ObtenerTransportistaUltimaGuia(ruccliente) {
+        console.log("ruc obtenido " + ruccliente);
+          $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+
+                 url: "@Url.Action("ObtenerTransportistaUltimaGuia", "Cotizador")",
+              data: "{ 'ruccliente': '" + ruccliente +"'}",
+                success: function (data) {
+                    console.log("codigo transportista obtenido " + data.codigo);
+
+                    if (data.codigo != null) {
+
+                        $('#transportista').val(data.codigo).trigger('change.select2');
+                    }
+                    else {
+                        $('#transportista').val('42098216').trigger('change.select2');
+                    }
+
+                }
+            });
+
+
+
+    }
+
+
+    function MostrarDataFinancieraCliente(rucliente, razonsocial) {
+        //var btn_fn= document.getElementById('rg_ctz_btn_fnz');
+        //$('#rg_ctz_btn_fnz').click(function () {
+        //   btn_fn.value = rucliente;
+        /*  });*/
+        var btn_fnz = document.getElementById('rg_ctz_btn_fnz');
+        console.log("Data Financiera del Cliente " + rucliente + "-" + razonsocial);
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+         //   url: baserul + '/Cotizador/ObtenerDetalleFinanciero',
+            url: "@Url.Action("ObtenerDetalleFinanciero", "Cotizador")",
+            data: "{ 'ruccliente': '" + rucliente + "'}",
+            success: function (data) {
+                console.log(data);
+                if (data.limite_credito == null) {
+                    document.getElementById('Lim_cred_cli').value = "S/. 0.00";
+                    document.getElementById('rs_dt_fnz').value = razonsocial;
+                }
+                else {
+                    btn_fnz.removeAttribute("disabled", "");
+                    btn_fnz.setAttribute("enabled", "");
+                    document.getElementById('rs_dt_fnz').value = razonsocial;
+                    document.getElementById('Lim_cred_cli').value = data.limite_credito;
+                    var deuda__ = document.getElementById('deuda_cred_cli').value;
+                    var deu = Parseint(deuda__);
+                    //DEUDA FGB
+                    document.getElementById('saldo-disponible_cred_cli').value = deu- data.limite_credito;
+                }
+
+            }
+        });
+
+
+
+    }
+
+    function MostrarDocumentosPendientes(ruccliente, razonsocial) {
+        var mitablaDocPendientes = document.getElementById("tabla-doc-vencidos-res");
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+           // url: baserul + '/Cotizador/ListaDocumentosPendientes',
+            url: "@Url.Action("ListaDocumentosPendientes", "Cotizador")",
+            data: "{ 'ruccliente': '" + ruccliente + "'}",
+            success: function (data) {
+
+                //if (mitablaDocPendientes) {
+                //    mitablaDocPendientes.innerHTML = ``;
+                //}
+                //else {
+                //    // mitablacabecera.innerHTML = ``;
+                //}
+                //recorrer lista de objectos :D
+                mitablaDocPendientes.innerHTML = ``;
+
+                var totaldueda = 0;
+                for (cab in data) {
+                 //   console.log(data);
+                    totaldueda = totaldueda + parseInt(data[cab].importe);
+                    //  codigoanulacion = codigocotizaciontext + data[cab].codigo;
+                    //  console.log(codigoanulacion);
+                    //console.log("Cotizacion ___________________________");
+                    //console.log("codigo " + data[cab].codigo + " cliente" + data[cab].cliente + " almacen " + data[cab].almacen);
+                    //console.log("_______________________________________");
+                    mitablaDocPendientes.innerHTML += ` <tr>
+
+                                  <td>${data[cab].tipo_documento}</td>
+                                  <td>${data[cab].numero_documento}</td>
+                                  <td>${data[cab].vendedor}</td>
+                                  <td>${data[cab].fecha_emision}</td>
+                                  <td>${data[cab].fecha_vencimiento}</td>
+                                  <td>${data[cab].fecha_cancelacion}</td>
+                                  <td >${data[cab].motivo}</td>
+                                  <td>${data[cab].importe}</td>
+                                  <td>${data[cab].saldo}</td>
+                                  <td>${data[cab].vencimiento}</td>
+                                  <td>${data[cab].tdr}</td>
+                                  <td >${data[cab].numero_doc_referencia}</td>
+
+                                </tr>
+                                    `;
+
+
+
+                }
+                var formatodeuda = "S/" + totaldueda;
+                document.getElementById('deuda_cred_cli').value = formatodeuda;
+            }
+        });
+
+
+    }
+
+    function RellenarFormaVenta(tipoventa, descripcion) {
+
+        var formaventa = document.getElementById('formapago');
+        //inicie el select vacio
+        for (let i = formaventa.options.length; i >= 0; i--) {
+            formaventa.remove(i);
+        }
+
+        if (tipoventa == null && descripcion == null) {
+            //CUANDO EL CLIENTE ES NUEVO O NO TIENE AIGNADO UN F.VENTA
+            var tipoventa_ag = 'C01';
+            var descripcion_ag = 'CONTADO CONTRA ENTREGA ';
+            formaventa = document.getElementById('formapago');
+            var option = document.createElement("option"); //Creamos la opcion
+            option.value = tipoventa_ag;
+            option.text = descripcion_ag;
+            formaventa.appendChild(option);
+        }
+        else {
+            if (tipoventa == 'C01') {
+                console.log("ESTA EN EL O");
+                formaventa = document.getElementById('formapago');
+                var option = document.createElement("option"); //Creamos la opcion
+                option.value = tipoventa;
+                option.text = descripcion;
+                formaventa.appendChild(option);
+            }
+            else {
+                $('#formapago').val(tipoventa).trigger('change.select2');
+                formaventa = document.getElementById('formapago');
+                console.log("ESTA EN EL ELSE");
+                var option_mas_default = document.createElement("option"); //Creamos la opcion
+                var option_mas_d = document.createElement("option"); //Creamos la opcion
+                ti_v = "C01";
+                des_v = "CONTADO CONTRA ENTREGA ";
+                //{ 'tipoventa': '" + tipoventa + "' };
+                var arr_fv = [{ 'tipoventa': tipoventa, 'descripcion': descripcion }, { 'tipoventa': ti_v, 'descripcion': des_v }];
+                console.log(arr_fv);
+
+                option_mas_d.value = arr_fv[0].tipoventa;
+                option_mas_d.text = arr_fv[0].descripcion;
+
+                for (i in arr_fv) {
+                    console.log(option_mas_default);
+                    option_mas_default.value = arr_fv[i].tipoventa;
+                    option_mas_default.text = arr_fv[i].descripcion;
+                    console.log(arr_fv[i].tipoventa);
+                    formaventa.appendChild(option_mas_d);
+                    formaventa.appendChild(option_mas_default);
+
+                }
+
+
+
+            }
+
+        }
+
+
+
+    }
+
+    function RellenarFormaVenta_con_ajax(dias) {
+       //  console.log("ruc obtenido para Forma de venta " + ruccliente);
+
+        let ruc = document.getElementById('clienteres3');
+        let select = ruc.options[ruc.selectedIndex].value;
+
+
+
+        @*$("#formapago").select2({
+            ajax: {
+                url: "@Url.Action("ListadoFormaVenta", "Cotizador")",
+                type: "post",
+                dataType: 'json',
+                delay: 250,
+                data: function (params) {
+                    return {
+                        select: params.term // search term
+                    };
+                },
+                processResults: function (response) {
+                    return {
+                        results: response
+                    };
+                },
+                cache: true
+            }
+        });*@
+
+
+        $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                 url: "@Url.Action("ListadoFormaVenta", "Cotizador")",
+            data: "{ 'ruccliente': '" + dias +"'}",
+                success: function (data) {
+
+                    console.log(data);
+                    console.log("codigo forma de venta obtenido " + data.nombre);
+
+                    var cadena = "";
+                    if (data.length > 0) {
+                        $.each(data, function (k, v) {
+                            cadena += "<option value='" + v.codigo + "'>" + v.codigo+" "+ v.nombre + "</option>";
+                        });
+                    } else {
+                        cadena += "<option value=''>NO SE ENCONTRARON REGISTROS</option>";
+                    }
+                    $("#formapago").html(cadena);
+
+                }
+            });
+    }
+
+    function RellenarDatosCliente() {
+        console.log("algo aqui en rellenar cliente");
+        //let ruc = $("#clienteres3").val();
+        let ruc = document.getElementById('clienteres3');
+        let select = ruc.options[ruc.selectedIndex].value;
+
+        document.getElementById("codigocliente").value = select;
+        document.getElementById("direcion_cliente").value = select;
+
+
+        var data = { ruccliente: select };
+        console.log(data);
+
+
+        $.ajax({
+
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+        //    url: baserul + '/Cotizador/Buscar',
+            url:  "@Url.Action("Buscar", "Cotizador")",
+            data: "{ 'ruccliente': '" + insertado + "'}",
+            success: function (data) {
+                console.log(data.ruc);
+
+            },
+
+        });
+
+
+    }
+
+    function rellenarDirecciones() {
+        ///FGB: RELLENA DATOS DE DIRECCIONES DEL CLIENTE
+        var select = document.getElementById('direccion_cliente_se');
+        //inicie el select vacio
+        for (let i = select.options.length; i >= 0; i--) {
+            select.remove(i);
+        }
+
+        var SelectCliente = document.getElementById('clienteres3');
+        var RucCliente = SelectCliente.options[SelectCliente.selectedIndex].value;
+        // console.log("RUC CLIENTE " + RucCliente);
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+           // url: '/Cotizador/ListarDireccionesCliente',
+            url: "@Url.Action("ListarDireccionesCliente", "Cotizador")",
+            data: "{ 'ruccliente': '" + RucCliente + "'}",
+            success: function (data) {
+                //   console.log(data);
+
+
+                // llene el select Direcciones
+                for (var i = 0; i < data.length; i++) {
+                    var option = document.createElement("option"); //Creamos la opcion
+                    //    console.log(data[i].codigoUbicacion);
+                    if (data == null) {
+                        //option.innerHTML = data[i].nombre; //Metemos el texto en la opción
+
+                        option.value = "0001";
+                        option.text = "MZ B ";
+                        select.appendChild(option); //Metemos la opción en el select
+                    }
+                    else {
+                        option.value = data[i].codigoUbicacion;
+                        option.text = data[i].nombre;
+                        select.appendChild(option); //Metemos la opción en el select
+                    }
+
+
+
+
+                }
+                //select.appendChild().val="";
+
+            },
+
+        });
+
+    }
+
+
+</script>
+
+
+

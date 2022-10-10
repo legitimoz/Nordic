@@ -1,0 +1,130 @@
+C:\Users\jose.gutierrez\source\repos\BASE\DAO\bin\Debug\DAO.dll
+C:\Users\jose.gutierrez\source\repos\BASE\DAO\bin\Debug\DAO.pdb
+C:\Users\jose.gutierrez\source\repos\BASE\DAO\bin\Debug\ENTIDAD.dll
+C:\Users\jose.gutierrez\source\repos\BASE\DAO\bin\Debug\ENTIDAD.pdb
+C:\Users\jose.gutierrez\source\repos\BASE\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\source\repos\BASE\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\source\repos\BASE\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\jose.gutierrez\source\repos\BASE\DAO\obj\Debug\DAO.dll
+C:\Users\jose.gutierrez\source\repos\BASE\DAO\obj\Debug\DAO.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\DAO\bin\Debug\DAO.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\DAO\bin\Debug\DAO.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\DAO\bin\Debug\ENTIDAD.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\DAO\bin\Debug\ENTIDAD.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\DAO\obj\Debug\DAO.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\DAO\obj\Debug\DAO.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022\BASE\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\DAO\bin\Debug\DAO.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\DAO\bin\Debug\DAO.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\DAO\bin\Debug\ENTIDAD.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\DAO\bin\Debug\ENTIDAD.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\DAO\obj\Debug\DAO.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2\BASE\DAO\obj\Debug\DAO.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\DAO\bin\Debug\DAO.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\DAO\bin\Debug\DAO.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\DAO\bin\Debug\ENTIDAD.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\DAO\bin\Debug\ENTIDAD.pdb
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\DAO\obj\Debug\DAO.dll
+C:\Users\jose.gutierrez\source\repos\BASE17_05_2022_V2_CAMBIOS\BASE\DAO\obj\Debug\DAO.pdb
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\DAO\bin\Debug\DAO.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\DAO\bin\Debug\DAO.pdb
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\DAO\bin\Debug\ENTIDAD.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\DAO\bin\Debug\ENTIDAD.pdb
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.dll
+C:\Users\jose.gutierrez\source\repos\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.pdb
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\bin\Debug\DAO.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\bin\Debug\DAO.pdb
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\bin\Debug\ENTIDAD.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\bin\Debug\ENTIDAD.pdb
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.pdb
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\bin\Debug\DAO.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\bin\Debug\DAO.pdb
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\bin\Debug\ENTIDAD.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\bin\Debug\ENTIDAD.pdb
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.pdb
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_5_7_22\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\bin\Debug\DAO.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_5_7_22\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\bin\Debug\DAO.pdb
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_5_7_22\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\bin\Debug\ENTIDAD.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_5_7_22\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\bin\Debug\ENTIDAD.pdb
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_5_7_22\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_5_7_22\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_5_7_22\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_5_7_22\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.dll
+C:\Users\jose.gutierrez\Desktop\PROYECTO NORDIC_5_7_22\PROYECTO NORDIC_1\PROYECTO NORDIC\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.pdb
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\bin\Debug\DAO.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\bin\Debug\DAO.pdb
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\bin\Debug\ENTIDAD.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\bin\Debug\ENTIDAD.pdb
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS\DAO\obj\Debug\DAO.pdb
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\DAO\bin\Debug\DAO.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\DAO\bin\Debug\DAO.pdb
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\DAO\bin\Debug\ENTIDAD.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\DAO\bin\Debug\ENTIDAD.pdb
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\DAO\obj\Debug\DAO.dll
+C:\Users\Francisco\Documents\PROYECTO NORDIC\VIATICOS\VERSIONES\VIATICOS13\VIATICOS\DAO\obj\Debug\DAO.pdb
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\DAO\bin\Debug\DAO.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\DAO\bin\Debug\DAO.pdb
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\DAO\bin\Debug\ENTIDAD.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\DAO\bin\Debug\ENTIDAD.pdb
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\DAO\obj\Debug\DAO.dll
+C:\Users\jose.gutierrez\Documents\VIATICOS\VERSIONES\PROYECTO VIATICOS\VIATICOS13\VIATICOS\DAO\obj\Debug\DAO.pdb
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\DAO\bin\Debug\DAO.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\DAO\bin\Debug\DAO.pdb
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\DAO\bin\Debug\ENTIDAD.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\DAO\bin\Debug\ENTIDAD.pdb
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\DAO\obj\Debug\DAO.dll
+C:\Users\jhonatan.punto\Documents\VIATICOS10-8\VIATICOS\DAO\obj\Debug\DAO.pdb
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\DAO\bin\Debug\DAO.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\DAO\bin\Debug\DAO.pdb
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\DAO\bin\Debug\ENTIDAD.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\DAO\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\DAO\bin\Debug\ENTIDAD.pdb
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\DAO\bin\Debug\Newtonsoft.Json.xml
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\DAO\obj\Debug\DAO.dll
+C:\Users\jose.gutierrez\Documents\PROYECTOS WEB 2022\VIATICOS\VIATICOS11-8\VIATICOS10-8\VIATICOS\DAO\obj\Debug\DAO.pdb
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\DAO\bin\Debug\DAO.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\DAO\bin\Debug\DAO.pdb
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\DAO\bin\Debug\ENTIDAD.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\DAO\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\DAO\bin\Debug\ENTIDAD.pdb
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\DAO\bin\Debug\Newtonsoft.Json.xml
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\DAO\obj\Debug\DAO.dll
+C:\Users\jose.gutierrez\Documents\app viaticos\VIATICOS\DAO\obj\Debug\DAO.pdb

@@ -1,0 +1,703 @@
+﻿@using ENTIDAD.VIATICOS
+@{
+    ViewBag.Title = "Master";
+    Layout = "~/Views/Layout/_LayoutViatico.cshtml";
+}
+
+<main role="main">
+    @*<div class="jumbotron">*@
+
+    <!--<div class="container">
+
+    <div class="row">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active col-12 col-sm-12" id="home-tab" data-toggle="tab" href="#solicitud" role="tab" aria-controls="home" aria-selected="true">Cabecera Solicitud</a>
+            </li>
+            <li class="nav-item" role="presentation">-->
+    @*<a class="nav-link col-12 col-sm-12" id="profile-tab" data-toggle="tab" href="#clientes" role="tab" aria-controls="profile" aria-selected="false">Detalle Clientes</a>*@
+    <!--</li>
+    <li class="nav-item" role="presentation">-->
+    @*<a class="nav-link col-12 col-sm-12" id="profile-tab" data-toggle="tab" href="#gastos" role="tab" aria-controls="profile" aria-selected="false">Detalle Gastos</a>*@
+    <!--</li>
+        </ul>
+    </div>
+    <div class="tab-content" id="myTabContent">
+
+        <div class="tab-pane fade show active" id="solicitud" role="tabpanel" aria-labelledby="home-tab">
+
+            <div class="container">
+                <div class="p-2"></div>
+                <div class="row">
+
+
+                    <div class="col-md-12 order-md-1">
+                        <h4 class="mb-3"></h4>
+                        <form class="needs-validation" novalidate>
+                            <div class="row">
+                                <div class="col-md-8 mb-3">
+                                    <label for="firstName">Nombre</label>
+                                    <input disabled type="text" class="form-control" id="v_r_nombre" placeholder="" value="@ViewBag.Usuario.usr_nombre" required>
+                                    <div class="invalid-feedback">
+                                        Nombre es requerido
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="country">Linea</label>
+                                    <select class="custom-select d-block w-100" id="via_lin_usr" required>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Linea Requerida
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="country">Fecha Solicitud</label>
+                                    <input type="date" class="form-control" id="via_fecha_solicitud" placeholder="" value="" required>
+                                    <div class="invalid-feedback">
+                                        Fecha Solicitud requerida
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="state">Motivo Viaje</label>
+                                    <select class="custom-select d-block w-100" id="via_mot_viaje" required>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Motivo viaje requerido
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">-->
+    @*<label for="zip">Monto Solicitado</label>
+        <input type="number" class="form-control" id="via_monto_sol" placeholder="" required>
+        <div class="invalid-feedback">
+            Monto Solicitud requerido
+        </div>*@
+
+    <!--<label for="username">Medio de Viaje</label>
+            <div class="input-group">
+
+                <select class="custom-select d-block w-100" id="via_med_viaje" required>
+                </select>
+                <div class="invalid-feedback" style="width: 100%;">
+                    Medio de Viaje Requerido
+                </div>
+            </div>
+
+
+        </div>
+    </div>-->
+    @*<div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="username">Medio de Viaje</label>
+                <div class="input-group">
+
+                    <select class="custom-select d-block w-100" id="via_med_viaje" required>
+                    </select>
+                    <div class="invalid-feedback" style="width: 100%;">
+                        Medio de Viaje Requerido
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+
+    <!--<hr class="mb-4">
+                                        <h6>Origen</h6>
+
+                                        <div class="row">
+
+                                            <div class="col-md-3 mb-3">
+                                                <label for="country">Fecha Y hora Origen</label>
+                                                <input type="datetime-local" class="form-control" id="via_fec_hora_origin" placeholder="" value="" required>
+                                                <div class="invalid-feedback">
+                                                    Fecha y Hora requerido
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3 mb-3">
+                                                <label for="country">Departamento</label>
+                                                <select class="custom-select d-block w-100" id="via_dep_origin" required>
+                                                    <option selected disabled value="">Seleccione...</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Departamento requerido.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                                <label for="state">Provincia</label>
+                                                <select class="custom-select d-block w-100" id="via_pro_origin" required>
+                                                    <option selected disabled value="">Seleccione...</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Provincia requerida
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                                <label for="zip">Distrito</label>
+                                                <select class="custom-select d-block w-100" id="via_dis_origin" required>
+
+                                                    <option selected disabled value="">Seleccione...</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Distrito  requerido.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <h6>Destino</h6>
+                                        <div class="row">
+                                            <div class="col-md-3 mb-3">
+                                                <label for="country">Fecha Y hora Destino</label>
+                                                <input type="datetime-local" class="form-control" id="via_fec_hora_dest" placeholder="" value="" required>
+                                                <div class="invalid-feedback">
+                                                    Fecha y Hora requerido
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                                <label for="country">Departamento</label>
+                                                <select class="custom-select d-block w-100" id="via_dep_dest" required>
+                                                    <option selected disabled value="">Seleccione...</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Departamento requerio
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                                <label for="state">Provincia</label>
+                                                <select class="custom-select d-block w-100" id="via_pro_dest" required>
+                                                    <option selected disabled value="">Seleccione...</option>
+
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Provincia requerida
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                                <label for="zip">Distrito</label>
+                                                <select class="custom-select d-block w-100" id="via_dis_dest" required>
+                                                    <option selected disabled value="">Seleccione...</option>
+
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Distrito requerido
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="mb-4">
+
+                                        <div class="row">
+                                            <div class="col-md-3 mb-3">
+                                                <label for="cc-expiration">Fecha Termino Viaje</label>
+                                                <input type="date" class="form-control" id="via_fec_term_viaje" onchange="CalcularDiasViaje();" placeholder="" required>
+                                                <div class="invalid-feedback">
+                                                    Fecha termino requerida
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <hr class="mb-4">
+                                        <button class="btn btn-primary btn-lg btn-block" id="btn_reg_via">Registrar Solicitud</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <footer class="my-5 pt-5 text-muted text-center text-small">
+                                <p class="mb-1">&copy; 2021-2023 FGB</p>
+                                <ul class="list-inline">
+                                </ul>
+                            </footer>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="clientes" role="tabpanel" aria-labelledby="contact-tab">
+
+
+
+
+                    </div>
+
+                    <div class="tab-pane fade" id="gastos" role="tabpanel" aria-labelledby="contact-tab">
+
+                    </div>
+
+                </div>
+
+    <!-- Button trigger modal -->
+    <!-- Modal Motivos Viaje-->
+    <div class="modal fade" id="modalmotivoviaje" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registro de Motivos de Viaje</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-md-6 mb-6">
+                                <label for="country">Ingrese Motivo Viaje</label>
+                                <input type="text" class="form-control" id="via_mot_add" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Motivo Requerido
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <button class="btn btn-primary" onclick="RegistrarMotivoViaje()" id="btn_reg_via">Registrar</button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="table-responsive table-responsive-md table-responsive-lg">
+                                <table class="table table-sm table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Motivo</th>
+                                            <th scope="col">Accion</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tabla_motivos_viaje">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Medios Viaje-->
+    <div class="modal fade" id="modalmedioviaje" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registro de Medios de Viaje</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-md-6 mb-6">
+                                <label for="country">Ingrese Medio Viaje</label>
+                                <input type="text" class="form-control" id="via_med_add" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Motivo Requerido
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <button class="btn btn-primary" onclick="RegistrarMedioViaje()" id="btn_reg_via">Registrar</button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="table-responsive table-responsive-md table-responsive-lg">
+                                <table class="table table-sm table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Motivo</th>
+                                            <th scope="col">Accion</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tabla_medio_viaje">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Conceptop Gasto-->
+    <div class="modal fade" id="modalconceptogasto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registro de Concepto Gasto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-md-6 mb-6">
+                                <label for="country">Ingrese Medio Viaje</label>
+                                <input type="text" class="form-control" id="via_med_add" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Motivo Requerido
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <button class="btn btn-primary" onclick="RegistrarMedioViaje()" id="btn_reg_via">Registrar</button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="table-responsive table-responsive-md table-responsive-lg">
+                                <table class="table table-sm table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Motivo</th>
+                                            <th scope="col">Descripcion</th>
+                                            <th scope="col">Precio Maximo</th>
+                                            <th scope="col">Estado</th>
+                                            <th scope="col">Cuenta Contable</th>
+                                            <th scope="col">Perfil</th>
+                                            <th scope="col">Accion</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tabla_conceptogasto">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-3">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalmotivoviaje">
+                    Modulo Motivos de Viaje
+
+                </button>
+            </div>
+
+            <div class="col-3">
+
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalmedioviaje">
+                    Modulo Medios de Viaje
+
+                </button>
+
+            </div>
+
+
+            <div class="col-3">
+
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalconceptogasto">
+                    Modulo Concepto de Gasto
+
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="~/Assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" type="text/javascript"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script type="text/javascript">
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+
+
+    $(document).ready(function () {
+        ListarMotivosViaje();
+        ListarMediosViaje();
+        ListarConceptoGasto();
+
+    });
+
+
+    function ListarMotivosViaje() {
+
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+             url: "@Url.Action("ListadoMotivosViaje", "Viaticos")",
+            //data: "{'vcs_id': '" + vcs_id + "'}",
+            success: function (data) {
+                console.log(data);
+                var mitabladetcliente = document.getElementById("tabla_motivos_viaje");
+
+                mitabladetcliente.innerHTML = ``;
+
+                for (cab in data) {
+
+                    mitabladetcliente.innerHTML += ` <tr>
+
+                                        <td>${data[cab].v_mot_v_id}</td>
+                                  <td>${data[cab].v_mot_v_nombre}</td>
+
+                                  <td><button class="btn text-white" onclick="ModificarMotivoViaje(${data[cab].v_mot_v_id})" style="background-color:#D22B08;"><i class="bi bi-clipboard2-x"></i></button></td>
+
+
+
+                                </tr>
+                                    `;
+
+
+
+                }
+
+
+
+            }
+        });
+
+
+    }
+
+    function ListarMediosViaje() {
+
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+             url: "@Url.Action("ListadoMediosViaje", "Viaticos")",
+            //data: "{'vcs_id': '" + vcs_id + "'}",
+            success: function (data) {
+                console.log(data);
+                var mitabladetcliente = document.getElementById("tabla_medio_viaje");
+
+                mitabladetcliente.innerHTML = ``;
+
+                for (cab in data) {
+
+                    mitabladetcliente.innerHTML += ` <tr>
+
+                                        <td>${data[cab].v_med_v_id}</td>
+                                  <td>${data[cab].v_med_v_nombre}</td>
+
+                                  <td><button class="btn text-white" onclick="ModificarMotivoViaje(${data[cab].v_med_v_id})" style="background-color:#D22B08;"><i class="bi bi-clipboard2-x"></i></button></td>
+
+
+
+                                </tr>
+                                    `;
+
+
+
+                }
+
+
+
+            }
+        });
+
+
+    }
+
+    function ListarConceptoGasto() {
+
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+             url: "@Url.Action("ListadoConceptoGasto_master", "Viaticos")",
+            //data: "{'vcs_id': '" + vcs_id + "'}",
+            success: function (data) {
+                console.log(data);
+                var mitabladetcliente = document.getElementById("tabla_conceptogasto");
+
+                mitabladetcliente.innerHTML = ``;
+
+                for (cab in data) {
+                    var estado = "";
+                    if (data[cab].est_codigo == 'AC') {
+                      estado = "ACTIVO";
+
+                        mitabladetcliente.innerHTML += ` <tr>
+
+                                        <td>${data[cab].vcg_id}</td>
+                                        <td>${data[cab].vcg_nombre}</td>
+                                        <td>${data[cab].vcg_descripcion}</td>
+                                        <td>${data[cab].vcg_preciomaximo}</td>
+                                       
+                                        <td>${estado}</td>
+                                       
+                                        <td>${data[cab].vcg_cnt_conta}</td>
+                                        <td>${data[cab].vcg_idperfil}</td>
+ 
+                                       
+
+
+
+                                  <td><button class="btn text-white" onclick="ModificarMotivoViaje(${data[cab].v_med_v_id})" style="background-color:#D22B08;"><i class="bi bi-clipboard2-x"></i></button></td>
+
+
+
+                                </tr>
+                                    `;
+
+                    }
+
+                    else {
+                        estado = "ANULADO";
+                        mitabladetcliente.innerHTML += ` <tr>
+
+                                        <td>${data[cab].vcg_id}</td>
+                                        <td>${data[cab].vcg_nombre}</td>
+                                        <td>${data[cab].vcg_descripcion}</td>
+                                        <td>${data[cab].vcg_preciomaximo}</td>
+                                        
+                                        <td>${estado}</td>
+                                       
+                                        <td>${data[cab].vcg_cnt_conta}</td>
+                                         <td>${data[cab].vcg_idperfil}</td>
+
+
+
+                                  <td><button class="btn text-white" onclick="ModificarMotivoViaje(${data[cab].v_med_v_id})" style="background-color:#D22B08;"><i class="bi bi-clipboard2-x"></i></button></td>
+
+
+
+                                </tr>
+                                    `;
+
+                    }
+
+                  
+
+
+
+                }
+
+
+
+            }
+        });
+
+
+    }
+
+
+    
+    function ModificarMotivoViaje() {
+
+    }
+
+    function RegistrarMotivoViaje() {
+        var mot = document.getElementById("via_mot_add").value;
+
+        //alert(mot);
+
+         $.ajax({
+                    dataType: "json",
+                    type: 'POST',
+                    contentType: "application/json; charset=utf-8",
+                    url: "@Url.Action("Registrar_Mot_Viaje", "Viaticos")",
+                    data: "{'mot': '" + mot + "'}",
+                    success: function (data) {
+                        if (data === true) {
+                            swal.fire("Registro exitoso","","success");
+                               ListarMotivosViaje();
+                        }
+
+                        else {
+                            swal.fire("Registro fallido", "", "error");
+                        }
+                   }
+            });
+    }
+
+    function RegistrarMedioViaje() {
+        var med = document.getElementById("via_med_add").value;
+
+        //alert(mot);
+
+         $.ajax({
+                    dataType: "json",
+                    type: 'POST',
+                    contentType: "application/json; charset=utf-8",
+                    url: "@Url.Action("Registrar_Med_Viaje", "Viaticos")",
+                    data: "{'med': '" + med + "'}",
+                    success: function (data) {
+                        if (data === true) {
+                            swal.fire("Registro exitoso","","success");
+                               ListarMediosViaje();
+                        }
+
+                        else {
+                            swal.fire("Registro fallido", "", "error");
+                        }
+                   }
+            });
+    }
+
+</script>
+
+

@@ -1,0 +1,1380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\jose.gutierrez\Desktop\COMPILADOSVIATICOS\29-09-V2</_PublishTargetUrl>
+    <History>True|2022-09-26T22:12:05.0960509Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Assets/brand/bootstrap-outline.svg">
+      <publishTime>10/28/2021 06:25:09</publishTime>
+    </File>
+    <File Include="Assets/brand/bootstrap-solid.svg">
+      <publishTime>10/28/2021 06:25:09</publishTime>
+    </File>
+    <File Include="Assets/brand/CARGA.JPG">
+      <publishTime>09/26/2022 13:24:44</publishTime>
+    </File>
+    <File Include="Assets/brand/logo_comprimax.png">
+      <publishTime>06/16/2022 09:26:41</publishTime>
+    </File>
+    <File Include="Assets/brand/logo_nordic.png">
+      <publishTime>08/18/2022 08:41:30</publishTime>
+    </File>
+    <File Include="Assets/brand/logo_senda.png">
+      <publishTime>05/09/2022 18:01:17</publishTime>
+    </File>
+    <File Include="Assets/brand/user.png">
+      <publishTime>05/09/2022 15:44:24</publishTime>
+    </File>
+    <File Include="Assets/brand/VIATICOS.JPG">
+      <publishTime>09/26/2022 13:25:34</publishTime>
+    </File>
+    <File Include="Assets/dist/css/bootstrap-icons.css">
+      <publishTime>06/07/2022 09:34:18</publishTime>
+    </File>
+    <File Include="Assets/dist/css/bootstrap-icons.woff">
+      <publishTime>05/25/2022 12:57:16</publishTime>
+    </File>
+    <File Include="Assets/dist/css/bootstrap-icons.woff2">
+      <publishTime>05/25/2022 12:57:16</publishTime>
+    </File>
+    <File Include="Assets/dist/css/bootstrap.css">
+      <publishTime>06/22/2022 08:58:11</publishTime>
+    </File>
+    <File Include="Assets/dist/css/bootstrap.css.map">
+      <publishTime>10/28/2021 09:45:21</publishTime>
+    </File>
+    <File Include="Assets/dist/css/bootstrap.min.css">
+      <publishTime>10/28/2021 06:25:09</publishTime>
+    </File>
+    <File Include="Assets/dist/css/bootstrap.min.css.map">
+      <publishTime>10/28/2021 06:25:09</publishTime>
+    </File>
+    <File Include="Assets/dist/css/cabezeratabla.css">
+      <publishTime>05/11/2022 12:21:03</publishTime>
+    </File>
+    <File Include="Assets/dist/css/Datalist.css">
+      <publishTime>06/13/2022 18:23:53</publishTime>
+    </File>
+    <File Include="Assets/dist/css/fonts/bootstrap-icons.woff">
+      <publishTime>05/25/2022 12:28:25</publishTime>
+    </File>
+    <File Include="Assets/dist/css/fonts/bootstrap-icons.woff2">
+      <publishTime>05/25/2022 12:28:25</publishTime>
+    </File>
+    <File Include="Assets/dist/css/navbar.css">
+      <publishTime>10/28/2021 06:25:09</publishTime>
+    </File>
+    <File Include="Assets/dist/css/ScrollTabla.css">
+      <publishTime>06/12/2022 18:21:42</publishTime>
+    </File>
+    <File Include="Assets/dist/css/select2_boostrap4.css">
+      <publishTime>05/24/2022 11:22:42</publishTime>
+    </File>
+    <File Include="Assets/dist/js/AgregarArticulosTabla.js">
+      <publishTime>06/15/2022 17:38:21</publishTime>
+    </File>
+    <File Include="Assets/dist/js/AgregarClienteNuevo.js">
+      <publishTime>06/11/2022 11:42:49</publishTime>
+    </File>
+    <File Include="Assets/dist/js/articulos.js">
+      <publishTime>06/14/2022 17:04:32</publishTime>
+    </File>
+    <File Include="Assets/dist/js/bootstrap.bundle.min.js">
+      <publishTime>10/28/2021 06:25:09</publishTime>
+    </File>
+    <File Include="Assets/dist/js/bootstrap.bundle.min.js.map">
+      <publishTime>10/28/2021 06:25:09</publishTime>
+    </File>
+    <File Include="Assets/dist/js/cab_coti.js">
+      <publishTime>05/23/2022 10:25:26</publishTime>
+    </File>
+    <File Include="Assets/dist/js/clientes.json">
+      <publishTime>05/10/2022 14:35:24</publishTime>
+    </File>
+    <File Include="Assets/dist/js/cotizaciones.json">
+      <publishTime>05/26/2022 09:06:02</publishTime>
+    </File>
+    <File Include="Assets/dist/js/cotizador.js">
+      <publishTime>05/19/2022 09:59:22</publishTime>
+    </File>
+    <File Include="Assets/dist/js/Estados.js">
+      <publishTime>06/15/2022 23:27:21</publishTime>
+    </File>
+    <File Include="Assets/dist/js/jquery-3.6.0.min.js">
+      <publishTime>05/14/2022 10:08:09</publishTime>
+    </File>
+    <File Include="Assets/dist/js/ListarTablaCabceraCotizacion.js">
+      <publishTime>06/15/2022 18:29:46</publishTime>
+    </File>
+    <File Include="Assets/dist/js/lista_cotizador_vendedor.js">
+      <publishTime>06/15/2022 17:47:36</publishTime>
+    </File>
+    <File Include="Assets/dist/js/Login.js">
+      <publishTime>06/10/2022 15:52:50</publishTime>
+    </File>
+    <File Include="Assets/dist/js/logo_senda.png">
+      <publishTime>05/09/2022 18:01:17</publishTime>
+    </File>
+    <File Include="Assets/dist/js/logo_ssendaok.png">
+      <publishTime>06/02/2022 12:31:01</publishTime>
+    </File>
+    <File Include="Assets/dist/js/MenuPermisos.js">
+      <publishTime>06/15/2022 12:41:18</publishTime>
+    </File>
+    <File Include="Assets/dist/js/n_cuentas-min.png">
+      <publishTime>06/09/2022 12:32:24</publishTime>
+    </File>
+    <File Include="Assets/dist/js/n_cuentas.png">
+      <publishTime>06/09/2022 12:11:38</publishTime>
+    </File>
+    <File Include="Assets/dist/js/n_cuentas2.png">
+      <publishTime>06/16/2022 09:32:34</publishTime>
+    </File>
+    <File Include="Assets/dist/js/selectclientes.js">
+      <publishTime>06/10/2022 17:39:04</publishTime>
+    </File>
+    <File Include="Assets/dist/js/selector.js">
+      <publishTime>06/09/2022 01:05:58</publishTime>
+    </File>
+    <File Include="Assets/dist/js/visor.js">
+      <publishTime>06/15/2022 17:00:59</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/.gitignore">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/bower.json">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/build.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/CNAME">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/dist/jspdf.debug.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/dist/jspdf.min.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/dist/jspdf.plugin.autotable.min.js">
+      <publishTime>10/23/2017 14:19:34</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/doc/files.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/doc/index.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/doc/plugins/from_html.md">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/doc/symbols/FontObject.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/doc/symbols/jsPDF-jsPDF.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/doc/symbols/jsPDF-PubSub.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/doc/symbols/jsPDF.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/doc/symbols/jsPDFClass.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/doc/symbols/PubSub.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/doc/symbols/src/c__work_jsPDF_jspdf.js.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/doc/symbols/src/c__work_jsPDF_tools_jspdf.js.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/doc/symbols/src/jspdf.js.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/doc/symbols/_global_.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/docs/getting_started.md">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/annotation/test_annotation-magFactor.pdf">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/annotation/test_annotation.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/annotation/test_annotation.pdf">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/annotation/test_annotation_2.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/basic.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/bootstrap/css/bootstrap-responsive.css">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/bootstrap/css/bootstrap-responsive.min.css">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/bootstrap/css/bootstrap.css">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/bootstrap/css/bootstrap.min.css">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/bootstrap/img/glyphicons-halflings-white.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/bootstrap/img/glyphicons-halflings.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/bootstrap/js/bootstrap.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/bootstrap/js/bootstrap.min.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/canvg_context2d/bar_graph_with_text_and_lines.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/context2d/test_context2d.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/context2d/test_context2d_paths.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/css/editor.css">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/css/main.css">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/css/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/css/smoothness/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/css/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/css/smoothness/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/css/smoothness/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/css/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/css/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/css/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/css/smoothness/images/ui-icons_222222_256x240.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/css/smoothness/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/css/smoothness/images/ui-icons_454545_256x240.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/css/smoothness/images/ui-icons_888888_256x240.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/css/smoothness/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/css/smoothness/jquery-ui-1.8.17.custom.css">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/downloadify.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/html2pdf/auto_break.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/html2pdf/examples.css">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/html2pdf/images/favicon.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/html2pdf/lists.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/html2pdf/page_break.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/html2pdf/pdf.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/html2pdf/pdf2.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/html2pdf/showcase.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/html2pdf/showcase_supported_html.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/html2pdf/simple.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/html2pdf/tables.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/html2pdf/total_mess.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/images.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/images/24_bit.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/images/32_bit.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/images/grayscale_16bpc.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/images/grayscale_8bpc.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/images/grayscale_alpha_16_bpc.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/images/grayscale_alpha_8bpc.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/images/grid.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/images/jpg.jpg">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/images/png8_flat.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/images/png8_trans.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/images/RGBA_16bpc.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/images/RGB_16bpc.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/images/tiny_png_indexed.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/jaxer.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/AcroForm.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/autoprint.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/basic.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/circles.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/editor.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/font-faces.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/font-size.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/from-html.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/html2canvas.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/images.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/images_png.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/jquery/jquery-1.7.1.min.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/jquery/jquery-ui-1.8.17.custom.min.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/kitchen-sink.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/landscape.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/lines.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/rectangles.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/string-splitting.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/test_harness.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/text-colors.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/theme-ambiance.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/triangles.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/two-page.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/js/user-input.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/jspdf.PLUGINTEMPLATE.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/null-logo-trans.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/octocat.jpg">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/octocat.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/outline/test_outline.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/outline/test_outline.pdf">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/runner.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/test_from_html.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/test_from_html_css_page_breaks.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/test_insert_page.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/examples/thinking-monkey.jpg">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/index.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/ISSUE_TEMPLATE.md">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/jspdf.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/canvg_context2d/canvg.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/canvg_context2d/libs/rgbcolor.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/canvg_context2d/libs/StackBlur.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/canvg_context2d/README.md">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/css_colors.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/deflate.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/Downloadify/images/download.png">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/Downloadify/js/downloadify.min.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/Downloadify/js/swfobject.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/Downloadify/LICENSE.txt">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/Downloadify/media/downloadify.swf">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/Downloadify/README.textile">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/Downloadify/src/com/dynamicflash/util/Base64.as">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/Downloadify/src/com/dynamicflash/util/tests/Base64Test.as">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/Downloadify/src/Downloadify.as">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/Downloadify/src/downloadify.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/Downloadify/test.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/dist/html2canvas.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/LICENSE">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/readme.md">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/clone.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/color.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/core.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/dummyimagecontainer.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/fallback.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/font.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/fontmetrics.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/framecontainer.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/gradientcontainer.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/imagecontainer.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/imageloader.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/lineargradientcontainer.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/log.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/nodecontainer.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/nodeparser.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/promise.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/proxy.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/proxyimagecontainer.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/pseudoelementcontainer.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/renderer.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/renderers/canvas.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/stackingcontext.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/support.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/svgcontainer.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/svgnodecontainer.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/textcontainer.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/utils.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/webkitgradientcontainer.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2canvas/src/xhr.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/html2pdf.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/png_support/png.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/png_support/zlib.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/polyfill.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/README">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/require/config.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/libs/require/require.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/main.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/MIT-LICENSE.txt">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/npm-shrinkwrap.json">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/package.json">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/plugins/acroform.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/plugins/addhtml.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/plugins/addimage.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/plugins/annotations.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/plugins/autoprint.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/plugins/canvas.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/plugins/cell.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/plugins/context2d.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/plugins/from_html.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/plugins/javascript.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/plugins/outline.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/plugins/png_support.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/plugins/prevent_scale_to_fit.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/plugins/split_text_to_size.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/plugins/standard_fonts_metrics.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/plugins/svg.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/plugins/total_pages.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/plugins/xmp_metadata.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/README.md">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/RELEASE.md">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/SUMMARY.md">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/001_blankpdf.pdf">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/002_twopagedoc.pdf">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/002_twopagedoc_oldapi.pdf">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/003_demolandscape.pdf">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/004_fontsizes.pdf">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/005_demofonttypes.pdf">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/006_demotestcolors.pdf">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/007_demometadata.pdf">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/008_demorectangles.pdf">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/009_demoliness.pdf">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/010_democircles.pdf">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/011_multilinetext.pdf">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/012_multiplelines.pdf">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/013_sillysvgrenderer.pdf">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/013_sillysvgrenderer.svg">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/014_addImage.jpeg">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/014_addImage.jpeg.base64.txt">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/014_addImage.pdf.base64.txt">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/014_addImage.txt">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/015_splittext.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/015_splittext.pdf">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/components_tests.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/index.htm">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/libs/curl-0.5.4.min.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/libs/custom_fill.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/libs/qunit.css">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/libs/qunit.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/pdf_generate_tests.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/test.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/test_from_html_css_page_breaks.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/test_harness.js">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/test/test_min.html">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/dist/jsPDF-1.3.2/todo.txt">
+      <publishTime>09/30/2016 15:33:18</publishTime>
+    </File>
+    <File Include="Assets/Imagenes/CTZ-00450.pdf">
+      <publishTime>06/17/2022 13:08:38</publishTime>
+    </File>
+    <File Include="Assets/Imagenes/CTZ-00452.pdf">
+      <publishTime>06/17/2022 13:00:06</publishTime>
+    </File>
+    <File Include="Assets/Imagenes/CTZ-00470.pdf">
+      <publishTime>06/17/2022 11:45:21</publishTime>
+    </File>
+    <File Include="Assets/Imagenes/CUENTAS DE BANCO - HEADMARK CORPORATION %281%29.png">
+      <publishTime>06/20/2022 00:00:06</publishTime>
+    </File>
+    <File Include="Assets/Imagenes/CUENTAS DE BANCO - HEADMARK CORPORATION.png">
+      <publishTime>06/17/2022 12:57:42</publishTime>
+    </File>
+    <File Include="Assets/Imagenes/DD.jpg">
+      <publishTime>06/20/2022 15:26:31</publishTime>
+    </File>
+    <File Include="Assets/Imagenes/GIF.png">
+      <publishTime>06/17/2022 16:15:59</publishTime>
+    </File>
+    <File Include="Assets/Imagenes/logo.png">
+      <publishTime>06/20/2022 11:58:34</publishTime>
+    </File>
+    <File Include="Assets/Imagenes/logo_comprimax.png">
+      <publishTime>06/17/2022 09:27:28</publishTime>
+    </File>
+    <File Include="Assets/Imagenes/n_cuentas %281%29.png">
+      <publishTime>06/21/2022 16:35:31</publishTime>
+    </File>
+    <File Include="Assets/Imagenes/n_cuentas.png">
+      <publishTime>06/17/2022 13:21:18</publishTime>
+    </File>
+    <File Include="Assets/Imagenes/n_cuentas2.png">
+      <publishTime>06/21/2022 09:29:27</publishTime>
+    </File>
+    <File Include="Assets/Imagenes/voucher %281%29.jpg">
+      <publishTime>06/20/2022 11:50:48</publishTime>
+    </File>
+    <File Include="Assets/Imagenes/voucher.jpg">
+      <publishTime>06/17/2022 16:26:38</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/brand/bootstrap-outline.svg">
+      <publishTime>10/28/2021 06:25:09</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/brand/bootstrap-solid.svg">
+      <publishTime>10/28/2021 06:25:09</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/addons/datatables-select.min.css">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/addons/datatables-select.min.css.map">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/addons/datatables-select2.min.css">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/addons/datatables-select2.min.css.map">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/addons/datatables.min.css">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/addons/datatables.min.css.map">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/addons/datatables2.min.css">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/addons/datatables2.min.css.map">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/addons/directives.min.css">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/addons/directives.min.css.map">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/addons/flag.min.css">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/addons/flag.min.css.map">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/addons/jquery.zmd.hierarchical-display.min.css">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/addons/jquery.zmd.hierarchical-display.min.css.map">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/addons/rating.min.css">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/addons/rating.min.css.map">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/bootstrap-icons.css">
+      <publishTime>06/07/2022 09:34:18</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/bootstrap-icons.woff">
+      <publishTime>05/25/2022 12:57:16</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/bootstrap-icons.woff2">
+      <publishTime>05/25/2022 12:57:16</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/bootstrap.css">
+      <publishTime>06/22/2022 08:55:15</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/bootstrap.css.map">
+      <publishTime>10/28/2021 09:45:21</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/bootstrap.min.css">
+      <publishTime>10/28/2021 06:25:09</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/bootstrap.min.css.map">
+      <publishTime>10/28/2021 06:25:09</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/cabezeratabla.css">
+      <publishTime>05/11/2022 12:21:03</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/Datalist.css">
+      <publishTime>06/13/2022 18:23:53</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/descarga.png">
+      <publishTime>06/09/2022 13:02:42</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/fonts/bootstrap-icons.woff">
+      <publishTime>05/25/2022 12:28:25</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/fonts/bootstrap-icons.woff2">
+      <publishTime>05/25/2022 12:28:25</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/Layaout/dashboard.css">
+      <publishTime>10/28/2021 06:25:09</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/Layaout/dashboard.js">
+      <publishTime>06/22/2022 15:01:24</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/Layaout/style.css">
+      <publishTime>08/09/2022 14:57:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/navbar.css">
+      <publishTime>10/28/2021 06:25:09</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/ScrollTabla.css">
+      <publishTime>06/12/2022 18:21:42</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/css/select2_boostrap4.css">
+      <publishTime>05/24/2022 11:22:42</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/js/addons/datatables-select.min.css">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/js/addons/datatables-select.min.css.map">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/js/addons/datatables-select2.min.css">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/js/addons/datatables-select2.min.css.map">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/js/addons/datatables.min.css">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/js/addons/datatables.min.css.map">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/js/addons/datatables2.min.css">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/js/addons/datatables2.min.css.map">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/js/addons/directives.min.css">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/js/addons/directives.min.css.map">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/js/addons/flag.min.css">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/js/addons/flag.min.css.map">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/js/addons/jquery.zmd.hierarchical-display.min.css">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/js/addons/jquery.zmd.hierarchical-display.min.css.map">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/js/addons/rating.min.css">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/js/addons/rating.min.css.map">
+      <publishTime>01/24/2022 07:51:22</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/js/bootstrap.bundle.min.js">
+      <publishTime>10/28/2021 06:25:09</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/js/bootstrap.bundle.min.js.map">
+      <publishTime>10/28/2021 06:25:09</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/js/file-earmark-pdf.svg">
+      <publishTime>05/30/2022 16:37:12</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/js/jquery-3.6.0.min.js">
+      <publishTime>05/14/2022 10:08:09</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/js/Login.js">
+      <publishTime>06/10/2022 15:52:50</publishTime>
+    </File>
+    <File Include="Assets/Viaticos/dist/js/MenuPermisos.js">
+      <publishTime>06/15/2022 12:41:18</publishTime>
+    </File>
+    <File Include="bin/DAO.dll">
+      <publishTime>09/26/2022 16:51:07</publishTime>
+    </File>
+    <File Include="bin/DAO.pdb">
+      <publishTime>09/26/2022 16:51:07</publishTime>
+    </File>
+    <File Include="bin/ENTIDAD.dll">
+      <publishTime>09/22/2022 15:18:51</publishTime>
+    </File>
+    <File Include="bin/ENTIDAD.pdb">
+      <publishTime>09/22/2022 15:18:51</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Helpers.resources.dll">
+      <publishTime>11/28/2018 08:04:36</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Mvc.resources.dll">
+      <publishTime>11/28/2018 08:00:00</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Razor.resources.dll">
+      <publishTime>11/28/2018 08:00:22</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Webpages.Deployment.resources.dll">
+      <publishTime>11/28/2018 08:04:36</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Webpages.Razor.resources.dll">
+      <publishTime>11/28/2018 08:04:36</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Webpages.resources.dll">
+      <publishTime>11/28/2018 08:04:36</publishTime>
+    </File>
+    <File Include="bin/LN.dll">
+      <publishTime>09/26/2022 16:51:08</publishTime>
+    </File>
+    <File Include="bin/LN.pdb">
+      <publishTime>09/26/2022 16:51:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>09/05/2018 16:10:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/17/2021 15:03:36</publishTime>
+    </File>
+    <File Include="bin/PRESENTACION.dll">
+      <publishTime>09/26/2022 17:12:02</publishTime>
+    </File>
+    <File Include="bin/PRESENTACION.pdb">
+      <publishTime>09/26/2022 17:12:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>08/08/2018 12:18:12</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>08/08/2018 12:18:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>08/08/2018 12:09:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>12/05/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>12/05/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>11/05/2016 18:55:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>11/05/2016 18:55:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/16/2018 03:29:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>11/05/2016 18:55:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>11/05/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>11/05/2016 18:55:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>11/05/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Globalization.Calendars.dll">
+      <publishTime>11/05/2016 18:56:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.ZipFile.dll">
+      <publishTime>11/05/2016 18:56:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Http.dll">
+      <publishTime>11/05/2016 18:56:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Sockets.dll">
+      <publishTime>11/05/2016 18:56:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/16/2018 03:29:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>11/05/2016 18:57:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>11/05/2016 18:57:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>11/05/2016 18:57:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>11/05/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>11/05/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>11/05/2016 18:57:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>11/05/2016 18:57:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>11/05/2016 18:57:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>11/05/2016 18:57:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>11/05/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>11/05/2016 18:57:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>11/05/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>08/08/2018 12:18:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>08/08/2018 12:09:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>08/08/2018 12:18:16</publishTime>
+    </File>
+    <File Include="bin/SunatMVB.dll">
+      <publishTime>04/25/2021 12:28:16</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/28/2018 12:59:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/28/2018 13:00:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/09/2022 11:37:39</publishTime>
+    </File>
+    <File Include="libman.json">
+      <publishTime>07/05/2022 15:18:04</publishTime>
+    </File>
+    <File Include="Views/Cotizador/CotizacionCreada.cshtml">
+      <publishTime>06/20/2022 10:24:43</publishTime>
+    </File>
+    <File Include="Views/Cotizador/Index.cshtml">
+      <publishTime>06/20/2022 19:34:33</publishTime>
+    </File>
+    <File Include="Views/Cotizador/ListarCotizaciones.cshtml">
+      <publishTime>06/21/2022 11:22:28</publishTime>
+    </File>
+    <File Include="Views/Cotizador/Monitoreo.cshtml">
+      <publishTime>06/17/2022 14:31:47</publishTime>
+    </File>
+    <File Include="Views/Cotizador/Visor.cshtml">
+      <publishTime>06/20/2022 19:07:48</publishTime>
+    </File>
+    <File Include="Views/Index/Index.cshtml">
+      <publishTime>09/26/2022 13:10:02</publishTime>
+    </File>
+    <File Include="Views/Index/Programas.cshtml">
+      <publishTime>09/26/2022 17:10:29</publishTime>
+    </File>
+    <File Include="Views/Layout/_LayoutMenu.cshtml">
+      <publishTime>06/17/2022 13:48:36</publishTime>
+    </File>
+    <File Include="Views/Layout/_LayoutSOP.cshtml">
+      <publishTime>09/26/2022 15:31:46</publishTime>
+    </File>
+    <File Include="Views/Layout/_LayoutViatico.cshtml">
+      <publishTime>09/26/2022 14:57:25</publishTime>
+    </File>
+    <File Include="Views/SOP/Embarque.cshtml">
+      <publishTime>09/26/2022 15:27:23</publishTime>
+    </File>
+    <File Include="Views/SOP/Index.cshtml">
+      <publishTime>09/26/2022 15:27:04</publishTime>
+    </File>
+    <File Include="Views/SOP/Institucional.cshtml">
+      <publishTime>09/26/2022 15:27:08</publishTime>
+    </File>
+    <File Include="Views/SOP/Proyeccion.cshtml">
+      <publishTime>09/26/2022 15:27:15</publishTime>
+    </File>
+    <File Include="Views/Viaticos/AprobacionGerenteLinea.cshtml">
+      <publishTime>09/23/2022 11:31:16</publishTime>
+    </File>
+    <File Include="Views/Viaticos/AsigancionGL.cshtml">
+      <publishTime>08/18/2022 18:10:06</publishTime>
+    </File>
+    <File Include="Views/Viaticos/dashboard/dashboard.css">
+      <publishTime>10/28/2021 06:25:09</publishTime>
+    </File>
+    <File Include="Views/Viaticos/dashboard/dashboard.js">
+      <publishTime>10/28/2021 06:25:09</publishTime>
+    </File>
+    <File Include="Views/Viaticos/dashboard/index.html">
+      <publishTime>10/28/2021 06:25:09</publishTime>
+    </File>
+    <File Include="Views/Viaticos/GerenteLinea.cshtml">
+      <publishTime>09/23/2022 10:15:41</publishTime>
+    </File>
+    <File Include="Views/Viaticos/Index.cshtml">
+      <publishTime>06/22/2022 10:55:36</publishTime>
+    </File>
+    <File Include="Views/Viaticos/Liquidacion.cshtml">
+      <publishTime>08/19/2022 14:47:00</publishTime>
+    </File>
+    <File Include="Views/Viaticos/ListaViaticos.cshtml">
+      <publishTime>08/19/2022 11:21:56</publishTime>
+    </File>
+    <File Include="Views/Viaticos/Master.cshtml">
+      <publishTime>08/19/2022 08:36:55</publishTime>
+    </File>
+    <File Include="Views/Viaticos/RegistroViatico.cshtml">
+      <publishTime>06/24/2022 12:52:01</publishTime>
+    </File>
+    <File Include="Views/Viaticos/Representante.cshtml">
+      <publishTime>09/14/2022 16:09:36</publishTime>
+    </File>
+    <File Include="Views/Viaticos/RestriccionesSistema.cshtml">
+      <publishTime>08/19/2022 08:50:03</publishTime>
+    </File>
+    <File Include="Views/Viaticos/Vendedor.cshtml">
+      <publishTime>06/24/2022 15:15:33</publishTime>
+    </File>
+    <File Include="Views/Viaticos/ViaticoCreado.cshtml">
+      <publishTime>09/15/2022 09:26:41</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>05/09/2022 11:37:39</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/26/2022 17:12:02</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

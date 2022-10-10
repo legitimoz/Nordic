@@ -1,0 +1,9 @@
+C:\Users\jose.gutierrez\source\repos\BASE\DAO\bin\Debug\DAO.dll
+C:\Users\jose.gutierrez\source\repos\BASE\DAO\bin\Debug\DAO.pdb
+C:\Users\jose.gutierrez\source\repos\BASE\DAO\bin\Debug\ENTIDAD.dll
+C:\Users\jose.gutierrez\source\repos\BASE\DAO\bin\Debug\ENTIDAD.pdb
+C:\Users\jose.gutierrez\source\repos\BASE\DAO\obj\Debug\ACCESODATOS.csproj.AssemblyReference.cache
+C:\Users\jose.gutierrez\source\repos\BASE\DAO\obj\Debug\ACCESODATOS.csproj.CoreCompileInputs.cache
+C:\Users\jose.gutierrez\source\repos\BASE\DAO\obj\Debug\ACCESODATOS.csproj.CopyComplete
+C:\Users\jose.gutierrez\source\repos\BASE\DAO\obj\Debug\DAO.dll
+C:\Users\jose.gutierrez\source\repos\BASE\DAO\obj\Debug\DAO.pdb

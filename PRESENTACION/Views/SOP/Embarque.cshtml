@@ -1,0 +1,450 @@
+﻿
+@{
+    ViewBag.Title = "Embarque";
+    Layout = "~/Views/Layout/_LayoutSOP.cshtml";
+}
+
+
+
+<div class="row">
+    <div class="col-9">
+        <h3>MODULO EMBARQUE</h3>
+    </div>
+
+
+
+    <div class="col-sm-3 col-3">
+        <!--BOTON BUSCAR POR FECHA-->
+        <button type="button" id="btn_add_rrss" onclick="NuevoRegistroEmbarque();" class="btn btn-dark"><i class="bi bi-clipboard2-check"></i> Agregar Embarque</button>
+    </div>
+
+</div>
+
+<!-- MODAL NUEVO REGISTRO SANITARIO-->
+<div class="modal fade" id="exampleModalCenter_embarque" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Nuevo Registro Embarque</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!--Cotizacion a Modificar--->
+                <main role="main">
+                    <div class="jumbotron">
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <label for="country">Codigo Embarque</label>
+                                <input type="text" class="custom-select d-block w-100" id="sop_cod_emb" required>
+
+                                <div class="invalid-feedback">
+                                    Codigo requerido.
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <button class="btn btn-primary btn-lg btn-block" id="sop_btn_registro" onclick="RegistroEmbarque();">Registrar</button>
+                            </div>
+                        </div>
+                        
+
+                        <div class="container">
+                            <div class="p-2"></div>
+                            <div class="row">
+
+                                <div class="col-md-12 order-md-1">
+                                    <h4 class="mb-3"></h4>
+                                    <form class="needs-validation" novalidate>
+
+                                        <div class="row">
+
+                                            <div class="col-md-3 mb-3">
+                                                <label for="country">Codigo Embarque</label>
+                                                <input class="custom-select d-block w-100" id="via_dep_origin" required>
+
+                                                <div class="invalid-feedback">
+                                                    Departamento requerido.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                                <label for="country">Lugar Embarque</label>
+                                                <select class="custom-select d-block w-100" id="via_dep_origin" required>
+                                                    <option selected disabled value="">Seleccione...</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Departamento requerido.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                                <label for="state">Provincia</label>
+                                                <select class="custom-select d-block w-100" id="via_pro_origin" required>
+                                                    <option selected disabled value="">Seleccione...</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Provincia requerida
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                                <label for="zip">Distrito</label>
+                                                <select class="custom-select d-block w-100" id="via_dis_origin" required>
+
+                                                    <option selected disabled value="">Seleccione...</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Distrito  requerido.
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3 mb-3">
+                                                <label for="country">Fecha Y hora Origen</label>
+                                                <input type="datetime-local" class="form-control" id="via_fec_hora_origin" placeholder="" value="" required>
+                                                <div class="invalid-feedback">
+                                                    Fecha y Hora requerido
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+
+                                            <div class="col-md-3 mb-3">
+                                                <label for="country">Fecha Y hora Origen</label>
+                                                <input type="datetime-local" class="form-control" id="via_fec_hora_origin" placeholder="" value="" required>
+                                                <div class="invalid-feedback">
+                                                    Fecha y Hora requerido
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3 mb-3">
+                                                <label for="country">Fecha Y hora Origen</label>
+                                                <input type="datetime-local" class="form-control" id="via_fec_hora_origin" placeholder="" value="" required>
+                                                <div class="invalid-feedback">
+                                                    Fecha y Hora requerido
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3 mb-3">
+                                                <label for="country">Fecha Y hora Origen</label>
+                                                <input type="datetime-local" class="form-control" id="via_fec_hora_origin" placeholder="" value="" required>
+                                                <div class="invalid-feedback">
+                                                    Fecha y Hora requerido
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3 mb-3">
+                                                <label for="country">Fecha Y hora Origen</label>
+                                                <input type="datetime-local" class="form-control" id="via_fec_hora_origin" placeholder="" value="" required>
+                                                <div class="invalid-feedback">
+                                                    Fecha y Hora requerido
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <label for="country">Fabricante</label>
+                                                <input type="text" class="form-control" id="via_fecha_solicitud" placeholder="" value="" required>
+                                                <div class="invalid-feedback">
+                                                    Fecha Solicitud requerida
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <label for="state">Pais</label>
+                                                <input type="text" class="form-control d-block w-100" value="" required>
+
+                                                <div class="invalid-feedback">
+                                                    Motivo viaje requerido
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <label for="zip">Comercializacion</label>
+                                                <input type="text" class="form-control" id="via_monto_sol" placeholder="" required>
+                                                <div class="invalid-feedback">
+                                                    Monto Solicitud requerido
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <label for="username">Estado</label>
+                                                <div class="input-group">
+
+                                                    <input type="text" class="form-control d-block w-100" value="" required>
+
+                                                    <div class="invalid-feedback" style="width: 100%;">
+                                                        Medio de Viaje Requerido
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <hr class="mb-4">
+
+
+                                        <div class="row">
+                                            <div class="col-md-3 mb-3">
+                                                <label for="cc-expiration">Fecha Inicio</label>
+                                                <input type="date" class="form-control" id="via_fec_term_viaje" placeholder="" required>
+                                                <div class="invalid-feedback">
+                                                    Fecha termino requerida
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                                <label for="cc-cvv">Fecha Vigencia</label>
+                                                <input type="date" class="form-control" id="via_fec_term_viaje" placeholder="" required>
+                                                <div class="invalid-feedback">
+                                                    Monto Esperado requerido
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3 mb-3">
+                                                <label for="cc-cvv">Envase</label>
+                                                <input type="text" class="form-control" id="via_cant_dias" placeholder="" required>
+                                                <div class="invalid-feedback">
+                                                    Dias  requerido
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3 mb-3">
+                                                <label for="cc-cvv">Vida Util</label>
+                                                <input type="text" class="form-control" id="via_cant_dias" placeholder="" required>
+                                                <div class="invalid-feedback">
+                                                    Dias  requerido
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <hr class="mb-4">
+                                        <button  type="button"  class="btn btn-primary btn-lg btn-block" >Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <footer class="my-5 pt-5 text-muted text-center text-small">
+                                <p class="mb-1">&copy; 2021-2023 FGB</p>
+                                <ul class="list-inline">
+                                </ul>
+                            </footer>
+                        </div>
+
+                    </div>
+
+
+
+                </main>
+                <!--FIN --->
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- MODAL NUEVO REGISTRO SANITARIO-->
+
+
+<main>
+    <div class="container">
+        <div class="row   text-white" style="background-color: #e9ecef; ">
+
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-1">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Fecha Inicio</span>
+                    </div>
+                    <input type="date" class="form-control" id="lc_dt_fec_ini" aria-describedby="basic-addon3">
+                </div>
+            </div>
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Fecha Fin</span>
+                    </div>
+                    <input type="date" class="form-control" id="lc_dt_fec_fin" aria-describedby="basic-addon3">
+                </div>
+            </div>
+
+
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Estados</label>
+                    </div>
+                    <select class="custom-select" id="cot_est_ven">
+                        <option selected>Elija...</option>
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <!--input class="form-control" type="search" placeholder="Buscar" aria-label="Search"-->
+                        <!-- prueba-->
+                        <!--- FIN DE PRUEBA-->
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <h4></h4>
+        <div class="row">
+            <div class="col-6">
+
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Upload</span>
+                    </div>
+                    <div class="custom-file">
+                        <input type="file" onchange="encodeImageFileAsURL();" class="custom-file-input" id="formato_excel">
+                        <input type="hidden" class="custom-file-input" id="excelninja">
+                        <label class="custom-file-label" for="formato_excel">Carga Excel</label>
+                    </div>
+                </div>
+                <button type="button" id="cargar_excel" class="btn btn-dark"><i class="bi bi-upload"></i>Subir</button>
+            </div>
+        </div>
+
+        <div class="row">
+
+
+            <div class="table-responsive table-responsive-md table-responsive-lg">
+                <table class="table table-sm table-hover display" id="tabla_privada">
+                    <thead>
+                        <tr>
+                                                       
+                            <th scope="col">Cod Embarque</th>
+                            <th scope="col">Cod Product</th>
+                            <th scope="col">Fecha Embarque</th>
+                            <th scope="col">Fecha Arribo </th>
+                            <th scope="col">Pais Origen </th>
+                            <th scope="col">Mes 6 </th>
+                            <th scope="col">Mes 7 </th>
+                            <th scope="col">Mes 8 </th>
+                            <th scope="col">Mes 9 </th>
+                            <th scope="col">Mes 10 </th>
+                           
+
+
+                        </tr>
+                    </thead>
+                    <tbody id="tabla_pro_privada">
+                    </tbody>
+                </table>
+
+                <div class="pagination-container">
+                    <nav>
+                        <ul class="pagination">
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="~/Assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" type="text/javascript"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+       // init();
+
+    });
+
+    function NuevoRegistroEmbarque() {
+        $("#exampleModalCenter_embarque").modal("toggle");
+
+
+
+    }
+
+    function RegistroEmbarque() {
+
+        var codembarque = document.getElementById("sop_cod_emb").value;
+
+           $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("RegistroCodigoEmbarque", "SOP")",
+                data: "{'codEmbarque': '" + codembarque + "'}",
+                success: function (data) {
+                alert(data);
+                    console.log(data);
+
+
+                }
+                });
+    }
+    function ListaEmbarque_API(codembarque) {
+
+
+         $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("ListaEmbarque_API", "SOP")",
+                data: "{'codEmbarque': '" + codembarque + "'}",
+                success: function (data) {
+                alert(data);
+                    console.log(data);
+
+                    for (cab in data) {
+                        console.log(data[cab].Shipment.HousebillNumber);
+                        console.log(data[cab].Shipment.Origin.CountryCode);
+                        console.log(data[cab].Shipment.Origin.LocationCode);
+                        console.log(data[cab].Shipment.Origin.LocationName);
+                        //ROUTES
+                        console.log(data[cab].Shipment.Routes.Route);
+                        console.log(data[cab].Shipment.Routes.Route[0].VesselName);
+                        console.log(data[cab].Shipment.Routes.Route[0].EstimatedArrivalDate);
+                        console.log(data[cab].Shipment.Routes.Route[0].EstimatedArrivalDate);
+
+
+
+                      //  PlaceOfAcceptance
+
+
+
+                       // console.log(data[cab].HousebillNumber);
+
+                    }
+                }
+                });
+    }
+
+    
+</script>

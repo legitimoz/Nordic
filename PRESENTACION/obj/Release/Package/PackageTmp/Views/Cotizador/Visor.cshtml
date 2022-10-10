@@ -1,0 +1,550 @@
+﻿
+@{
+    ViewBag.Title = "Visor";
+    Layout = "~/Views/Layout/_LayoutMenu.cshtml";
+}
+<main>
+    <div class="container">
+        <h3>Visor Cotizaciones Creditos y Cobranzas</h3>
+        <div class="row p-3 mb-2 text-white" style="background-color:#E3EAEC;">
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-1">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Fecha Inicio</span>
+                    </div>
+                    <input type="date" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                </div>
+            </div>
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Fecha Fin</span>
+                    </div>
+                    <input type="date" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                </div>
+            </div>
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Estados</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Elija...</option>
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Cliente</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Elija...</option>
+                        <option value="1">Cliente 1</option>
+                        <option value="2">Cliente 2</option>
+                        <option value="3">Cliente 3</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Vendedor</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Elija...</option>
+                        <option value="1">Vendedor 1</option>
+                        <option value="2">Vendedor 2</option>
+                        <option value="3">Vendedor 3</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+
+                        <!-- prueba-->
+                        <!--- FIN DE PRUEBA-->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <h4>Lista de cotizaciones </h4> <br />
+        <div class="row">
+
+            <div class="table-responsive table-responsive-md table-responsive-lg">
+                <table class="table table-sm table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Numero</th>
+                            <th scope="col">Cliente</th>
+                            <th scope="col">Almacen</th>
+
+                            <th scope="col">Vendedor</th>
+                            <th scope="col">For. Pago</th>
+                            <th scope="col">Fecha Registro</th>
+                            <th scope="col">EStado</th>
+                            <th scope="col">Direccion</th>
+                            <th scope="col">Importe</th>
+
+                            <th scope="col">Aprobar</th>
+                            <th scope="col">Rechazar</th>
+                            <th scope="col">VerDetalle</th>
+                        </tr>
+                    </thead>
+                    <tbody id="res_visor_cotizaciones">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- MODAL EDITAR-->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Detalle Cotizacion </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!--Cotizacion a Modificar--->
+                    <main role="main">
+                        <div class="jumbotron">
+
+                            <div class="container">
+                                <h3 class="text-center">Detalle Articulos </h3>
+
+                                <div class="row">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link active col-12 col-sm-12" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Datos Generales</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link col-12 col-sm-12" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Detalle Articulos</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" id="myTabContent">
+
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      
+                                        <div class="table-responsive">
+
+                                            <table id="mytable" class="table table-sm table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Codigo</th>
+                                                        <th scope="col">Articulo</th>
+                                                        <th scope="col">Unidad</th>
+                                                        <th scope="col">Precio</th>
+                                                        <th scope="col">Cant.Req.</th>
+                                                        <th scope="col">Cant.Disp</th>
+                                                        <th scope="col">Stock</th>
+                                                        <th scope="col">Anular</th>
+                                                        <th style="visibility:hidden;" scope="col">anular 2 </th>
+                                                        <th style="visibility:hidden;" scope="col">Anular 3</th>
+
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody id="tabla_detalle_cotizacion_vendedor_visor">
+                                                </tbody>
+
+                                            </table>
+                                        </div>
+
+
+                                      
+                                    </div>
+
+                                  
+                                </div>
+
+
+
+
+                            </div>
+
+                        </div>
+
+
+
+                    </main>
+                    <!--FIN --->
+
+
+
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <!--FIN MODAL EDITAR-->
+    <!--MODAL ADJUNTO-->
+
+    <div class="modal fade" id="exampleModalCenter_ad" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Revisar archivos adjuntos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+
+                    <form action="/" method="post" enctype="multipart/form-data">
+
+
+
+                        <label for="inputPassword3" class="col-3 col-sm-1 col-form-label">Adjunto</label>
+                        <div id="listadeimagenes" class="col-9 col-sm-8">
+
+                            <img  CLASS="img-fluid" src="~/Assets/Imagenes/voucher.jpg" alt="Alternate Text" />
+                            <img id="imagencargada" CLASS="img-fluid" src="" alt="Alternate Text" />
+                            <a href="~/Assets/Imagenes/voucher.jpg" download <img src="~/Assets/Imagenes/voucher.jpg" alt="imagen de ejemplo" /> Download</a>
+                        </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" id="subir_archivos_pdf" class="btn btn-primary">Guardar Cambios</button>
+                </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL ADJUNTO-->
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="../Assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+
+      //  init_articulo();
+        ListarCotizacionesVendedor_visor();
+      });
+    function ListarCotizacionesVendedor_visor() {
+        var codigoanulacion;
+        var botonanular = "";
+        //   console.log("Estamos en Listado cabeceras");
+        //var mitablacabecera = document.getElementById("tabla_cabecera_cotizacion_vendedor");
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+            url: "@Url.Action("ListarCotizacionesVendedor_visor_creditos_cobranzas", "Cotizador")",
+
+            success: function (data) {
+
+                var mitablacabecera_visor = document.getElementById("res_visor_cotizaciones");
+                if (mitablacabecera_visor) {
+                    mitablacabecera_visor.innerHTML = ``;
+                }
+                else {
+                    // mitablacabecera.innerHTML = ``;
+                }
+                //recorrer lista de objectos :D
+                mitablacabecera_visor.innerHTML = ``;
+                var codigocotizaciontext = "CTZ-00";
+                for (cab in data) {
+                    var valor = 90;
+                    // console.log(data);
+                    codigoanulacion = codigocotizaciontext + data[cab].codigo;
+                    var importe_visor = Importe_visor(data[cab].codigo);
+                    //  console.log(codigoanulacion);
+                    //console.log("Cotizacion ___________________________");
+                    //console.log("codigo " + data[cab].codigo + " cliente" + data[cab].cliente + " almacen " + data[cab].almacen);
+                    //console.log("_______________________________________");
+                    mitablacabecera_visor.innerHTML += ` <tr>
+                                  <td scope='row'>${codigocotizaciontext}${data[cab].codigo}</td>
+                                  <td>${data[cab].cliente}</td>
+                                  <td>${data[cab].almacen}</td>
+                                  <td>${data[cab].vendedor}</td>
+                                  <td>${data[cab].formapago}</td>
+                                  <td>${data[cab].fecharegistro}</td>
+
+                                    <td>${data[cab].id_estado}</td>
+                                  <td >${data[cab].direccion}</td>
+                            <td >${importe_visor}</td>
+                                  <td><button id="${codigoanulacion}" class="btn text-white" onclick="generarpedido(${data[cab].codigo},${data[cab].usuario})" style="background-color:#09B556;"><i class="bi bi-clipboard2-x"></i></button></td>
+                                <td><button id="${codigoanulacion}" class="btn text-white" onclick="Rechazar(${data[cab].codigo})" style="background-color:#D22B08;"><i class="bi bi-pencil-square"></i></button></td>
+                                <td><button id="${codigoanulacion}" onclick="listarDetalleCotizacion(${data[cab].codigo})" class="btn text-white" data-toggle="modal" data-target="#exampleModalCenter"  style="background-color:#278DE9;"><i class="bi bi-file-earmark-pdf"></i></button></td>
+<td><button id="${codigoanulacion}"  onclick="verImagendeabonoporCtz(${data[cab].codigo})" class="btn text-white" data-toggle="modal" data-target="#exampleModalCenter_ad" style="background-color:#09B556;"><i class="bi bi-check2-square"></i></button></td>
+
+                                </tr>
+                                    `;
+
+
+
+                }
+
+
+
+            }
+        });
+
+    }
+
+   // listarDetalleCotizacion(codigocabecera);
+
+    //function generaraprobacion(codigo, idusuario) {
+
+    //    Aprobar(codigo, idusuario);
+     
+    //    generarpedido(codigo, idusuario);
+    //}
+
+    @*function Aprobar(codigo,idusuario) {
+        console.log("ejecutando alertar");
+        Swal.fire({
+            title: '¿Esta seguro de Aprobar CTZ-00 ' + codigo,
+            showDenyButton: true,
+            showCancelButton: true,
+            confirmButtonText: 'Guardar',
+            denyButtonText: `No Guardar`,
+        }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+                Swal.fire('Aprobar CTZ-00' + codigo, '', 'success')
+                aprobarporajax(codigo, idusuario);
+                
+               
+            } else if (result.isDenied) {
+                Swal.fire('Cambios no Guardados', '', 'info')
+            }
+        })
+       
+    }
+    function aprobarporajax(codigocotizacion,idusuario) {
+
+        console.log("aprobar internamnete");
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+            data: "{ 'codigo': '" + codigocotizacion + "','estado': '" + '1' + "','idusuario': '" + idusuario + "'}",
+            url: "@Url.Action("AprobarCotiVendedor", "Cotizador")",
+
+            success: function (data) {
+                console.log("APROBAR ?:" + data);
+                //GENERAR PEDIDO LUEGO DE APROBAR LA COTIZACION X CY COBRANZAS
+
+                ListarCotizacionesVendedor_visor();
+                
+            }
+        });
+    }*@
+
+    function generarpedido(codigocotizacion,idusuario) {
+
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+            data: "{ 'codigocotizacion': '" + codigocotizacion + "','idusuario': '" + idusuario + "'}",
+            url: "@Url.Action("GenerarPedido", "Cotizador")",
+
+            success: function (data) {
+                console.log("PEDIDO GENERADO ?:" + data);
+               // ListarCotizacionesVendedor_visor();
+            }
+        });
+  }
+
+    function Rechazar(codigo) {
+        console.log("ejecutando alertar");
+        Swal.fire({
+            title: '¿Esta seguro de Rechazar CTZ-00 ' + codigo,
+            showDenyButton: true,
+            showCancelButton: true,
+            confirmButtonText: 'Guardar',
+            denyButtonText: `No Guardar`,
+        }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+                Swal.fire('Aprobar CTZ-00' + codigo, '', 'success')
+                rechazarporajax(codigo);
+            } else if (result.isDenied) {
+                Swal.fire('Cambios no Guardados', '', 'info')
+            }
+        })
+
+    }
+    function rechazarporajax(codigocotizacion) {
+        console.log("rechazar internamnete");
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+            data: "{ 'codigo': '" + codigocotizacion + "','estado': '" + '2' + "'}",
+
+             url: "@Url.Action("AprobarCotiVendedor", "Cotizador")",
+            success: function (data) {
+                console.log("APROBAR ?:" + data);
+                ListarCotizacionesVendedor_visor();
+
+            }
+        });
+    }
+    function Importe_visor(codigoCabecera) {
+        var totalll =0;
+        var total_final = 150;
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+
+            url: "@Url.Action("Listado_Detalle_stock_mayor_cero", "Cotizador")",
+            data: "{ 'codigo': '" + codigoCabecera + "'}",
+            success: function (data) {
+
+                for (cab in data) {
+
+                    var cant_solic = data[cab].cantidad_solicitada;
+                    var precio_cot = data[cab].preciodecotizacion;
+
+
+                    var precio_entero = parseInt(precio_cot);
+                    var total_articulo = cant_solic * precio_entero;
+                    var total_articulo_string = total_articulo + "";
+                    var cant_solic_string = cant_solic + "";
+
+
+                    total_final = total_final + parseInt(total_articulo);
+
+     //data_c[cab] = [data[cab].codigo_articulo, data[cab].nombre_articulo, data[cab].preciodecotizacion.slice(0, 6), cant_solic_string, total_articulo_string];
+
+
+                }
+
+               // totalll = total_final;
+                console.log("CABECERA " + total_final);
+
+            }
+
+        });
+        return total_final;
+
+    }
+
+
+
+    //agregar articulo a la tabla
+
+
+    function listarDetalleCotizacion(codigocabecera) {
+        console.log("Listando detalle del codigo " + codigocabecera);
+         $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+            url: "@Url.Action("ListarDetalleCotizacionxCabecera", "Cotizador")",
+            data: "{ 'codigocabecera': '" + codigocabecera + "'}",
+            success: function (data) {
+
+                var mitablacabecera = document.getElementById("tabla_detalle_cotizacion_vendedor_visor");
+                if (mitablacabecera) {
+                    mitablacabecera.innerHTML = ``;
+                }
+                else {
+                    // mitablacabecera.innerHTML = ``;
+                }
+                //recorrer lista de objectos :D
+                mitablacabecera.innerHTML = ``;
+                var codigoanulacion;
+                for (cab in data) {
+
+                    // console.log(data);
+                    codigoanulacion = data[cab].codigo_cabecera;
+                    //  console.log(codigoanulacion);
+                    //console.log("Cotizacion ___________________________");
+                    //console.log("codigo " + data[cab].codigo + " cliente" + data[cab].cliente + " almacen " + data[cab].almacen);
+                    //console.log("_______________________________________");
+                    mitablacabecera.innerHTML += ` <tr>
+
+                                  <td>${data[cab].codigo_articulo}</td>
+                                  <td>${data[cab].nombre_articulo}</td>
+                                   <td>${data[cab].uni}</td>
+                                  <td>${data[cab].preciodecotizacion}</td>
+                                  <td>${data[cab].cantidad_solicitada}</td>
+                                  <td>${data[cab].cantidad_disponible}</td>
+                                  <td>${data[cab].stock}</td>
+                                  <td><button  class="btn text-white" onclick="borrarRegistroDetalle(${data[cab].codigo_cabecera})" style="background-color:#D22B08;"><i class="bi bi-clipboard2-x"></i></button></td>
+
+
+                                </tr>
+                                    `;
+
+
+
+                }
+
+
+
+            }
+        });
+
+    }
+
+    function verImagendeabonoporCtz(codigocotizacion) {
+         $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+             data: "{ 'codigocotizacion': '" + codigocotizacion + "'}",
+            url: "@Url.Action("lIstadodeimagenesabonos", "Cotizador")",
+
+            success: function (data) {
+               //cargarimagenes en html
+
+                console.log(data);
+                 document.getElementById("listadeimagenes").value="";
+                for (cab in data)
+
+                {
+                    //document.getElementById("imagencargada").src = data[cab].imgagenBs;
+
+                    var x = document.createElement("IMG");
+                    x.setAttribute("src", data[cab].imgagenBs);
+                    x.setAttribute("height", "200");
+                    x.setAttribute("width", "400");
+                    x.setAttribute("alt", "suppp");
+                    document.getElementById("listadeimagenes").appendChild(x);
+
+                }
+
+            }
+        });
+
+
+    }
+
+
+</script>
+
+

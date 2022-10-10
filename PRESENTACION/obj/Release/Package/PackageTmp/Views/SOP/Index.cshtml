@@ -1,0 +1,633 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Layout/_LayoutSOP.cshtml";
+}
+
+<div class="row">
+    <div class="col-9">
+        <h3>LISTA DE REGISTROS SANITARIOS</h3>
+    </div>
+
+
+    <div class="col-sm-3 col-3">
+        <!--BOTON BUSCAR POR FECHA-->
+        <button type="button" id="btn_add_rrss" onclick="NuevoRegistroSanitario();"  class="btn btn-dark"><i class="bi bi-clipboard2-check"></i> Agregar RRSS</button>
+    </div>
+
+</div>
+
+<!-- MODAL NUEVO REGISTRO SANITARIO-->
+<div class="modal fade" id="exampleModalCenter_rrss" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Nuevo Registro Sanitario</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!--Cotizacion a Modificar--->
+                <main role="main">
+                    <div class="jumbotron">
+
+                        <div class="container">
+                            <div class="p-2"></div>
+                            <div class="row">
+
+
+                                <div class="col-md-12 order-md-1">
+                                    <h4 class="mb-3"></h4>
+                                    <form class="needs-validation" novalidate>
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <label for="firstName">Codigo</label>
+                                                <input type="text" class="form-control" id="sop_codigo" placeholder="" value="" required>
+                                                <div class="invalid-feedback">
+                                                    Nombre es requerido
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 mb-3">
+                                                <label for="country">Nombre</label>
+                                               <input  class="form-control" value="" id="sop_nombre" required>
+
+                                                <div class="invalid-feedback">
+                                                    Linea Requerida
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <select class="custom-select" id="sop_fabricante_s">
+                                                   
+                                                </select>
+
+                                                <label for="country">Fabricante</label>
+                                                <input type="text" class="form-control" id="sop_fabricante" placeholder="" value="" required>
+                                                <div class="invalid-feedback">
+                                                    Fecha Solicitud requerida
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <select class="custom-select" id="sop_pais_s">
+                                                </select>
+                                                <label for="state">Pais</label>
+                                                <input type="text" class="form-control d-block w-100" id="sop_pais" value="" required>
+
+                                                <div class="invalid-feedback">
+                                                    Motivo viaje requerido
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <select class="custom-select" id="sop_comercializacion_s">
+                                                    <option value="SI">SI</option>
+                                                    <option value="NO">NO</option>
+                                                </select>
+                                                <label for="zip">Comercializacion</label>
+                                                <input type="text" class="form-control" id="sop_comercializacion" placeholder="" required>
+                                                <div class="invalid-feedback">
+                                                    Monto Solicitud requerido
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <select class="custom-select" id="sop_estado_s">
+
+                                                </select>
+
+                                                    <label for="username">Estado</label>
+                                                    <div class="input-group">
+
+                                                        <input type="text" class="form-control d-block w-100" id="sop_estado" value="" required>
+
+                                                        <div class="invalid-feedback" style="width: 100%;">
+                                                            Medio de Viaje Requerido
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+
+
+                                        <hr class="mb-4">
+                                      
+
+                                        <div class="row">
+                                            <div class="col-md-4 mb-4">
+                                                <label for="cc-expiration">Fecha Inicio</label>
+                                                <input type="datetime" class="form-control" id="sop_fecha_inicio" placeholder="" required>
+                                                <div class="invalid-feedback">
+                                                    Fecha termino requerida
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-4">
+                                                <label for="cc-cvv">Fecha Vigencia</label>
+                                                <input type="datetime" class="form-control" id="sop_fecha_vigencia" placeholder="" required>
+                                                <div class="invalid-feedback">
+                                                    Monto Esperado requerido
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3 mb-3">
+                                                <select class="custom-select" id="sop_envase_s">
+                                                </select>
+                                                <label for="cc-cvv">Envase</label>
+                                                <input type="text" class="form-control" id="sop_envase" placeholder="" required>
+                                                <div class="invalid-feedback">
+                                                    Dias  requerido
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3 mb-3">
+                                                <label for="cc-cvv">Vida Util</label>
+                                                <input type="text" class="form-control" id="sop_vida_util" placeholder="" required>
+                                                <div class="invalid-feedback">
+                                                    Dias  requerido
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <hr class="mb-4">
+                                        <button class="btn btn-primary btn-lg btn-block" id="btn_reg_via">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <footer class="my-5 pt-5 text-muted text-center text-small">
+                                <p class="mb-1">&copy; 2021-2023 FGB</p>
+                                <ul class="list-inline">
+                                </ul>
+                            </footer>
+                        </div>
+
+                    </div>
+
+
+
+                </main>
+                <!--FIN --->
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- MODAL NUEVO REGISTRO SANITARIO-->
+
+
+<main>
+    <div class="container">
+        <div class="row   text-white" style="background-color: #e9ecef; ">
+
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-1">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Fecha Inicio</span>
+                    </div>
+                    <input type="date" class="form-control" id="lc_dt_fec_ini" aria-describedby="basic-addon3">
+                </div>
+            </div>
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Fecha Fin</span>
+                    </div>
+                    <input type="date" class="form-control" id="lc_dt_fec_fin" aria-describedby="basic-addon3">
+                </div>
+            </div>
+
+
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Estados</label>
+                    </div>
+                    <select class="custom-select" id="cot_est_ven">
+                        <option selected>Elija...</option>
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <!--input class="form-control" type="search" placeholder="Buscar" aria-label="Search"-->
+                        <!-- prueba-->
+                        <!--- FIN DE PRUEBA-->
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row  mb-1 p-2 text-white" style="background-color: #e9ecef; ">
+
+
+            <div class="col-sm-4 col-4">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Cliente</label>
+                    <input class="col-9 col-sm-12 form-control" name="clientes" list="listas">
+                </div>
+                <datalist class="col-sm-6 col-6" id="listas">
+
+                    @*@foreach (var item in ViewBag.clienteDataTable)
+                        {
+                            nombre_completo = @item.ruc + " " + @item.razonsocial;
+                            <option data-codigo="@item.ruc" value="@nombre_completo"></option>
+                        }*@
+
+                </datalist>
+                @*Asociamos al input la datalist 'listas'*@
+
+            </div>
+            <div class="col-sm-3 col-3">
+                <!--BOTON BUSCAR POR FECHA-->
+                <button type="button" id="limpiar" class="btn btn-dark"><i class="bi bi-search"></i>Limpiar</button>
+            </div>
+            <div class="col-sm-3 col-3">
+                <!--BOTON BUSCAR POR FECHA-->
+                <button type="button" id="lc_btn_fec" class="btn btn-dark"><i class="bi bi-search"></i>Buscar</button>
+            </div>
+
+        </div>
+
+        <h4></h4>
+
+        <div class="row">
+
+            <div class="table-responsive table-responsive-md table-responsive-lg">
+                <table class="table table-sm table-hover" id="tabla_rrss">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Codigo</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Fabricante</th>
+                            <th scope="col">Pais</th>
+                            <th scope="col">Comer cializa cion.</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Temperatura</th>
+                            <th scope="col">Fec. Inicio</th>
+                            <th scope="col">Fec. Vigencia</th>
+                            <th scope="col">Envase</th>
+                            <th scope="col">Vida Util- Meses</th>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Ver</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="~/Assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" type="text/javascript"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+     init();
+
+    });
+
+ function init() {
+        $("#via_clie_select").select2({
+            minimumInputLength: 3 // para buscar a partir del 3er digito
+        });
+
+        ListadoViaticos_v2();
+     ListadoFabricantes();
+     ListadoPaises();
+     ListadoEstados();
+     ListadoEnvase();
+
+
+     $("#sop_fabricante_s").select2({
+         // para buscar a partir del 3er digito
+     });
+     $("#sop_pais_s").select2({
+         // para buscar a partir del 3er digito
+     });
+     $("#sop_estado_s").select2({
+         // para buscar a partir del 3er digito
+     });
+     $("#sop_envase_s").select2({
+         //minimumInputLength: 1 // para buscar a partir del 3er digito
+     });
+
+    }
+
+ function ListadoViaticos() {
+
+     // var vcs_id = document.getElementById('via_num_sol').value;
+        $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                 url: "@Url.Action("ListaRegistrosSanitarios", "SOP")",
+               // data: "{'vcs_id': '" + 1 + "'}",
+                success: function (data) {
+                console.log(data);
+                    var mitablaviaticoscreados = document.getElementById("tabla_rrss");
+
+                    mitablaviaticoscreados.innerHTML = ``;
+
+                    for (cab in data) {
+
+
+                            mitablaviaticoscreados.innerHTML += ` <tr>
+                            <td>${data[cab].id_rrgg         }</td>
+                            <td>${data[cab].codigo              }</td>
+                            <td>${data[cab].nombre              }</td>
+                            <td>${data[cab].nombre_fabricante}</td>
+
+                            <td>${data[cab].nombre_pais         }</td>
+                            <td>${data[cab].comercializacion    }</td>
+                            <td>${data[cab].est_codigo          }</td>
+                            <td>${data[cab].des_temperatura     }</td>
+                            <td>${data[cab].fecha_inicio        }</td>
+                            <td>${data[cab].fec_vigencia        }</td>
+                            <td>${data[cab].des_envase      }</td>
+                            <td>${data[cab].vida_util       }</td>
+
+
+
+                </tr>
+                `;
+
+
+
+
+
+
+
+                }
+
+                }
+                });
+    }
+
+ function ListadoViaticos_v2() {
+        console.log("lista proy privada");
+         $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                 url: "@Url.Action("ListaRegistrosSanitarios", "SOP")",
+               // data: "{'vcs_id': '" + 1 + "'}",
+                success: function (data) {
+                console.log(data);
+                    var hi = "hola";
+                    var table = $('#tabla_rrss').DataTable({
+                        data: data,
+
+                        columns: [
+
+                            { 'data': 'id_rrgg' },
+                            { 'data': 'codigo' },
+                            { 'data': 'nombre' },
+                            { 'data': 'nombre_fabricante' },
+                            { 'data': 'nombre_pais' },
+                            { 'data': 'comercializacion' },
+                            { 'data': 'est_codigo' },
+                            { 'data': 'des_temperatura' },
+                            { 'data': 'fecha_inicio' },
+                            { 'data': 'fec_vigencia' },
+                            { 'data': 'des_envase' },
+                            { 'data': 'vida_util' },
+                            { "defaultContent": "<button type='button' class=' btn btn-primary'> <i class='bi bi-clipboard2-check'></i></button>" },
+                            { "defaultContent": "<button type='button'  id='btn_add_rrss' class= 'btn btn-dark' > <i class='bi bi-clipboard2-check'></i> </button>" }
+
+                        ]
+
+                    });
+
+
+
+                    $('#tabla_rrss tbody').on('click', 'button.btn-primary', function () {
+                        var data = table.row($(this).parents('tr')).data();
+                       // console.log(data);
+
+
+                        EditarRegistro(data.id_rrgg);
+                    });
+
+                    $('#tabla_rrss tbody').on('click', 'button.btn-dark', function () {
+                        var data = table.row($(this).parents('tr')).data();
+                        //console.log(data);
+
+
+                        VerPresentacion(data.id_rrgg);
+                    });
+                }
+                });
+
+    }
+
+
+    function NuevoRegistroSanitario() {
+        Limpieza();
+     $("#exampleModalCenter_rrss").modal("toggle");
+        document.getElementById("sop_codigo").value = "holi3";
+
+
+    }
+
+    function VerPresentacion(data) {
+        Limpieza();
+        //alert("PRESENTAICONES DE RRSS " + data);
+        $("#exampleModalCenter_rrss").modal("toggle");
+        document.getElementById("sop_codigo").value = "holi2";
+    }
+
+    function EditarRegistro(data) {
+        Limpieza();
+        //alert("EDITAR REGISTRO SANAITARIO " + data);
+        $("#exampleModalCenter_rrss").modal("toggle");
+
+        ObtenerRegistroSanitario(data);
+
+    }
+
+    function Limpieza() {
+        document.getElementById("sop_codigo").value = "";
+    }
+
+    function ObtenerRegistroSanitario(cod_solicitud) {
+
+        $.ajax({
+            dataType: "json",
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+            url: "@Url.Action("ObtenerRegistroSanitario", "SOP")",
+            data: "{'cod_solicitud': '" + cod_solicitud + "'}",
+            success: function (data) {
+                console.log(data);
+
+                $('#sop_fabricante_s').val("Elegir").trigger('change');
+                $('#sop_pais_s').val("23").trigger('change');
+                document.getElementById("sop_codigo").value = data.codigo;
+                document.getElementById("sop_nombre").value = data.nombre;
+                document.getElementById("sop_fabricante").value = data.nombre_fabricante;
+
+                document.getElementById("sop_pais").value = data.nombre_pais;
+                document.getElementById("sop_comercializacion").value = data.comercializacion;
+                document.getElementById("sop_estado").value = data.est_codigo;
+                document.getElementById("sop_fecha_inicio").value = data.fecha_inicio;
+
+                document.getElementById("sop_fecha_vigencia").value = data.fec_vigencia;
+                document.getElementById("sop_envase").value = data.des_envase;
+                document.getElementById("sop_vida_util").value = data.vida_util;
+
+
+            }
+        });
+    }
+
+     function ListadoFabricantes() {
+         var select_med_viaje = document.getElementById('sop_fabricante_s');
+        if (select_med_viaje) {
+            $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("RS_Listado_Fabricante", "SOP")",
+               // url: '/Viaticos/ListadoMediosViaje',
+                //data: "{}",
+                success: function (data) {
+                    console.log(data);
+                    for (var i = 0; i < data.length; i++) {
+                        var option = document.createElement("option"); //Creamos la opcion
+
+                        option.value = data[i].fab_id;
+                        option.text = data[i].fab_des;
+                        select_med_viaje.appendChild(option); //Metemos la opción en el select
+                        // console.log("OPTION "+option);
+
+                    }
+
+                }
+            });
+        }
+        else {
+
+        }
+    }
+
+     function ListadoPaises() {
+        var select_med_viaje = document.getElementById('sop_pais_s');
+        if (select_med_viaje) {
+            $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("RS_Listado_Paises", "SOP")",
+               // url: '/Viaticos/ListadoMediosViaje',
+                //data: "{}",
+                success: function (data) {
+                    console.log(data);
+                    for (var i = 0; i < data.length; i++) {
+                        var option = document.createElement("option"); //Creamos la opcion
+
+                        option.value = data[i].pa_id;
+                        option.text = data[i].pa_des;
+                        select_med_viaje.appendChild(option); //Metemos la opción en el select
+                        // console.log("OPTION "+option);
+
+                    }
+
+                }
+            });
+        }
+        else {
+
+        }
+    }
+
+     function ListadoEstados() {
+        var select_med_viaje = document.getElementById('sop_estado_s');
+        if (select_med_viaje) {
+            $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("RS_Listado_Estado", "SOP")",
+               // url: '/Viaticos/ListadoMediosViaje',
+                //data: "{}",
+                success: function (data) {
+                    console.log(data);
+                    for (var i = 0; i < data.length; i++) {
+                        var option = document.createElement("option"); //Creamos la opcion
+
+                        option.value = data[i].est_codigo;
+                        option.text = data[i].est_descripcion;
+                        select_med_viaje.appendChild(option); //Metemos la opción en el select
+                        // console.log("OPTION "+option);
+
+                    }
+
+                }
+            });
+        }
+        else {
+
+        }
+    }
+
+     function ListadoEnvase() {
+        var select_med_viaje = document.getElementById('sop_envase_s');
+        if (select_med_viaje) {
+            $.ajax({
+                dataType: "json",
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "@Url.Action("RS_Listado_Envases", "SOP")",
+               // url: '/Viaticos/ListadoMediosViaje',
+                //data: "{}",
+                success: function (data) {
+                    console.log(data);
+                    for (var i = 0; i < data.length; i++) {
+                        var option = document.createElement("option"); //Creamos la opcion
+
+                        option.value = data[i].id_envase;
+                        option.text = data[i].descri_envase;
+                        select_med_viaje.appendChild(option); //Metemos la opción en el select
+                        // console.log("OPTION "+option);
+
+                    }
+
+                }
+            });
+        }
+        else {
+
+        }
+    }
+
+
+</script>
