@@ -17,7 +17,7 @@ namespace LN
             return almacenDAL.ListadoAlmacenes();
 
         }
-
+        // cambios de muestra
 
     }
 }
